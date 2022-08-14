@@ -2631,7 +2631,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_use = "- Use",
     tutorial_toMoveAnd = "para mover e",
     tutorial_toZoom = "para controlar o zoom",
-    tutorial_subtitle_chooseTribe_title = "Liderar esta Tribo",
+    tutorial_subtitle_chooseTribe_title = "Lidere uma Tribo",
     tutorial_subtitle_chooseTribe_a = "- Aproxime-se, então clique em algumas tribos diferentes",
     tutorial_subtitle_chooseTribe_b = "e escolha uma para liderar",
     -- Gathering hay
