@@ -2687,7 +2687,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
 
     --roleAssignment
     tutorial_title_roleAssignment = "Como atribuir Funções",
-    tutorial_description_roleAssignment = "Quando um sapien descobre uma nova tecnologia ele fica habilidoso nela e automaticamente recebe a função, o que permite que ele complete tarefas relacionadas com esta habilidade.\n\nMas você também deveria atribuir funções manualmente. Isto deixará todos ocupados e permitirá que você foque a sua tribo nas áreas mais necessárias.",
+    tutorial_description_roleAssignment = "Quando um sapien descobre uma nova tecnologia ele fica habilidoso nela e automaticamente recebe a função, o que permite que ele complete tarefas relacionadas a esta habilidade.\n\nMas você também deveria atribuir funções manualmente. Isto deixará todos ocupados e permitirá que você foque a sua tribo nas áreas mais necessárias.",
     tutorial_task_roleAssignment = "Atribua uma Função nova a um sapien",
     tutorial_task_roleAssignment_subtitle_a = "- Pressione",
     tutorial_task_roleAssignment_subtitle_b = "e então selecione o menu da tribo",
