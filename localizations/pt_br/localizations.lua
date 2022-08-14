@@ -2703,7 +2703,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     
     -- tools
     tutorial_title_tools = "Áreas de Criação e Ferramentas",
-    tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nMachados de  mão e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar construindo as áreas de criação.",
+    tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nMachados de mão e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar construindo as áreas de criação.",
     tutorial_tools_buildCraftAreas = function(values)
         return string.format("Construa %d áreas de criação", values.count) 
     end,
