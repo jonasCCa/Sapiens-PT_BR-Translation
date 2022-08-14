@@ -2033,32 +2033,32 @@ localizations.values = {
     
 
     -- ui names
-    ui_name_traits = "Traits",
+    ui_name_traits = "Características",
     ui_name_skillFocus = "Skill Focus",
-    ui_name_relationships = "Family",
-    ui_name_tasks = "Roles",
+    ui_name_relationships = "Família",
+    ui_name_tasks = "Funções",
     ui_name_move = "Mover",
-    ui_name_moveAndWait = "Mover & Wait",
-    ui_name_mapMode = "World Map",
-    ui_name_changeAssignedSapien = "Select a Sapien to Assign",
+    ui_name_moveAndWait = "Mover & Esperar",
+    ui_name_mapMode = "Mapa do Mundo",
+    ui_name_changeAssignedSapien = "Selecione um Sapien para quem atribuir",
     ui_name_tutorial = "Tutorial",
-    ui_name_terrain = "Terrain",
-    ui_name_craftCount = "Craft Count",
-    ui_name_ipAddress = "IP Address/Host",
-    ui_name_port = "Port (default 16161)",
+    ui_name_terrain = "Terreno",
+    ui_name_craftCount = "Quantidade a Criar",
+    ui_name_ipAddress = "Endereço de IP",
+    ui_name_port = "Porta (16161 por padrão)",
     ui_name_notApplicable = "N/A",
-    ui_name_today = "Today",
-    ui_name_yesterday = "Yesterday",
+    ui_name_today = "Hoje",
+    ui_name_yesterday = "Ontem",
     ui_daysAgo = function(values)
-        return string.format("%d days ago", values.count)
+        return string.format("%d dias atrás", values.count)
     end,
-    ui_name_lastPlayed = "Last Played",
-    ui_name_created = "Created",
-    ui_name_lastPlayedVersion = "Last Played Version",
+    ui_name_lastPlayed = "Jogado pela última vez em",
+    ui_name_created = "Criado em",
+    ui_name_lastPlayedVersion = "Última Versão Jogada",
     ui_name_seed = "Semente",
-    ui_name_saves = "Saves",
-    ui_name_load = "Load",
-    ui_name_deleteWorld = "Delete World",
+    ui_name_saves = "Mundos Salvos",
+    ui_name_load = "Carregar",
+    ui_name_deleteWorld = "Apagar Mundo",
     
     
     
@@ -2311,7 +2311,7 @@ localizations.values = {
     constructable_classification_path_action = "Construir",
     constructable_classification_place = "Place Object",
     constructable_classification_place_action = "Place",
-    constructable_classification_fill = "Fill Terrain",
+    constructable_classification_fill = "Fill Terreno",
     constructable_classification_fill_action = "Fill",
     constructable_classification_research = "Discoveries",
     constructable_classification_research_action = researchName,
@@ -2790,7 +2790,7 @@ BE CAREFUL! Install mods at your own risk. Even when installed from Steam Worksh
     tutorial_cookingMeat_butcher = "Butcher a carcass",
     tutorial_cookingMeat_cook = "Cook some meat",
     -- worldMap
-    tutorial_title_worldMap = "World Map",
+    tutorial_title_worldMap = "Mapa do Mundo",
     tutorial_worldMap_task = "View the world from above with",
     -- recruitment
     tutorial_title_recruitment = "Recruitment",
