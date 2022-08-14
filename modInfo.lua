@@ -11,7 +11,7 @@ local modInfo = {
     version = "0.0.1",
     type = "app",
     developer = "Jonas Costa Campos",
-    website = "https://github.com/jonasCCa",
+    website = "https://github.com/jonasCCa/Sapiens-PT_BR-Translation",
     loadOrder = 1, --default load order for all assets for this mod. Higher numbers are loaded after lower numbers. 
                    --For lua scripts, this can be optionally overriden in the mod table per lua script.
 }
