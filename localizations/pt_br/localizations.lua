@@ -2716,7 +2716,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     
     -- fire
     tutorial_title_fire = "Acendendo Fogo",
-    tutorial_fire_storyText = "Fogo é uma descoberta inicial importante que fornece luz à noite, ajuda a manter a sua tribo quentinha quando estiver frio e permite que eles cozinhem comida.\n\nAgora seria uma boa hora para acender uma fogueira.",
+    tutorial_fire_storyText = "Fogo é uma descoberta inicial importante que fornece luz durante a noite, ajuda a manter a sua tribo quentinha quando estiver frio e permite que eles cozinhem comida.\n\nAgora seria uma boa hora para acender uma fogueira.",
     tutorial_fire_place = "Coloque uma fogueira",
     tutorial_fire_waitForBuild = "Espere a fogueira ficar pronta e acenda-a",
     
