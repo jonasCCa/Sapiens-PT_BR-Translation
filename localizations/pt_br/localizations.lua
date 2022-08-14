@@ -2865,47 +2865,47 @@ Traduzido por Jonas Costa Campos
     -- values for these function usally include .name, the noun variant of the inProgressName. Also planName, which is the name of the plan, instead of the in-progress variant provided with planText.
 
     orderStatus_deliverTo = function(values)
-        return values.inProgressName .. " " .. values.heldObjectName .. " to " .. values.retrievedObjectName .. values.logisticsPostfix
+        return values.inProgressName .. " " .. values.heldObjectName .. " para " .. values.retrievedObjectName .. values.logisticsPostfix
     end,
     orderStatus_deliverForConstruction = function(values)
             if values.planText then
                 if values.retrievedObjectConstructableTypeName then
-                return values.inProgressName .. " " .. values.heldObjectName .. " for " .. values.planText .. " " .. values.retrievedObjectConstructableTypeName .. values.logisticsPostfix
+                return values.inProgressName .. " " .. values.heldObjectName .. " para " .. values.planText .. " " .. values.retrievedObjectConstructableTypeName .. values.logisticsPostfix
                 else
-                return values.inProgressName .. " " .. values.heldObjectName .. " for " .. values.planText .. values.logisticsPostfix
+                return values.inProgressName .. " " .. values.heldObjectName .. " para " .. values.planText .. values.logisticsPostfix
                 end
             end
-        return values.inProgressName .. " " .. values.heldObjectName .. " for construction at " .. values.retrievedObjectName
+        return values.inProgressName .. " " .. values.heldObjectName .. " para construção em " .. values.retrievedObjectName
     end,
     orderStatus_deliverForFuel = function(values)
-        return values.inProgressName .. " " .. values.heldObjectName .. " for fuel at " .. values.retrievedObjectName
+        return values.inProgressName .. " " .. values.heldObjectName .. " para combustível em " .. values.retrievedObjectName
     end,
     orderStatus_pickupObject = function(values)
             if values.planText then
                 if values.retrievedObjectConstructableTypeName then
-                return values.inProgressName .. " " .. values.pickupObjectName .. " for " .. values.planText .. " at " .. values.retrievedObjectConstructableTypeName
+                return values.inProgressName .. " " .. values.pickupObjectName .. " para " .. values.planText .. " em " .. values.retrievedObjectConstructableTypeName
                 else
-                return values.inProgressName .. " " .. values.pickupObjectName .. " for " .. values.planText
+                return values.inProgressName .. " " .. values.pickupObjectName .. " para " .. values.planText
                 end
             end
         return values.inProgressName .. " " .. values.pickupObjectName
     end,
     orderStatus_pickupObjectToEat = function(values)
-        return values.inProgressName .. " " .. values.pickupObjectName .. " to eat"
+        return values.inProgressName .. " " .. values.pickupObjectName .. " para comer"
     end,
     orderStatus_pickupObjectToWear = function(values)
-        return values.inProgressName .. " " .. values.pickupObjectName .. " to wear"
+        return values.inProgressName .. " " .. values.pickupObjectName .. " para vestir"
     end,
     orderStatus_pickupObjectToPlayWith = function(values)
-        return values.inProgressName .. " " .. values.pickupObjectName .. " to play with"
+        return values.inProgressName .. " " .. values.pickupObjectName .. " para tocar"
     end,
-    orderStatus_crafting = "crafting",
-    orderStatus_research = "research",
+    orderStatus_crafting = "criando",
+    orderStatus_research = "pesquisando",
     orderStatus_moveObjectForAction = function(values)
-        return "Movendo " .. values.objectName .. " for " .. values.action
+        return "Movendo " .. values.objectName .. " para " .. values.action
     end,
     orderStatus_talkingTo = function(values)
-        return "Talking to " .. values.objectName
+        return "Conversando com " .. values.objectName
     end,
 
     --b13
@@ -2952,18 +2952,18 @@ local function getTimeDurationDescriptionFromSplitTime(timeSplit)
     local result = ""
     local empty = true
     if timeSplit.years > 0 then
-        local postfix = " year"
+        local postfix = " ano"
         if timeSplit.years > 1 then
-            postfix = " years"
+            postfix = " anos"
         end
         result = mj:tostring(timeSplit.years) .. postfix
         empty = false
     end
 
     if timeSplit.days > 0 then
-        local postfix = " day"
+        local postfix = " dia"
         if timeSplit.days > 1 then
-            postfix = " days"
+            postfix = " dia"
         end
 
         if not empty then
@@ -2975,9 +2975,9 @@ local function getTimeDurationDescriptionFromSplitTime(timeSplit)
     end
     
     if timeSplit.hours > 0 then
-        local postfix = " hour"
+        local postfix = " hora"
         if timeSplit.hours > 1 then
-            postfix = " hours"
+            postfix = " horas"
         end
 
         if not empty then
@@ -2988,7 +2988,7 @@ local function getTimeDurationDescriptionFromSplitTime(timeSplit)
         empty = false
     else 
         if empty then
-        return "< 1 hour"
+        return "< 1 hora"
         end
     end
 
@@ -3017,13 +3017,13 @@ function localizations.getTimeRangeDescription(durationSecondsMin, durationSecon
 
     if (timeSplitMin.years == 0 and timeSplitMax.years == 0) then
         if (timeSplitMin.days == 0 and timeSplitMax.days == 0) then
-        return mj:tostring(timeSplitMin.hours) .. " - " .. mj:tostring(timeSplitMax.hours) .. " hours"
+        return mj:tostring(timeSplitMin.hours) .. " - " .. mj:tostring(timeSplitMax.hours) .. " horas"
         end
         if (timeSplitMin.hours == 0 and timeSplitMax.hours == 0) then
-        return mj:tostring(timeSplitMin.days) .. " - " .. mj:tostring(timeSplitMax.days) .. " days"
+        return mj:tostring(timeSplitMin.days) .. " - " .. mj:tostring(timeSplitMax.days) .. " dias"
         end
     elseif (timeSplitMin.days == 0 and timeSplitMax.days == 0) and (timeSplitMin.hours == 0 and timeSplitMax.hours == 0) then
-        return mj:tostring(timeSplitMin.years) .. " - " .. mj:tostring(timeSplitMax.years) .. " years"
+        return mj:tostring(timeSplitMin.years) .. " - " .. mj:tostring(timeSplitMax.years) .. " anos"
     end
 
     local minDescription = getTimeDurationDescriptionFromSplitTime(timeSplitMin)
@@ -3051,31 +3051,31 @@ function localizations.getBiomeForestDescription(biomeTags)
 
     if biomeTags.coniferous then
         if biomeTags.birch then
-            typeString = "pine & birch"
+            typeString = "pinheiro & bétula"
         elseif biomeTags.bamboo then
-            typeString = "pine & bamboo"
+            typeString = "pinheiro & bambu"
         else
-            typeString = "pine"
+            typeString = "pinheiro"
         end
     else 
-        typeString = "birch"
+        typeString = "bétula"
     end
     
     if not typeString then
-        return "No trees."
+        return "Sem árvores."
     end
 
     local forestString = true
     if biomeTags.mediumForest then
-        forestString = string.format("%s forest.", mj:capitalize(typeString))
+        forestString = string.format("Floresta de %s.", mj:capitalize(typeString))
     elseif biomeTags.denseForest then
-        forestString = string.format("Dense %s forest.", typeString)
+        forestString = string.format("Floresta Densa de %s.", typeString)
     elseif biomeTags.sparseForest then
-        forestString = string.format("%s trees.", mj:capitalize(typeString))
+        forestString = string.format("Algumas Árvores de %s.", mj:capitalize(typeString))
     elseif biomeTags.verySparseForest then
-        forestString = string.format("Very few %s trees.", typeString)
+        forestString = string.format("Poquíssimas Árvores de %s.", typeString)
     else
-        return "No trees."
+        return "Sem árvores."
     end
 
     return forestString
@@ -3087,11 +3087,11 @@ function localizations.getBiomeMainDescription(biomeTags)
     if biomeTags.tropical then
         descriptionString = "Tropical"
     elseif biomeTags.polar or biomeTags.icecap or biomeTags.heavySnowSummer or biomeTags.medSnowSummer or biomeTags.lightSnowSummer then
-        descriptionString = "Icey"
+        descriptionString = "Gelado"
     elseif biomeTags.temperate then
-        descriptionString = "Temperate"
+        descriptionString = "Temperado"
     elseif biomeTags.dry then
-        descriptionString = "Dry"
+        descriptionString = "Seco"
     end
 
     local mainAdded = false
@@ -3106,13 +3106,13 @@ function localizations.getBiomeMainDescription(biomeTags)
     end
 
     if biomeTags.desert then
-        addMain("desert")
+        addMain("deserto")
     elseif biomeTags.steppe then
-        addMain("steppe")
+        addMain("estepe")
     elseif biomeTags.rainforest then
-        addMain("rainforest")
+        addMain("floresta tropical")
     elseif biomeTags.savanna then
-        addMain("savanna")
+        addMain("savana")
     elseif biomeTags.tundra then
         addMain("tundra")
     end
@@ -3131,26 +3131,26 @@ function localizations.getBiomeTemperatureDescription(biomeTags)
     local descriptionString = nil
 
     if biomeTags.temperatureSummerVeryHot then
-        descriptionString = "Very Hot Summer."
+        descriptionString = "Verão Muito Quente."
     elseif biomeTags.temperatureSummerHot then
-        descriptionString = "Hot Summer."
+        descriptionString = "Verão Quente."
     elseif biomeTags.temperatureSummerCold then
-        descriptionString = "Cold Summer."
+        descriptionString = "Verão Frio."
     elseif biomeTags.temperatureSummerVeryCold then
-        descriptionString = "Very Cold Summer."
+        descriptionString = "Verão Muito Frio."
     else
-        descriptionString = "Moderate Summer."
+        descriptionString = "Verão Ameno."
     end
     if biomeTags.temperatureWinterVeryHot then
-        descriptionString = descriptionString .. " Very Hot Winter."
+        descriptionString = descriptionString .. " Inverno Muito Quente."
     elseif biomeTags.temperatureWinterHot then
-        descriptionString = descriptionString .. " Hot Winter."
+        descriptionString = descriptionString .. " Inverno Quente."
     elseif biomeTags.temperatureWinterCold then
-        descriptionString = descriptionString .. " Cold Winter."
+        descriptionString = descriptionString .. " Inverno Frio.."
     elseif biomeTags.temperatureWinterVeryCold then
-        descriptionString = descriptionString .. " Very Cold Winter."
+        descriptionString = descriptionString .. " Inverno Muito Frio."
     else
-        descriptionString = descriptionString .. " Moderate Winter."
+        descriptionString = descriptionString .. " Inverno Ameno."
     end
 
     return descriptionString
