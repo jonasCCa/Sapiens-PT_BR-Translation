@@ -1833,7 +1833,7 @@ localizations.values = {
     settings_Debug_startLogicProfile = "Perfil da Thread Lógica",
     settings_Debug_startMainThreadProfile = "Perfil da Thread Principal",
     settings_exitAreYouSure = "Tem certeza de que quer sair de Sapiens?",
-    settings_exitAreYouSure_info = "O jogo é salvo constantemente enquanto jogas.",
+    settings_exitAreYouSure_info = "O jogo é salvo constantemente enquanto você joga.",
     settings_exitMainMenu = "Sair para Menu Principal",
     settings_exitDesktop = "Sair para a Área de Trabalho",
     --stats ui
