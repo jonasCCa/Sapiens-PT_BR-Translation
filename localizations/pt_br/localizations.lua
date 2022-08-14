@@ -1725,60 +1725,60 @@ localizations.values = {
     end,
 
     -- nomadTribeBehavior
-    nomadTribeBehavior_foodRaid_name = "Food raid",
-    nomadTribeBehavior_friendlyVisit_name = "Visiting (friendly)",
-    nomadTribeBehavior_cautiousVisit_name = "Visiting (cautious)",
-    nomadTribeBehavior_join_name = "Wants to join the tribe",
-    nomadTribeBehavior_passThrough_name = "Passing through",
-    nomadTribeBehavior_leave_name = "Leaving",
+    nomadTribeBehavior_foodRaid_name = "Roubando comida",
+    nomadTribeBehavior_friendlyVisit_name = "Visitando (amigável)",
+    nomadTribeBehavior_cautiousVisit_name = "Visitando (cauteloso)",
+    nomadTribeBehavior_join_name = "Quer se juntar à tribo",
+    nomadTribeBehavior_passThrough_name = "Atravessando",
+    nomadTribeBehavior_leave_name = "Saindo",
 
     -- manageUI
     manage_build = "Construir",
-    manage_tribe = "Tribe",
-    manage_storageLogistics = "Routes",
+    manage_tribe = "Tribo",
+    manage_storageLogistics = "Rotas",
     
     -- build ui
     build_ui_build = "Construir",
-    build_ui_place = "Decorate",
-    build_ui_plant = "Plant",
+    build_ui_place = "Decorar",
+    build_ui_plant = "Plantar",
     build_ui_path = "Caminhos",
 
     --construct ui
-    construct_ui_needsDiscovery = "Investigate items to make a required breakthrough",
-    construct_ui_unseenResources = "Find or craft a required item",
-    construct_ui_unseenTools = "Find or craft a required tool",
-    construct_ui_acceptOnly = "Accept Only",
-    construct_ui_requires = "Requires",
-    construct_ui_rdisabledInResourcesPanel = "Use of this resource has been disabled in the tribe resources panel",
-    construct_ui_discoveryRequired = "Discovery required",
-    construct_ui_discoveryRequired_plantsInfo = "To grow plants and trees, your tribe first needs to discover rock knapping, digging and planting.",
-    construct_ui_discoveryRequired_pathsInfo = "Caminhos allow sapiens to move around faster. To build paths, your tribe first needs to discover digging.",
+    construct_ui_needsDiscovery = "Investigue itens para fazer uma descoberta necessária",
+    construct_ui_unseenResources = "Encontre ou crie um item necessário",
+    construct_ui_unseenTools = "Encontre ou crie uma ferramenta necessária",
+    construct_ui_acceptOnly = "Apenas Aceitar",
+    construct_ui_requires = "Requer",
+    construct_ui_rdisabledInResourcesPanel = "O uso deste recurso foi desabilitado no painel de recursos da tribo",
+    construct_ui_discoveryRequired = "Descoberta necessária",
+    construct_ui_discoveryRequired_plantsInfo = "Para cultivar plantas e árvores a sua tribo deve primeiro aprender a lascar pedras, cavar e plantar.",
+    construct_ui_discoveryRequired_pathsInfo = "Caminhos permitem que sapiens se movam mais rápido por aí. Para construir caminhos a sua tribo deve primeiro aprender a cavar.",
 
     --storage ui
-    storage_ui_acceptOnly = "Accept Only",
-    storage_ui_Unlimited = "Unlimited",
-    storage_ui_RouteDisabled = "Route Disabled",
+    storage_ui_acceptOnly = "Apenas Aceitar",
+    storage_ui_Unlimited = "Ilimitado",
+    storage_ui_RouteDisabled = "Rota Desabilitada",
     storage_ui_routeName = function(values)
-        return string.format("Route %d", values.count)
+        return string.format("Rota %d", values.count)
     end,
-    storage_ui_returnToFirstStop = "Return to first stop when done",
-    storage_ui_returnToFirstStop_toolTip = "After a sapien drops off items at the final stop, they will walk back to the first stop again.",
-    storage_ui_removeRouteWhenComplete = "Remover route when complete",
-    storage_ui_removeRouteWhenComplete_toolTip = "Delete this route when there are no longer any stops requiring pick-up.",
-    storage_ui_maxSapiens = "Max sapiens",
-    storage_ui_clickToAddStops = "Click on storage areas to add stops",
+    storage_ui_returnToFirstStop = "Voltar à primeira parada quando terminar",
+    storage_ui_returnToFirstStop_toolTip = "Depois que um sapien largar itens na última parada ele irá voltar à primeira parada novamente.",
+    storage_ui_removeRouteWhenComplete = "Remover rota quando completar",
+    storage_ui_removeRouteWhenComplete_toolTip = "Deletar esta rota quando não houver mais paradas que precisem ser recolhidas.",
+    storage_ui_maxSapiens = "Máximo de sapiens",
+    storage_ui_clickToAddStops = "Clique em uma área de armazenamento para adicionar paradas",
     storage_ui_hit = "Hit",
-    storage_ui_whenDone = "When Done",
-    storage_ui_NoDestinations = "No destinations",
+    storage_ui_whenDone = "Quando Terminar",
+    storage_ui_NoDestinations = "Sem Destino",
     
     --resources ui
-    resources_ui_allowUse = "Allow use",
+    resources_ui_allowUse = "Permitir uso",
     
     -- tribe ui
     tribe_ui_tribe = "Sapiens",
-    tribe_ui_roles = "Roles",
-    tribe_ui_stats = "Stats",
-    tribe_ui_resources = "Resources",
+    tribe_ui_roles = "Funções",
+    tribe_ui_stats = "Estatísticas",
+    tribe_ui_resources = "Recursos",
 
     --settings ui
     settings_options = "Settings",
