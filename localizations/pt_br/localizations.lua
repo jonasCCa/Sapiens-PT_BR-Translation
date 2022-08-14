@@ -813,7 +813,7 @@ localizations.values = {
     research_threshing_description = "As sementes de certas plantas tem valor nutricional e a sua tribo descobriu como extraí-las mais facilmente.",
     research_treeFelling = researchName,
     research_treeFelling_inProgress = researchingName,
-    research_treeFelling_description = "Com golpes suficientes com um machado de mão, até mesmo as árvores mais poderosas podem ser derrubadas. Isso fornecerá troncos, que queimam por muito mais tempo, mas talvez haja outros usos também.",
+    research_treeFelling_description = "Com golpes suficientes de um machado, até mesmo as árvores mais poderosas podem ser derrubadas. Isso fornecerá troncos, que queimam por muito mais tempo, mas talvez haja outros usos também.",
     research_basicHunting = researchName,
     research_basicHunting_inProgress = researchingName,
     research_basicHunting_description = "Sua tribo descobriu uma maneira de caçar pequenas presas, que podem fornecer recursos valiosos e potencialmente comida, quando preparados e cozidos.",
@@ -2708,7 +2708,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
         return string.format("Construa %d áreas de criação", values.count) 
     end,
     tutorial_tools_craftHandAxes = function(values)
-        return string.format("Crie e guarde %d machados de mão de pedra", values.count) 
+        return string.format("Crie e guarde %d cabeças de machado de pedra", values.count) 
     end,
     tutorial_tools_craftKnives = function(values)
         return string.format("Crie e guarde %d facas de pedra", values.count) 
