@@ -2458,66 +2458,66 @@ localizations.values = {
     
     -- notifications
     notification_becamePregnant = function(values)
-        return values.name .. " is pregnant"
+        return values.name .. " está grávida"
     end,
     notification_babyBorn = function(values)
-            local gender = "Girl"
+            local gender = "uma Menina"
             if not values.babyIsFemale then
-                gender = "Boy"
+                gender = "um Menino"
             end
-        return values.parentName .. " had a baby " .. gender
+        return values.parentName .. " teve " .. gender
     end,
     notification_babyGrew = function(values)
-        return values.parentName .. "'s baby grew into a child and has been named " .. values.childName
+        return "O bebê de " .. values.parentName .. " cresceu e recebeu o nome " .. values.childName
     end,
     notification_agedUp = function(values)
             if values.lifeStageName then
-            return values.name .. " is now an " .. string.lower(values.lifeStageName)
+            return values.name .. " agora é um " .. string.lower(values.lifeStageName)
             end
-        return values .. " aged up"
+        return values .. " cresceu"
     end,
     notification_died = function(values)
-        return values.name .. " has died. reason: " .. values.deathReason
+        return values.name .. " morreu. Motivo: " .. values.deathReason
     end,
     notification_left = function(values)
-        return values.name .. " has left the tribe."
+        return values.name .. " deixou a tribo."
     end,
     notification_lowLoyalty = function(values)
-        return values.name .. " may leave the tribe soon."
+        return values.name .. " está pensando em deixar a tribo."
     end,
     notification_recruited = function(values)
-        return values.name .. " has joined your tribe"
+        return values.name .. " se juntou à sua tribo."
     end,
     notification_skillLearned = function(values)
-        return values.name .. " has learned the " .. values.skillName .. " skill"
+        return values.name .. " aprendeu a habilidade de " .. values.skillName
     end,
     notification_newTribeSeen = function(values)
-        return "Another tribe has been spotted"
+        return "Outra tribo foi avistada"
     end,
     notification_discovery = function(values)
         return "Sua tribo descobriu " .. values.skillName .. "!"
     end,
     notification_researchNearlyDone = function(values)
-        return "Breakthrough is nearly complete!"
+        return "Descoberta quase completa!"
     end,
     notification_mammothKill = function(values)
-        return values.name .. " has killed a mammoth"
+        return values.name .. " matou um mamute"
     end,
     notification_minorInjuryByMob = function(values)
-        return values.name .. " has been injured by a " .. values.mobTypeName
+        return values.name .. " foi ferido por um " .. values.mobTypeName
     end,
     --b13
     notification_majorInjuryByMob = function(values)
-        return values.name .. " has been majorly injured by a " .. values.mobTypeName
+        return values.name .. " foi gravemente ferido por um " .. values.mobTypeName
     end,
     notification_criticalInjuryByMob = function(values)
-        return values.name .. " has been critically injured by a " .. values.mobTypeName
+        return values.name .. " foi criticamente ferido por um " .. values.mobTypeName
     end,
     notification_majorInjuryDeveloped = function(values)
-        return values.name .. "'s injury has become major"
+        return "O ferimento de " .. values.name .. "se tornou grave"
     end,
     notification_criticalInjuryDeveloped = function(values)
-        return values.name .. "'s injury has become critical"
+        return "O ferimento de " .. values.name .. "se tornou crítico"
     end,
     --/b13
 
