@@ -2875,15 +2875,15 @@ Traduzido por Jonas Costa Campos
                 return values.inProgressName .. " " .. values.heldObjectName .. " para " .. values.planText .. values.logisticsPostfix
                 end
             end
-        return values.inProgressName .. " " .. values.heldObjectName .. " para construção em " .. values.retrievedObjectName
+        return values.inProgressName .. " " .. values.heldObjectName .. " para construção de " .. values.retrievedObjectName
     end,
     orderStatus_deliverForFuel = function(values)
-        return values.inProgressName .. " " .. values.heldObjectName .. " para combustível em " .. values.retrievedObjectName
+        return values.inProgressName .. " " .. values.heldObjectName .. " para combustível de " .. values.retrievedObjectName
     end,
     orderStatus_pickupObject = function(values)
             if values.planText then
                 if values.retrievedObjectConstructableTypeName then
-                return values.inProgressName .. " " .. values.pickupObjectName .. " para " .. values.planText .. " em " .. values.retrievedObjectConstructableTypeName
+                return values.inProgressName .. " " .. values.pickupObjectName .. " para " .. values.planText .. " de " .. values.retrievedObjectConstructableTypeName
                 else
                 return values.inProgressName .. " " .. values.pickupObjectName .. " para " .. values.planText
                 end
