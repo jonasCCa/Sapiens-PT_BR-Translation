@@ -2133,7 +2133,7 @@ localizations.values = {
     misc_unavailable = "Indisponível",
     misc_elsewhere = "Em Outro Lugar",
     misc_cantDoPlan = function(values)
-        return string.format("Não pode fazer %s", values.planName)
+        return string.format("Não pode %s", values.planName)
     end,
     
     misc_settings = "Configurações",
