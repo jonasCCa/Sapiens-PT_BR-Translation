@@ -3051,27 +3051,27 @@ function localizations.getBiomeForestDescription(biomeTags)
 
     if biomeTags.coniferous then
         if biomeTags.birch then
-            typeString = "pinheiro & bétula"
+            typeString = "Pinheiro & Bétula"
         elseif biomeTags.bamboo then
-            typeString = "pinheiro & bambu"
+            typeString = "Pinheiro & Bambu"
         else
-            typeString = "pinheiro"
+            typeString = "Pinheiro"
         end
     else 
-        typeString = "bétula"
+        typeString = "Bétula"
     end
     
     if not typeString then
-        return "Sem árvores."
+        return "Sem Árvores."
     end
 
     local forestString = true
     if biomeTags.mediumForest then
-        forestString = string.format("Floresta de %s.", mj:capitalize(typeString))
+        forestString = string.format("Floresta de %s.", typeString) -- removed mj:capitalize
     elseif biomeTags.denseForest then
         forestString = string.format("Floresta Densa de %s.", typeString)
     elseif biomeTags.sparseForest then
-        forestString = string.format("Algumas Árvores de %s.", mj:capitalize(typeString))
+        forestString = string.format("Algumas Árvores de %s.", typeString)
     elseif biomeTags.verySparseForest then
         forestString = string.format("Poquíssimas Árvores de %s.", typeString)
     else
