@@ -5,8 +5,8 @@
 --    see localizations/english/localizations.lua for more info
 
 local modInfo = {
-    name = "Portuguese Translation",
-    description = "Este mod adiciona uma Tradução para Português ao jogo!\nThis mod adds a Portuguese translation to the game.",
+    name = "Sapiens em Português",
+    description = "Este mod adiciona uma Tradução para Português ao jogo!\n  1 - Ative este Mod\n  2 - Vá para Settings\n  3 - Em Language, selecione Português\n  4 - Clique em Relaunch.",
     preview = "preview.png",
     version = "b19c",
     type = "app",
