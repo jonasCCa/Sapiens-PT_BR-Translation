@@ -1838,39 +1838,39 @@ localizations.values = {
     settings_exitDesktop = "Sair para a Área de Trabalho",
     --stats ui
     ui_stats_days_ago = function(values)
-        return string.format("%d Days ago", values.dayCount)
+        return string.format("%d Dias atrás", values.dayCount)
     end,
-    ui_stats_now = "Now",
+    ui_stats_now = "Agora",
 
     --roles ui
-    ui_roles_allowed = "Assigned",
-    ui_roles_disallowed = "Not Assigned",
+    ui_roles_allowed = "Atribuído",
+    ui_roles_disallowed = "Não Atribuído",
 
     -- resources ui
     ui_resources_allResourceType = function(values)
-        return string.format("All %s", values.resourceName)
+        return string.format("Todos %s", values.resourceName)
     end,
     ui_resources_storedCount = function(values)
-        return string.format("%s stored", values.storedCount)
+        return string.format("%s guardados", values.storedCount)
     end,
-    ui_resources_decorations = "Place Decoration",
+    ui_resources_decorations = "Colocar Decoração",
     ui_resources_eating = "Comendo",
-    ui_resources_tool = "Ferramenta or Arma", --b13
+    ui_resources_tool = "Ferramenta ou Arma", --b13
 
     -- look at ui
-    lookatUI_needs = "Needs",
-    lookatUI_missingStorage = "No matching or empty storage area near by",
-    lookatUI_missingCraftArea = "No craft area near by",
-    lookatUI_missingCampfire = "No lit campfire near by",
-    lookatUI_missingKiln = "No lit kiln near by",
-    lookatUI_missingStorageAreaContainedObjects = "No suitable items stored here",
+    lookatUI_needs = "Necessidades",
+    lookatUI_missingStorage = "Nenhuma área de armazenamento vazia ou com o mesmo item nas proximidades",
+    lookatUI_missingCraftArea = "Nenhuma área de criação nas proximidades",
+    lookatUI_missingCampfire = "Nenhuma fogueira acesa nas proximidades",
+    lookatUI_missingKiln = "Nenhum forno aceso nas proximidades",
+    lookatUI_missingStorageAreaContainedObjects = "Nenhum item adequado guardado aqui",
     lookatUI_missingTaskAssignment = function(values)
-        return "No capable sapiens are assigned the \"" .. values.taskName .. "\" role"
+        return "Nenhum sapien capaz possui a função \"" .. values.taskName .. "\""
     end,
     lookatUI_needsTools = function(values)-- b16
-        local planInfoString = "Needs "
+        local planInfoString = "Necessita de "
         for i,missingToolInfo in ipairs(values.missingToolInfos) do
-            planInfoString = planInfoString .. missingToolInfo.toolName .. " (eg. " .. missingToolInfo.exampleObjectName .. ")"
+            planInfoString = planInfoString .. missingToolInfo.toolName .. " (ex.: " .. missingToolInfo.exampleObjectName .. ")"
             if i ~= #values.missingToolInfos then
                 planInfoString = planInfoString .. ", "
             end
@@ -1878,7 +1878,7 @@ localizations.values = {
         return planInfoString
     end,
     lookatUI_needsResources = function(values)-- b16
-        local planInfoString = "Needs "
+        local planInfoString = "Necessita de "
         for i,missingResourceString in ipairs(values.missingResources) do
             planInfoString = planInfoString .. missingResourceString
             if i ~= #values.missingResources then
@@ -1887,147 +1887,147 @@ localizations.values = {
         end
         return planInfoString
     end,
-    lookatUI_inaccessible = "Too difficult to get to",
-    lookatUI_terrainTooSteepFill = "Filling this would create a slope that is too steep",
-    lookatUI_invalidUnderWater = "Needs access from dry land",
-    lookatUI_terrainTooSteepDig = "Digging this would create a slope that is too steep",
-    lookatUI_needsLit = "Needs to be lit first",
-    lookatUI_disabledDueToOrderLimit = "Maximum orders reached",
-    lookatUI_tooDark = "Not enough light. Add torches or wait until day time",
-    lookatUI_tooDistant = "No capable sapiens near by with the required role assigned",
+    lookatUI_inaccessible = "Muito difícil alcançar",
+    lookatUI_terrainTooSteepFill = "Preencher aqui criaria uma inclinação muito íngrime",
+    lookatUI_invalidUnderWater = "Necessita acesso por terra firme",
+    lookatUI_terrainTooSteepDig = "Escavar aqui criaria uma inclinação muito íngrime",
+    lookatUI_needsLit = "Precisa ser aceso antes",
+    lookatUI_disabledDueToOrderLimit = "Máximo de ordens alcançado",
+    lookatUI_tooDark = "Sem luz suficiente. Adicione tochas ou espere o sol nascer",
+    lookatUI_tooDistant = "Nenhum sapien capaz possui a função necessária nas proximidades",
     lookatUI_tooDistantWithRoleName = function(values)
-        return "No capable sapiens near by with the \"" .. values.taskName .. "\" role"
+        return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\""
     end,
     lookatUI_tooDistantRequiresCapable = function(values)
-        return "No capable sapiens near by with the \"" .. values.taskName .. "\" role (Requires heavy lifting)"
+        return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\" (Requer levantar peso)"
     end,
     
-    sapien_ui_roles = "Roles",
-    sapien_ui_inventory = "Inventory",
-    sapien_ui_relationships = "Family",
+    sapien_ui_roles = "Funções",
+    sapien_ui_inventory = "Inventário",
+    sapien_ui_relationships = "Família",
 
     -- ui actions    
-    ui_action_chooseTribe = "Lead this tribe",
-    ui_action_place = "Place",
-    ui_action_plant = "Plant",
+    ui_action_chooseTribe = "Liderar esta Tribo",
+    ui_action_place = "Colocar",
+    ui_action_plant = "Plantar",
     ui_action_build = "Construir",
-    ui_action_craft = "Craft",
-    ui_action_continue = "Continue",
-    ui_action_craft_continuous = "Craft Continuously",
-    ui_action_assign = "Assign",
-    ui_action_cancel = "Cancel",
-    ui_action_cancelling = "Cancelling",
+    ui_action_craft = "Criar",
+    ui_action_continue = "Continuar",
+    ui_action_craft_continuous = "Criar Continuamente",
+    ui_action_assign = "Atribuir",
+    ui_action_cancel = "Cancelar",
+    ui_action_cancelling = "Cancelando",
     ui_action_stop = "Parar",
-    ui_action_next = "Next",
-    ui_action_choose = "Choose",
-    ui_action_set = "Set",
+    ui_action_next = "Próximo",
+    ui_action_choose = "Escolher",
+    ui_action_set = "Definir",
     ui_action_zoom = "Zoom",
     ui_action_remove = "Remover",
-    ui_action_manageRoles = "Gerenciar Roles",
-    ui_action_disallowAll = "Unassign All",
-    ui_action_allowAll = "Assign All",
-    ui_action_allow = "Assign",
-    ui_action_disallow = "Unassign",
-    ui_action_selectMore = "Select More",
-    ui_action_select = "Select",
-    ui_action_boxSelect = "Box Select",
-    ui_action_radiusSelect = "Radius Select",
-    ui_action_editName = "Rename",
-    ui_action_inspectRoute = "Inspect Route",
-    ui_action_assignDifferentSapien = "Assign Different Sapien",
-    ui_action_assignSapien = "Assign Sapien",
-    ui_action_prioritize = "Prioritize",
+    ui_action_manageRoles = "Gerenciar Funções",
+    ui_action_disallowAll = "Remover Todas Atribuições",
+    ui_action_allowAll = "Atribuir Todos",
+    ui_action_allow = "Atribuir",
+    ui_action_disallow = "Remover Atribuição",
+    ui_action_selectMore = "Selecionar Mais",
+    ui_action_select = "Selecionar",
+    ui_action_boxSelect = "Seleção em Caixa",
+    ui_action_radiusSelect = "Seleção em Raio",
+    ui_action_editName = "Renomear",
+    ui_action_inspectRoute = "Inspecionar Rota",
+    ui_action_assignDifferentSapien = "Atribuir a Outros Sapiens",
+    ui_action_assignSapien = "Atribuir a Sapien",
+    ui_action_prioritize = "Priorizar",
     ui_action_manageSapien = function(values)
         return "Gerenciar " .. values.name
     end,
-    ui_action_join = "Join",
-    ui_action_createWorld = "Create World",
-    ui_action_credits = "Credits",
+    ui_action_join = "Juntar-se",
+    ui_action_createWorld = "Criar Mundo",
+    ui_action_credits = "Créditos",
     ui_action_exit = "Sair",
-    ui_action_reportBug = "Report Bug",
-    ui_action_importReports = "Import Reports",
-    ui_action_wishlist = "Add to your wishlist",
-    ui_action_wishlistNow = "Wishlist now!",
-    ui_action_sendFeedback = "Send Feedback",
-    ui_action_apply = "Apply",
-    ui_action_dontShowAgain = "Don't show this again",
-    ui_action_attemptToPlayAnyway = "Attempt to play anyway",
-    ui_action_setFillType = "Set Fill Type",
+    ui_action_reportBug = "Relatar Bug",
+    ui_action_importReports = "Importar Relatórios",
+    ui_action_wishlist = "Adicionar à Lista de Desejos",
+    ui_action_wishlistNow = "Adicione à Lista de Desejos agora mesmo!",
+    ui_action_sendFeedback = "Enviar Feedback",
+    ui_action_apply = "Aplicar",
+    ui_action_dontShowAgain = "Não mostrar novametne",
+    ui_action_attemptToPlayAnyway = "Tentar jogar mesmo assim",
+    ui_action_setFillType = "Selecionar material de preenchimento",
 
     --ui plans
-    ui_plan_unavailable_stopOrders = "Cancel other orders first",
-    ui_plan_unavailable_multiSelect = "Too many selected",
-    ui_plan_unavailable_missingKnowledge = "Missing Knowledge",
-    ui_plan_unavailable_investigatedElsewhere = "Being investigated elsewhere",
-    ui_plan_unavailable_extinguishFirst = "Apagar first",
+    ui_plan_unavailable_stopOrders = "Cancele outras ordens primeiro",
+    ui_plan_unavailable_multiSelect = "Muitos selecionados",
+    ui_plan_unavailable_missingKnowledge = "Conhecimento não Descoberto",
+    ui_plan_unavailable_investigatedElsewhere = "Já está sendo investigado em outro lugar",
+    ui_plan_unavailable_extinguishFirst = "Apague primeiro",
     
 
     -- ui buildMode
-    ui_buildMode_fail_needsAttachment = "Needs to attach to something",
-    ui_buildMode_fail_collidesWithObjects = "Collides with something",
-    ui_buildMode_fail_tooSteep = "Slope is too steep",
-    ui_buildMode_fail_underwater = "Can't build under water",
-    ui_buildMode_plantFail_tooDistant = "Too far away",
-    ui_buildMode_plantFail_notTerrain = "Needs to be planted in the ground",
+    ui_buildMode_fail_needsAttachment = "Precisa estar ligado a algo",
+    ui_buildMode_fail_collidesWithObjects = "Está colidindo com algo",
+    ui_buildMode_fail_tooSteep = "Inclinação muito íngrime",
+    ui_buildMode_fail_underwater = "Não pode construir debaixo d'água",
+    ui_buildMode_plantFail_tooDistant = "Muito longe",
+    ui_buildMode_plantFail_notTerrain = "Precisa ser plantado no chão",
     ui_buildMode_plantFail_badMedium = function(values)
-        return "Cannot be planted in " .. values.terrainName
+        return "Não pode ser plantado em " .. values.terrainName
     end,
-    ui_buildMode_fail_belowTerrain = "Can't build below terrain",
+    ui_buildMode_fail_belowTerrain = "Não pode construir debaixo do terreno",
     fill_summary = function(values)
         if values.requiredResourceCount > 1 then
-            return string.format("Fill the terrain with %d %s", values.requiredResourceCount, values.resourceTypeNamePlural)
+            return string.format("Preencher o terreno com %d %s", values.requiredResourceCount, values.resourceTypeNamePlural)
         else
-            return "Fill the terrain with " .. values.resourceTypeNamePlural
+            return "Preencher o terreno com " .. values.resourceTypeNamePlural
         end
     end,
     ui_cantDoTasks = function(values)
         if values.pregnant then
-            return "Can't do these tasks due to pregnancy."
+            return "Não consegue fazer isto, pois está grávida."
         elseif values.hasBaby then
-            return "Can't do these tasks while carrying a baby."
+            return "Não consegue fazer isto, pois está carregando um bebê."
         elseif values.child then
-            return "Children can't do these tasks."
+            return "Crianças não conseguem fazer isto."
         elseif values.elder then
-            return "Elders can't do these tasks."
+            return "Idosos não conseguem fazer isto."
         elseif values.maxAssigned then
-            return "Maximum roles assigned"
+            return "Máximo de funções atribuídas"
         end
-        return "Can't do tasks due to limited ability."
+        return "Não consegue fazer isto devido à habilidade limitada."
     end,
     ui_partiallyCantDoTasks = function(values)
         if values.pregnant then
-            return "Some of these tasks can't be done due to pregnancy."
+            return "Algumas dessas tarefas não podem ser feitas devido à gravidez."
         elseif values.hasBaby then
-            return "Some of these tasks can't be done while carrying a baby."
+            return "Algumas dessas tarefas não podem ser feitas enquanto carrega um bebê."
         elseif values.child then
-            return "Children can't do some of these tasks."
+            return "Crianças não conseguem fazer algumas dessas tarefas."
         elseif values.elder then
-            return "Elders can't do some of these tasks."
+            return "Idosos não conseguem fazer algumas dessas tarefas."
         end
-        return "Some of these tasks can't be done due to limited ability."
+        return "Algumas dessas tarefas não podem ser feitas devidido à habilidade limitada."
     end,
     ui_cantDoTasksShort = function(values)
         if values.pregnant then
-            return "Pregnant"
+            return "Grávida"
         elseif values.hasBaby then
-            return "Carrying baby"
+            return "Carregando bebê"
         elseif values.child then
-            return "Child"
+            return "Criança"
         elseif values.elder then
-            return "Elder"
+            return "Idoso"
         elseif values.maxAssigned then
-            return "Max assigned"
+            return "Máximo atribuído"
         end
-        return "Limited ability"
+        return "Habilidade limitada"
     end,
     ui_missingTaskAssignment = function(values)
-        return "Not assigned the \"" .. values.taskName .. "\" role"
+        return "Não possui a função \"" .. values.taskName .. "\""
     end,
     ui_portionCount = function(values)
         if values.portionCount == 1 then
-            return string.format("1 portion")
+            return string.format("1 porção")
         else
-            return string.format("%d portions", values.portionCount)
+            return string.format("%d porções", values.portionCount)
         end
     end,
     
@@ -2093,7 +2093,7 @@ localizations.values = {
     misc_dry = "Dry",
     misc_newBreakthrough = "New Breakthrough!",
     misc_unlocks = "Unlocks",
-    misc_pregnant = "Pregnant",
+    misc_pregnant = "Grávida",
     misc_carryingBaby = "Carrying Baby",
     misc_unnamed = "Unnamed",
     misc_inside = "inside",
@@ -2161,9 +2161,9 @@ localizations.values = {
     loading_loading = "Loading",
 
     -- lifeStages
-    lifeStages_child = "Child",
+    lifeStages_child = "Criança",
     lifeStages_adult = "Adult",
-    lifeStages_elder = "Elder",
+    lifeStages_elder = "Idoso",
 
     --sapienTrait
     sapienTrait_charismatic = "Charismatic",
