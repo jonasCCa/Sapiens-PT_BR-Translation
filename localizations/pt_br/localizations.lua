@@ -2605,25 +2605,25 @@ Certifique-se de ter a sobreposição da Steam ativada. Depois que encontrar um 
 MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Steam Workshop podem conter e executar códigos que podem danificar seu computador. Apenas instale e ative mods de autores que você confia.",
 
     -- graphics drivers
-    gfx_updateRequiredTitle = "Please update your graphics card driver.",
-    gfx_updateRequired_info = "The driver that has been detected on this system is out of date.\n\nIf you do not update your driver, it will likely cause graphical glitches and/or the game might crash and exit to the desktop while playing.\n\nPlease download and install the latest driver from your graphics card manufacturer. Your graphics card is:",
+    gfx_updateRequiredTitle = "Por favor, atualize os drivers da sua placa de vídeo.",
+    gfx_updateRequired_info = "O driver que foi detectado no seu sistema está desatualizado.\n\nSe você não atualizar o seu driver, isto poderá causar problemas gráficos ou travar o seu jogo enquanto estiver jogando.\n\nPor favor, baixe e instale o driver mais recente para a sua placa de vídeo. Sua placa é:",
 
     --intro
     intro_a = function(values)
-        return "For millennia, Sapiens have been exploring " .. values.worldName .. ".\n\nSmall tribes are scattered wide across the world. Travelling, gathering, hunting, and surviving."
+        return "Há milênios, os Sapiens exploram " .. values.worldName .. ".\n\nPequenas tribos se espalharam pelo mundo, viajando, coletando, caçando e sobrevivendo."
     end,
-    intro_b = "These Sapiens are happy, but they are limited by their lack of knowledge and ambition.\n\nAlone, they may survive, but can never reach their full potential.",
-    intro_c = "You are to become the guardian of a tribe of Sapiens. You will give them direction, and purpose.\n\nYour goal is to encourage them to learn, advance, and grow, and ultimately to create a thriving Sapien civilization.",
-    intro_d = "Those you choose to lead will be the ancestors of the entire human species.\n\nChoose your tribe wisely.",
+    intro_b = "Estes Sapiens estão felizes, mas eles são limitados pela sua falta de conhecimento e ambição.\n\nSozinhos talvez sobrevivam, mas nunca alcançarão todo o seu potencial.",
+    intro_c = "Você se tornará o guardião de uma tribo de Sapiens. Você os dará uma direção e um propósito.\n\nSeu objetivo é encorajá-los a aprender, se desenvolver, crescer e criar uma civilização próspera.",
+    intro_d = "Aqueles que você escolher liderar serão os ancestrais de toda a espécie humana.\n\nEscolha a sua tribo com sabedoria.",
 
     -- gameFailSequence
-    gameFailSequence_a = "With their needs not met, your Sapiens have been dwindling in numbers.\n\nSadly, the last remaining member of your tribe has just departed.",
-    gameFailSequence_b = "Fortunately, there are other small tribes near by willing to follow your lead.\n\nChoose a new tribe to continue.",
+    gameFailSequence_a = "Não cumprindo com as suas necessidades, seus Sapiens diminuíram em número.\n\nInfelizmente, o último membro de sua tribo acabou de ir embora.",
+    gameFailSequence_b = "Felizmente há outras pequenas tribos nas proximidades que estão dispostas a seguir a sua liderança.\n\nEscolha a sua nova tribo para continuar.",
 
     --tips/tutorial
-    tutorial_skip = "Skip Tutorial",
-    tutorial_skipAreYouSure = "Are you sure you want to skip the tutorial?\nYou can enable it again later in the settings menu.",
-    tutorial_or = "or",
+    tutorial_skip = "Pular Tutorial",
+    tutorial_skipAreYouSure = "Tem certeza que quer pular o tutorial?\nVocê pode habilitá-lo novamente no menu de configurações.",
+    tutorial_or = "ou",
 
     -- choose tribe
     tutorial_title_chooseTribe = "Choose a tribe to lead",
