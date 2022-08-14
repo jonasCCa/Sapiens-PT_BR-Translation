@@ -1366,12 +1366,12 @@ localizations.values = {
     order_buildMoveComponent_inProgress = "Construindo",
     order_buildActionSequence = "Construir",
     order_buildActionSequence_inProgress = "Construindo",
-    order_eat = "Eat",
-    order_eat_inProgress = "Eating",
-    order_dig = "Dig",
-    order_dig_inProgress = "Digging",
-    order_mine = "Mine",
-    order_mine_inProgress = "Mining",
+    order_eat = "Comer",
+    order_eat_inProgress = "Comendo",
+    order_dig = "Escavar",
+    order_dig_inProgress = "Escavando",
+    order_mine = "Minerar",
+    order_mine_inProgress = "Minerando",
     order_clear = "Limpar",
     order_clear_inProgress = "Limpando",
     order_follow = "Seguir",
@@ -1854,7 +1854,7 @@ localizations.values = {
         return string.format("%s stored", values.storedCount)
     end,
     ui_resources_decorations = "Place Decoration",
-    ui_resources_eating = "Eating",
+    ui_resources_eating = "Comendo",
     ui_resources_tool = "Ferramenta or Arma", --b13
 
     -- look at ui
