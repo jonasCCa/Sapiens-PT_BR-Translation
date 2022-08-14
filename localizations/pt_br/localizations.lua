@@ -2736,7 +2736,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     
     -- farming
     tutorial_title_farming = "Agricultura",
-    tutorial_farming_storyText = "Agora que as necessidades imediatas da tribo foram atendidas, precisamos começar a planejar o futuro.\n\nEnquanto a tribo cresce, eles precisarão plantar o suficiente para alimentar todos os membros.",
+    tutorial_farming_storyText = "Agora que as necessidades imediatas da tribo foram atendidas, precisamos começar a pensar no futuro.\n\nEnquanto a tribo cresce, eles precisarão plantar o suficiente para alimentar todos os membros.",
     tutorial_farming_digging = "Descubra escavação",
     tutorial_farming_planting = "Descubra plantação",
     tutorial_farming_plantXTrees = function(values)
