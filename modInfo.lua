@@ -6,7 +6,7 @@
 
 local modInfo = {
     name = "Portuguese Translation",
-    description = "This mod adds a Portuguese translation to the game.",
+    description = "Este mod adiciona uma Tradução para Português ao jogo!\nThis mod adds a Portuguese translation to the game.",
     preview = "preview.png",
     version = "b19a",
     type = "app",
