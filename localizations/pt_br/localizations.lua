@@ -2724,7 +2724,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_title_thatchBuilding = "Construindo com Palha",
     tutorial_thatchBuilding_storyText = "Com o novo conhecimento da construção com palha, agora seria uma boa hora para a sua tribo começar a trabalhar em algumas estruturas básicas.\n\nSapiens ficam mais felizes se as suas camas estiverem sob um teto e recursos guardados debaixo de um duram mais tempo.",
     tutorial_thatchBuilding_place = "Coloque uma cabana/telhado de palha",
-    tutorial_thatchBuilding_waitForBuild = "Wait for the structure to be built",
+    tutorial_thatchBuilding_waitForBuild = "Espere até que a estrutura seja construída",
     
     -- food
     tutorial_title_food = "Fome e Comida",
