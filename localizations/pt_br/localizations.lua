@@ -2445,16 +2445,16 @@ localizations.values = {
     -- selection groups
     selectionGroup_branch_objectName = "Galho",
     selectionGroup_branch_plural = "Galhos",
-    selectionGroup_branch_descriptive = "Any Galhos",
+    selectionGroup_branch_descriptive = "Quaisquer Galhos",
     selectionGroup_log_objectName = "Tronco",
     selectionGroup_log_plural = "Troncos",
-    selectionGroup_log_descriptive = "Any Troncos",
+    selectionGroup_log_descriptive = "Quaisquer Troncos",
     selectionGroup_rock_objectName = "Pedra",
     selectionGroup_rock_plural = "Pedras",
-    selectionGroup_rock_descriptive = "Any Pedras",
+    selectionGroup_rock_descriptive = "Quaisquer Pedras",
     selectionGroup_smallRock_objectName = "Pedra Pequena",
     selectionGroup_smallRock_plural = "Pedras Pequenas",
-    selectionGroup_smallRock_descriptive = "Any Pedras Pequenas",
+    selectionGroup_smallRock_descriptive = "Quaisquer Pedras Pequenas",
     
     -- notifications
     notification_becamePregnant = function(values)
