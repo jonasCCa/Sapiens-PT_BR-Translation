@@ -2522,16 +2522,16 @@ localizations.values = {
     --/b13
 
     -- menues
-    menu_createWorld = "Create World",
-    menu_worldName = "World Name",
+    menu_createWorld = "Criar Mundo",
+    menu_worldName = "Nome do Mundo",
     menu_seed = "Semente",
-    menu_seaLevel = "Sea Level",
-    menu_rainfall = "Rainfall",
-    menu_temperature = "Temperature",
-    menu_continentSize = "Continent Size",
-    menu_continentHeight = "Mountain Height",
-    menu_featureSize = "Hills Size",
-    menu_featureHeight = "Hills Height",
+    menu_seaLevel = "Nível do Mar",
+    menu_rainfall = "Pluviosidade",
+    menu_temperature = "Temperatura",
+    menu_continentSize = "Tamanho dos Continentes",
+    menu_continentHeight = "Altura das Montanhas",
+    menu_featureSize = "Tamanho dos Morros",
+    menu_featureHeight = "Altura dos Morros",
     menu_mods = "Mods",
 
     --bug reporting
