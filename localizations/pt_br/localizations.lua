@@ -2761,7 +2761,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     
     -- paths
     tutorial_title_paths = "Caminhos e Estradas",
-    tutorial_paths_storyText = "Sapiens se movem mais rápido em caminhos, o que faz a sua tribo mais eficiente.",
+    tutorial_paths_storyText = "Sapiens se movem mais rápido em caminhos, o que faz a sua tribo ser mais eficiente.",
     tutorial_paths_buildXPaths = function(values)
         return string.format("Construa %d segmentos de caminho", values.count) 
     end,
