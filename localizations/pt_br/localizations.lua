@@ -801,7 +801,7 @@ localizations.values = {
     research_spinning_description = "Sua tribo agora consegue criar fios e cordas torcendo fibras de plantas. Isso será perticularmente útil para unir coisas para criar ferramentas mais complexas.",
     research_digging = researchName,
     research_digging_inProgress = researchingName,
-    research_digging_description = "Com o novo conhecimento de lascar pedras, machados de mão podem ser usados para remover solo mais facilmente e então transportá-lo outro local e revelar o que há abaixo.",
+    research_digging_description = "Com o novo conhecimento de lascar pedras, cabeças de machado podem ser usados para remover solo mais facilmente e então transportá-lo outro local e revelar o que há abaixo.",
     research_mining = researchName,
     research_mining_inProgress = researchingName,
     research_mining_description = "Após adicionar um cabo a uma ferramenta simples, força suficiente pode ser gerada para estilhaçar superfícies mais duras e a sua tribo agora descobriu que é possível mirerar pedras.",
@@ -2703,7 +2703,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     
     -- tools
     tutorial_title_tools = "Áreas de Criação e Ferramentas",
-    tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nMachados de mão e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar a construir as áreas de criação.",
+    tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nCabeças de machado e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar a construir as áreas de criação.",
     tutorial_tools_buildCraftAreas = function(values)
         return string.format("Construa %d áreas de criação", values.count) 
     end,
