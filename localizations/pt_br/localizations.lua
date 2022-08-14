@@ -2575,7 +2575,7 @@ Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalm
     mods_idReceived = "ID recebido. Ao enviar este item, você concorda com os termos de serviço da workshop em:\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement\nClique em enviar para atualizar os arquivos do mod na Steam.",
     mods_failedToSaveID = "Falha ao salvar o ID Steam para",
     mods_failedToAddToSteam = "Falha ao adicionar à Steam.",
-    mods_UploadToSteam = "Enviado à Steam",
+    mods_UploadToSteam = "Enviar à Steam",
     mods_Uploadcomplete = "Envio completo.",
     mods_failedToUploadToSteam = "Falha ao enviar à Steam.",
     mods_nameDefault = "Sem Nome",
