@@ -2768,7 +2768,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     
     -- woodBuilding
     tutorial_title_woodBuilding = "Construindo com Madeira",
-    tutorial_woodBuilding_storyText = "Cabanas de palha são melhores que nada, mas sua tribo vai precisar começar a construir com materiais mais avançados se quiserem que sua civilização passe no teste do tempo.",
+    tutorial_woodBuilding_storyText = "Cabanas de palha são melhores que nada, mas sua tribo vai precisar começar a construir com materiais mais avançados se quiser que sua civilização passe no teste do tempo.",
     tutorial_woodBuilding_chopTree = "Derrubar uma árvore",
     tutorial_woodBuilding_splitLog = "Cortar um tronco",
     tutorial_woodBuilding_buildWall = "Construir uma parede de troncos cortados",
