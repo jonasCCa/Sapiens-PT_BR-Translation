@@ -2065,24 +2065,24 @@ localizations.values = {
 
     -- ui infos
     ui_info_deleteWorldAreYouSure = function(values)
-        return string.format("Are you sure you want to delete the world %s? This cannot be undone, the game save will be gone forever.", values.worldName)
+        return string.format("Tem certeza de que quer apagar o mundo \"%s\"? Esta ação não pode ser desfeita, o mundo salvo será perdido para sempre.", values.worldName)
     end,    
-    ui_info_bindingPopUpViewInstructions = "Press and release the keys to assign to this binding.",
+    ui_info_bindingPopUpViewInstructions = "Pressione e solte a tecla para atribuí-la a este comando.",
     ui_info_bindingTimeRemaining = function(values)
-        return string.format("Reverts in %d seconds...", values.seconds)
+        return string.format("Reverte em %d segundos...", values.seconds)
     end,
     ui_pause = "Pause",
-    ui_play = "Play",
-    ui_fastForward = "Fast Forward",
+    ui_play = "Resumir",
+    ui_fastForward = "Avanço Rápido",
     tribeUI_sapien = "Sapien",
     tribeUI_distance = "Dist.",
-    tribeUI_age = "Age",
-    tribeUI_happiness = "Happy",
-    tribeUI_loyalty = "Loyalty",
-    tribeUI_effects = "Effects",
-    tribeUI_roles = "Roles",
-    tribeUI_skills = "Skills",
-    tribeUI_population = "Population",
+    tribeUI_age = "Idade",
+    tribeUI_happiness = "Felicidade",
+    tribeUI_loyalty = "Lealdade",
+    tribeUI_effects = "Efeitos",
+    tribeUI_roles = "Funções",
+    tribeUI_skills = "Habilidade",
+    tribeUI_population = "População",
 
     --misc
     misc_no_summary_available = "No summary available",
