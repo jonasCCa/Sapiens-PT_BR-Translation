@@ -2899,8 +2899,8 @@ Traduzido por Jonas Costa Campos
     orderStatus_pickupObjectToPlayWith = function(values)
         return values.inProgressName .. " " .. values.pickupObjectName .. " para tocar"
     end,
-    orderStatus_crafting = "criando",
-    orderStatus_research = "pesquisando",
+    orderStatus_crafting = "criar",
+    orderStatus_research = "pesquisar",
     orderStatus_moveObjectForAction = function(values)
         return "Movendo " .. values.objectName .. " para " .. values.action
     end,
