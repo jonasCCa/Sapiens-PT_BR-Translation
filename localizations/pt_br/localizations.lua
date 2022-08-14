@@ -2635,7 +2635,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_subtitle_chooseTribe_a = "- Aproxime-se, então clique em algumas tribos diferentes",
     tutorial_subtitle_chooseTribe_b = "e escolha uma para liderar",
     -- Gathering hay
-    tutorial_title_basicControls = "Coletando feno",
+    tutorial_title_basicControls = "Coletando Feno",
     tutorial_basicControls_storyText = "Seus sapiens gostariam de algum lugar para dormir esta noite e feno pode ser usado como uma cama decente. Vamos limpar um pouco de grama para deixar secar e depois usar como camas.",
     tutorial_basicControls_navigation = "Mova-se ao redor do mundo",
     tutorial_basicControls_issueOrder = "Ordene que sua tribo limpe um pouco de grama",
@@ -2646,7 +2646,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     end,
 
     -- storingResources
-    tutorial_title_storingResources = "Áreas de armazenamento",
+    tutorial_title_storingResources = "Áreas de Armazenamento",
     tutorial_storingResources_storyText = "Para guardar e gerenciar todos os recursos que a sua tribo encontrar e criar, você precisará de áreas de armazenamento\n\nCada área de armazenamento guarda apenas um tipo de recurso, então você precisará construir várias enquanto progride, pelo menos uma para cada tipo de recurso.",
     tutorial_storingResources_build = function(values)
         return string.format("Construir %d áreas de armazenamento", values.count) 
@@ -2665,7 +2665,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_subtitle_toggleFastForward = "Alterne a velocidade rápida com",
 
     --multiselect
-    tutorial_title_multiselect = "Selecionando múltiplas coisas",
+    tutorial_title_multiselect = "Selecionando Múltiplas Coisas",
     tutorial_description_multiselect = "Você pode selecionar vários objetos ou áreas do terreno de uma vez e então dar ou cancelar orens para todos eles ao mesmo tempo.\n\nIsto é particularmente útil para limpar grandes áreas ou coletar de várias plantas.",
     tutorial_task_multiselect = function(values)
         return string.format("Dê quaisquer ordens para %d ou mais coisas ao mesmo tempo", values.count) 
@@ -2675,7 +2675,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_task_multiselect_subtitle_c = "- Dê qualquer ordem para todos eles",
 
     -- beds
-    tutorial_title_beds = "Dormindo em camas",
+    tutorial_title_beds = "Dormindo em Camas",
     tutorial_beds_storyText = "Sapiens ficarão mais felizes se dormirem em uma cama ao invés do chão duro. Então agora que temos feno suficiente guardado, vamos construir algumas camas.",
     tutorial_beds_build = function(values)
         return string.format("Coloque %d ou mais camas", values.count) 
@@ -2695,14 +2695,14 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_task_roleAssignment_subtitle_d = "- Atribua qualquer função a um sapien",
     
     -- research
-    tutorial_title_research = "Investigar para avançar",
+    tutorial_title_research = "Investigar para Avançar",
     tutorial_research_storyText = "Para poder avançar, sapiens precisam investigar o mundo à sua volta.\n\nIsto leva a descobertas tecnológicas que desbloquearão novas coisas para construir e criar.",
     tutorial_research_branch = "Investigue um galho",
     tutorial_research_rock = "Investigue uma pedra",
     tutorial_research_hay = "Investigue feno",
     
     -- tools
-    tutorial_title_tools = "Áreas de criação e ferramentas",
+    tutorial_title_tools = "Áreas de Criação e Ferramentas",
     tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nMachados de  mão e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar construindo as áreas de criação.",
     tutorial_tools_buildCraftAreas = function(values)
         return string.format("Construa %d áreas de criação", values.count) 
@@ -2721,13 +2721,13 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_fire_waitForBuild = "Espere a fogueira ficar pronta e acenda-a",
     
     -- thatchBuilding
-    tutorial_title_thatchBuilding = "Construindo com palha",
+    tutorial_title_thatchBuilding = "Construindo com Palha",
     tutorial_thatchBuilding_storyText = "Com o novo conhecimento da construção com palha, agora seria uma boa hora para a sua tribo começar a trabalhar em algumas estruturas básicas.\n\nSapiens ficam mais felizes se as suas camas estiverem sob um teto e recursos guardados debaixo de um duram mais tempo.",
     tutorial_thatchBuilding_place = "Coloque uma cabana/telhado de palha",
     tutorial_thatchBuilding_waitForBuild = "Wait for the structure to be built",
     
     -- food
-    tutorial_title_food = "Fome e comida",
+    tutorial_title_food = "Fome e Comida",
     tutorial_food_storyText = "Seus sapiens estão começando a ficar com fome. Sapiens não colhem frutas sozinhos, você deve ordená-los a fazer isso, assim como caçar e guardar a comida.\n\nMas não colete tudo de uma vez, já que a maioria das frutas ficam na árvore até a próxima estação e, uma vez colhidas, apodrecerão rapidamente se deixadas expostas.",
     tutorial_food_storeTask = function(values)
         return string.format("Colete e guarde %d recursos de comida", values.count) 
@@ -2750,7 +2750,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_music_playFlute = "Toque uma flauta",
     
     -- routes
-    tutorial_title_routes = "Rotas e logística",
+    tutorial_title_routes = "Rotas e Logística",
     tutorial_routes_storyText = "Sapiens podem mover recursos de uma área de armazenamento para outra utilizando rotas.\n\nRotas são úteis para distribuir recursos para onde eles são necessários. Elas podem ser usadas também para transferir recursos através de grandes distâncias.",
     tutorial_routes_create = "Crie uma rota de transferência",
     tutorial_routes_create_subtitle_a = "- Abra o menu e clique em \"Rotas\"",
@@ -2767,13 +2767,13 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     end,
     
     -- woodBuilding
-    tutorial_title_woodBuilding = "Construindo com madeira",
+    tutorial_title_woodBuilding = "Construindo com Madeira",
     tutorial_woodBuilding_storyText = "Cabanas de palha são melhores que nada, mas sua tribo vai precisar começar a construir com materiais mais avançados se quiserem que sua civilização passe no teste do tempo.",
     tutorial_woodBuilding_chopTree = "Derrubar uma árvore",
     tutorial_woodBuilding_splitLog = "Cortar um tronco",
     tutorial_woodBuilding_buildWall = "Construir uma parede de troncos cortados",
     -- advancedTools
-    tutorial_title_advancedTools = "Criando ferramentas avançadas",
+    tutorial_title_advancedTools = "Criando Ferramentas Avançadas",
     tutorial_advancedTools_storyText = "Juntando ferramentas de pedra simples com um cabo, sua tribo pode criar ferramentas mais avançadas que duram mais, fazem tarefas mais rapidamente e desbloqueiam a habilidade de caçar presas maiores.",
     tutorial_advancedTools_driedFlax = function(values)
         return string.format("Encontre, colete e guarde %d linhos secos", values.count) 
@@ -2785,7 +2785,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_advancedTools_spear = "Crie uma lança",
     tutorial_advancedTools_hatchet = "Crie uma machadinha",
     -- cookingMeat
-    tutorial_title_cookingMeat = "Cozinhando carne",
+    tutorial_title_cookingMeat = "Cozinhando Carne",
     tutorial_cookingMeat_storyText = "Após uma caça bem sucedida, seus sapiens precisam preparar a carcaça para poderem comer. Para isso, eles precisarão cortar e então cozinhar a carne.",
     tutorial_cookingMeat_butcher = "Corte uma carcaça",
     tutorial_cookingMeat_cook = "Cozinhe carne",
