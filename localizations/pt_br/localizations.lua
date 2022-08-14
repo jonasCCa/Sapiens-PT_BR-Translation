@@ -2589,7 +2589,7 @@ Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalm
     mods_worldMods = "Mods de mundo",
     mods_worldMods_info = "Apenas configuráveis quando criar um novo mundo.",
     mods_configureWorldMods = "Configurar mods para este mundo",
-    mods_configureWorldMods_info = "Mods de mundo habilitados aqui são aplicados apenas a este mundo, só podem ser atribuídos quando criar um mundo e não podem ser alterados depois sem diretamente modificar os arquivos do mod. Isto se dá pelo fato de elses poderem adicionar ou remover objetos e comportamentos que podem corromper o seu mundo se forem alterados. A versão atual dos mods instalados será copiada e guardada com o salvamento do mundo na criação.",
+    mods_configureWorldMods_info = "Mods de mundo habilitados aqui são aplicados apenas a este mundo, só podem ser atribuídos quando criar um mundo e não podem ser alterados depois sem diretamente modificar os arquivos do mod, pois elses podem adicionar ou remover objetos e comportamentos que podem corromper o seu mundo se forem alterados. A versão atual dos mods instalados será guardada junto do salvamento do mundo na criação.",
     mods_configureGameMods = "Configurar mods do jogo",
     mods_configureGameMods_info = "Mods de jogo são aplicados ao jogo inteiro e afetam a sua experiência em todos os mundos. Apenas esse tipo de mod pode ser habilitado aqui.\nMods de mundo afetam os mundos mais diretamente e podem ser habilidados a partir do botão Mods na tela de criação de mundo.",
     mods_findMods = "Encontrar mods na Steam->",
@@ -2601,7 +2601,7 @@ Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalm
     mods_steamWorkshop = "Steam Workshop",
 
     mods_steamWorkshop_info = "Você pode navegar pela Steam Workshop para encontrar e instalar mods, que podem ser ativados dentro do jogo.\n\
-Certifique-se de ter a sobreposição da Steam ativada. Depois que encontrar um mod que você deseja na Steam Workshop, instale clicando em '+ Subscrever'. Porém, será necessário baixar o mod em segundo plano antes que ele esteja disponível. Talvez seja necessário reiniciar o Sapiens ou reiniciar a Steam para ver as mudanças.\n\
+Certifique-se de ter a sobreposição da Steam ativada. Quando encontrar um mod que você deseja na Steam Workshop, instale clicando em '+ Subscrever'. Talvez seja necessário reiniciar o Sapiens ou reiniciar a Steam para ver as mudanças.\n\
 MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Steam Workshop podem conter e executar códigos que podem danificar seu computador. Apenas instale e ative mods de autores que você confia.",
 
     -- graphics drivers
