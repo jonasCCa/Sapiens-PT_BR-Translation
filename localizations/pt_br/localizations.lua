@@ -847,7 +847,7 @@ localizations.values = {
     research_tiling = researchName,
     research_tiling_inProgress = researchingName,
     research_tiling_description = "Apoós queimar finas placas de argila, a sua tribo descobriu um novo método de construção. Ladrilhos podem ser usados para construir telhados de alta qualidade, assim como chãos e caminhos.",
-    research_unlock_butcherMammoth = "Butcher Mamute",
+    research_unlock_butcherMammoth = "Cortar Mamute",
 
     -- paths
     path_dirt = "Caminho de Terra",
