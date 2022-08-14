@@ -2317,42 +2317,42 @@ localizations.values = {
     constructable_classification_research_action = researchName,
 
     --evolution
-    evolution_dryAction = "Dries",
-    evolution_rotAction = "Rots",
-    evolution_despawnAction = "Gone",
-    evolution_time_verySoon = "very soon",
-    evolution_time_fewHours = "in a few hours",
-    evolution_time_fewDays = "in a few days",
-    evolution_time_nextYear = "next year",
-    evolution_time_fewYears = "in a few years",
+    evolution_dryAction = "Seca",
+    evolution_rotAction = "Apodrece",
+    evolution_despawnAction = "Some",
+    evolution_time_verySoon = "muito em breve",
+    evolution_time_fewHours = "em algumas horas",
+    evolution_time_fewDays = "em alguns dias",
+    evolution_time_nextYear = "no próximo ano",
+    evolution_time_fewYears = "em alguns anos",
     evolution_timeFunc = function(values)
         return values.actionName .. " " .. values.time
     end,
 
     -- time
-    time_year = "Year",
-    time_year_plural = "Years",
-    time_day = "Day",
-    time_day_plural = "Days",
-    time_second = "Second",
-    time_second_plural = "Seconds",
+    time_year = "Ano",
+    time_year_plural = "Anos",
+    time_day = "Dia",
+    time_day_plural = "Dias",
+    time_second = "Segundo",
+    time_second_plural = "Segundos",
 
     --weather
-    weather_temperatureZone_veryCold = "Very Cold",
-    weather_temperatureZone_cold = "Cold",
-    weather_temperatureZone_moderate = "Warm",
-    weather_temperatureZone_hot = "Hot",
-    weather_temperatureZone_veryHot = "Very Hot",
+    weather_temperatureZone_veryCold = "Muito Frio",
+    weather_temperatureZone_cold = "Frio",
+    weather_temperatureZone_moderate = "Ameno",
+    weather_temperatureZone_hot = "Quente",
+    weather_temperatureZone_veryHot = "Muito Quente",
 
     -- keyMaps
-    keygroup_game = "Game",
+    keygroup_game = "Jogo",
     keygroup_menu = "Menu",
-    keygroup_movement = "Movement",
-    keygroup_building = "Construindo",
-    keygroup_textEntry = "Text Entry",
+    keygroup_movement = "Movimento",
+    keygroup_building = "Construção",
+    keygroup_textEntry = "Entrada de Texto",
     keygroup_debug = "Debug",
-    keygroup_multiSelect = "Multi-Select",
-    keygroup_cinematicCamera = "Cinematic Camera",
+    keygroup_multiSelect = "Multi-Seleção",
+    keygroup_cinematicCamera = "Câmera Cinematográfica",
 
     -- key_game
     key_game_escape = "Close/Hide",
