@@ -2806,11 +2806,11 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_orderLimit_task = "Priorize qualquer ordem marcada com \"Máximo de ordens alcançado\"",
     
     -- notifications
-    tutorial_title_notifications = "Notifications",
-    tutorial_notifications_task = "Zoom to the most recent notification",
+    tutorial_title_notifications = "Notificações",
+    tutorial_notifications_task = "Vá até a notificação mais recente",
     -- completion
-    tutorial_title_completion = "Tutorial Complete!",
-    tutorial_completion_storyText = "Well done!\n\nYour tribe is only just getting started, but from here you are on your own.\n\nContinue to explore, craft, and investigate, and advance and grow your tribe. Olhar after your sapiens, build a bustling town, lead your tribe to a new and prosperous future.\n\nGood luck!",
+    tutorial_title_completion = "Tutorial Completo!",
+    tutorial_completion_storyText = "Muito bem!\n\nA sua tribo está apenas começando, mas daqui você estará sozinho.\n\nContinue explorando, criando e investigando e avance e cresça a sua tribo. Cuide dos seus sapiens, construa uma incrível cidade, lidere a sua tribo em direção a um futuro próspero.\n\nBoa sorte!",
 
     --done
     tutorial_subtitle_movement = "Movement:",
