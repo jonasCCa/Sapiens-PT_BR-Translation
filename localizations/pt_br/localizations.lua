@@ -1751,8 +1751,8 @@ localizations.values = {
     construct_ui_requires = "Requer",
     construct_ui_rdisabledInResourcesPanel = "O uso deste recurso foi desabilitado no painel de recursos da tribo",
     construct_ui_discoveryRequired = "Descoberta necessária",
-    construct_ui_discoveryRequired_plantsInfo = "Para cultivar plantas e árvores a sua tribo deve primeiro aprender a lascar pedras, cavar e plantar.",
-    construct_ui_discoveryRequired_pathsInfo = "Caminhos permitem que sapiens se movam mais rápido por aí. Para construir caminhos a sua tribo deve primeiro aprender a cavar.",
+    construct_ui_discoveryRequired_plantsInfo = "Para cultivar plantas e árvores a sua tribo deve primeiro aprender a lascar pedras, escavar e plantar.",
+    construct_ui_discoveryRequired_pathsInfo = "Caminhos permitem que sapiens se movam mais rápido por aí. Para construir caminhos a sua tribo deve primeiro aprender a escavar.",
 
     --storage ui
     storage_ui_acceptOnly = "Apenas Aceitar",
