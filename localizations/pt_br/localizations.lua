@@ -1767,7 +1767,7 @@ localizations.values = {
     storage_ui_removeRouteWhenComplete_toolTip = "Deletar esta rota quando não houver mais paradas que precisem ser recolhidas.",
     storage_ui_maxSapiens = "Máximo de sapiens",
     storage_ui_clickToAddStops = "Clique em uma área de armazenamento para adicionar paradas",
-    storage_ui_hit = "Hit",
+    storage_ui_hit = "Pressione",
     storage_ui_whenDone = "Quando Terminar",
     storage_ui_NoDestinations = "Sem Destino",
     
