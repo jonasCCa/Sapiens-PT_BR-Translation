@@ -2626,73 +2626,73 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_or = "ou",
 
     -- choose tribe
-    tutorial_title_chooseTribe = "Choose a tribe to lead",
-    tutorial_subtitle_mapNavigation = "Navigate the map",
+    tutorial_title_chooseTribe = "Selecione uma nova tribo para liderar",
+    tutorial_subtitle_mapNavigation = "Navegue pelo mapa",
     tutorial_use = "- Use",
-    tutorial_toMoveAnd = "to move, and",
-    tutorial_toZoom = "to zoom",
-    tutorial_subtitle_chooseTribe_title = "Lead a tribe",
-    tutorial_subtitle_chooseTribe_a = "- Zoom in close, then click on a few different tribes",
-    tutorial_subtitle_chooseTribe_b = "and choose one to lead",
-    -- Coletando hay
-    tutorial_title_basicControls = "Coletando hay",
-    tutorial_basicControls_storyText = "Your sapiens are going to want somewhere to sleep tonight, and hay makes a decent bed. Let's clear some grass so it can dry out and be used for beds.",
-    tutorial_basicControls_navigation = "Mover around the world",
-    tutorial_basicControls_issueOrder = "Order your tribe to clear some grass",
-    tutorial_issueOrder_instructions_a = "- Click on grassy ground near your tribe and select",
+    tutorial_toMoveAnd = "para mover e",
+    tutorial_toZoom = "para controlar o zoom",
+    tutorial_subtitle_chooseTribe_title = "Liderar esta Tribo",
+    tutorial_subtitle_chooseTribe_a = "- Aproxime-se, então clique em algumas tribos diferentes",
+    tutorial_subtitle_chooseTribe_b = "e escolha uma para liderar",
+    -- Gathering hay
+    tutorial_title_basicControls = "Coletando feno",
+    tutorial_basicControls_storyText = "Seus sapiens gostariam de algum lugar para dormir esta noite e feno pode ser usado como uma cama decente. Vamos limpar um pouco de grama para deixar secar e depois usar como camas.",
+    tutorial_basicControls_navigation = "Mova-se ao redor do mundo",
+    tutorial_basicControls_issueOrder = "Ordene que sua tribo limpe um pouco de grama",
+    tutorial_issueOrder_instructions_a = "- Clique em um chão gramado próximo à sua tribo e selecione",
     tutorial_issueOrder_instructions_b = "Limpar",
     tutorial_basicControls_clearHexes = function(values)
-        return string.format("Limpar %d grass tiles", values.count) 
+        return string.format("Limpar %d áreas de grama", values.count) 
     end,
 
     -- storingResources
-    tutorial_title_storingResources = "Storage areas",
-    tutorial_storingResources_storyText = "To store and manage all of the resources your tribe finds and crafts, you're going to need storage areas.\n\nEach storage area only stores a single type of resource, so you will need to build many more as you progress, at least one for each resource type.",
+    tutorial_title_storingResources = "Áreas de armazenamento",
+    tutorial_storingResources_storyText = "Para guardar e gerenciar todos os recursos que a sua tribo encontrar e criar, você precisará de áreas de armazenamento\n\nCada área de armazenamento guarda apenas um tipo de recurso, então você precisará construir várias enquanto progride, pelo menos uma para cada tipo de recurso.",
     tutorial_storingResources_build = function(values)
-        return string.format("Construir %d storage areas", values.count) 
+        return string.format("Construir %d áreas de armazenamento", values.count) 
     end,
-    tutorial_storingResources_subTitle_accessWith = "- Access the build menu with",
-    tutorial_storingResources_subTitle_andPlace = "- Place storage areas near your tribe",
+    tutorial_storingResources_subTitle_accessWith = "- Acesse o menu de construção com",
+    tutorial_storingResources_subTitle_andPlace = "- Coloque áreas de armazenamento próximas à sua tribo",
     tutorial_storingResources_store = function(values)
         return string.format("Guardar %d %s", values.count, values.typeName) 
     end,
-    tutorial_storingResources_storeTip_a = "- You may need to wait for the grass to dry out",
-    tutorial_storingResources_storeTip_b = "You can gather branches from trees",
+    tutorial_storingResources_storeTip_a = "- Você talvez precise esperar a grama secar",
+    tutorial_storingResources_storeTip_b = "Você pode coletar galhos das árvores",
 
     -- game speed controls
-    tutorial_title_speedControls = "Controlling Game Speed",
-    tutorial_subtitle_togglePause = "Toggle pause with",
-    tutorial_subtitle_toggleFastForward = "Toggle fast forward with",
+    tutorial_title_speedControls = "Controlando a Velocidade do Jogo",
+    tutorial_subtitle_togglePause = "Alterne o pause com",
+    tutorial_subtitle_toggleFastForward = "Alterne a velocidade rápida com",
 
     --multiselect
-    tutorial_title_multiselect = "Selecting multiple things",
-    tutorial_description_multiselect = "You can select many objects or terrain tiles at once, and then issue or cancel orders for all of them at the same time.\n\nThis is particularly useful for clearing large areas, or gathering from many trees.",
+    tutorial_title_multiselect = "Selecionando múltiplas coisas",
+    tutorial_description_multiselect = "Você pode selecionar vários objetos ou áreas do terreno de uma vez e então dar ou cancelar orens para todos eles ao mesmo tempo.\n\nIsto é particularmente útil para limpar grandes áreas ou coletar de várias plantas.",
     tutorial_task_multiselect = function(values)
-        return string.format("Issue any order for %d or more things at once", values.count) 
+        return string.format("Dê quaisquer ordens para %d ou mais coisas ao mesmo tempo", values.count) 
     end,
-    tutorial_task_multiselect_subtitle = "- Click on any object or ground tile",
-    tutorial_task_multiselect_subtitle_b = "- Hit \"Select More\"",
-    tutorial_task_multiselect_subtitle_c = "- Issue any order for all of them",
+    tutorial_task_multiselect_subtitle = "- Clique em qualquer objeto ou área do chão",
+    tutorial_task_multiselect_subtitle_b = "- Pressione \"Selecionar Mais\"",
+    tutorial_task_multiselect_subtitle_c = "- Dê qualquer ordem para todos eles",
 
     -- beds
-    tutorial_title_beds = "Dormindo in beds",
-    tutorial_beds_storyText = "Sapiens will be happier if they sleep on a bed, rather than the hard ground. So now that we have enough hay stored, let's build a few beds.",
+    tutorial_title_beds = "Dormindo em camas",
+    tutorial_beds_storyText = "Sapiens ficarão mais felizes se dormirem em uma cama ao invés do chão duro. Então agora que temos feno suficiente guardado, vamos construir algumas camas.",
     tutorial_beds_build = function(values)
-        return string.format("Place %d or more beds", values.count) 
+        return string.format("Coloque %d ou mais camas", values.count) 
     end,
-    tutorial_beds_subTitle_accessWith = "- Access the build menu with",
-    tutorial_beds_subTitle_andPlace = "- Place beds near your tribe",
-    tutorial_beds_waitForBuild = "Wait for the beds to be completed",
-    tutorial_beds_waitForBuild_tip = "- Limpar more grass to create more hay if necessary",
+    tutorial_beds_subTitle_accessWith = "- Acesse o menu de construção com",
+    tutorial_beds_subTitle_andPlace = "- Coloque camas próximas à sua tribo",
+    tutorial_beds_waitForBuild = "Espere as camas ficarem prontas",
+    tutorial_beds_waitForBuild_tip = "- Limpe mais grama para criar mais feno, se necessário",
 
     --roleAssignment
-    tutorial_title_roleAssignment = "How to assign roles",
-    tutorial_description_roleAssignment = "When a sapien discovers a new technology, they become skilled in it, and will automatically be assigned a role allowing them to complete tasks relating to that skill.\n\nYou should assign roles to sapiens manually too. This will help keep everyone busy, and allow you to focus your tribe on the areas where they are most needed.",
-    tutorial_task_roleAssignment = "Assign a sapien to a new role",
-    tutorial_task_roleAssignment_subtitle_a = "- Hit",
-    tutorial_task_roleAssignment_subtitle_b = "then select the tribe menu",
-    tutorial_task_roleAssignment_subtitle_c = "- Select \"Roles\"",
-    tutorial_task_roleAssignment_subtitle_d = "- Assign a sapien to any role",
+    tutorial_title_roleAssignment = "Como atribuir Funções",
+    tutorial_description_roleAssignment = "Quando um sapien descobre uma nova tecnologia ele fica habilidoso nela e automaticamente recebe a função, o que permite que ele complete tarefas relacionadas com esta habilidade.\n\nMas você também deveria atribuir funções manualmente. Isto deixará todos ocupados e permitirá que você foque a sua tribo nas áreas mais necessárias.",
+    tutorial_task_roleAssignment = "Atribua uma Função nova a um sapien",
+    tutorial_task_roleAssignment_subtitle_a = "- Pressione",
+    tutorial_task_roleAssignment_subtitle_b = "e então selecione o menu da tribo",
+    tutorial_task_roleAssignment_subtitle_c = "- Selecione \"Funções\"",
+    tutorial_task_roleAssignment_subtitle_d = "- Atribua qualquer função a um sapien",
     
     -- research
     tutorial_title_research = "Investigating to advance",
