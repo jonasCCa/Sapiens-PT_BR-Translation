@@ -2813,50 +2813,52 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_completion_storyText = "Muito bem!\n\nA sua tribo está apenas começando, mas daqui você estará sozinho.\n\nContinue explorando, criando e investigando e avance e cresça a sua tribo. Cuide dos seus sapiens, construa uma incrível cidade, lidere a sua tribo em direção a um futuro próspero.\n\nBoa sorte!",
 
     --done
-    tutorial_subtitle_movement = "Movement:",
+    tutorial_subtitle_movement = "Movimentação:",
     tutorial_subtitle_zoom = "Zoom:",
-    tutorial_subtitle_movementSpeed = "Mover faster or slower:",
-    tutorial_title_worldNavigation = "World Navigation",
-    tutorial_title_investigate = "Investigation and Breakthroughs",
-    tutorial_subtitle_investigateLine1 = "Investigating items leads to breakthroughs which unlock new things to craft and build.",
-    tutorial_subtitle_investigateLine2 = "Select a rock or branch and investigate it.",
-    buildContext_title = "Construir Controls",
-    buildContext_placeTitle = "Place: ",
-    buildContext_place = "Place",
-    buildContext_placeRefine = "Place and refine: ",
-    buildContext_placeWithoutBuild = "Place without issuing build order: ",
-    buildContext_cancel = "Cancel: ",
-    buildContext_rotate = "Rotate: ",
-    buildContext_rotate90 = "Rotate 90 degrees: ",
-    buildContext_moveXZ = "Mover horizontally: ",
-    buildContext_moveY = "Mover up/down: ",
-    buildContext_disableSnapping = "Disable Snapping: ",
+    tutorial_subtitle_movementSpeed = "Mover mais rápido ou devagar:",
+    tutorial_title_worldNavigation = "Navegação do Mundo",
+    tutorial_title_investigate = "Investigação e Descobertas",
+    tutorial_subtitle_investigateLine1 = "Investigar itens leva a descobertas que desbloqueiam novas coisas para criar e construir.",
+    tutorial_subtitle_investigateLine2 = "Selecione uma pedra ou galho e o investigue.",
+    buildContext_title = "Controles de Construção",
+    buildContext_placeTitle = "Colocar: ",
+    buildContext_place = "Colocar",
+    buildContext_placeRefine = "Colocar e refinar: ",
+    buildContext_placeWithoutBuild = "Colocar sem criar uma ordem de construção: ",
+    buildContext_cancel = "Cancelar: ",
+    buildContext_rotate = "Rotacionar: ",
+    buildContext_rotate90 = "Rotacionar 90º: ",
+    buildContext_moveXZ = "Mover horizontalmente: ",
+    buildContext_moveY = "Mover para cima ou para baixo: ",
+    buildContext_disableSnapping = "Desabilitar Encaixe Automático: ",
 
     --mouse
-    mouse_left = "Esquerda mouse button",
-    mouse_right = "Direita mouse button",
-    mouse_left_drag = "Drag with ",
-    mouse_right_drag = "Drag with right mouse",
-    mouse_wheel = "Mouse wheel",
-    creditsText_dave = "Created by David Frampton",
-    creditsText_music = "Original soundtrack by John Konsalakis & David Frampton",
-    creditsText_soundtrackLinkText = "Soundtrack details",
+    mouse_left = "Botão Esquerdo do Mouse",
+    mouse_right = "Botão Direito do Mouse",
+    mouse_left_drag = "Arrastar com ",
+    mouse_right_drag = "Arrastar com botão direito",
+    mouse_wheel = "Roda do Mouse",
+    creditsText_dave = "Criado por David Frampton",
+    creditsText_music = "Trilha sonora original por John Konsalakis & David Frampton",
+    creditsText_soundtrackLinkText = "Detalhes da Trilha Sonora",
     creditsText = [[
-Voice Acting by Emma Frampton, Ethan Frampton, & David Frampton
-Community Management: Milla Koutsos
-Promotional Illustrations by Jérémy Forveille
-Atmosphere rendering based on the work by Eric Bruneton
-Audio Engine: FMOD Studio by Firelight Technologies Pty Ltd.
-Physics: Bullet Physics
-Serialization: Cereal - Grant, W. Shane and Voorhies, Randolph (2017)
-Networking: Enet - Lee Salzman
-Sapiens uses the amazing LuaJIT library by Mike Pall
-Sapiens also uses LuaBridge by Nathan Reed, Vinnie Falco and others
-Vocals in Sapiens are in "toki pona", the constructed language by Sonja Lang - tokipona.org
+Dublagem por Emma Frampton, Ethan Frampton, & David Frampton
+Gestão da Comunidade: Milla Koutsos
+Ilustrações Promocionais por Jérémy Forveille
+Renderização atmosférica baseada no trabalho de Eric Bruneton
+Motor de Áudio: FMOD Studio por Firelight Technologies Pty Ltd.
+Física: Bullet Physics
+Serialização: Cereal - Grant, W. Shane and Voorhies, Randolph (2017)
+Rede: Enet - Lee Salzman
+Sapiens usa a incrível biblioteca LuaJIT por Mike Pall
+Sapiens também usa LuaBridge por Nathan Reed, Vinnie Falco e outros
+As vozes em Sapiens são em "toki pona", a língua construída por Sonja Lang - tokipona.org
 
-Many thanks for the huge support, testing, feedback and help from many others. An especially large thanks goes to the alpha testers, and also members of the community Discord server, and those who gave feedback on the devlog videos on YouTube. I couldn't have made Sapiens without you.
+Muito obrigado pelo enorme suporte, teste, feedback e ajuda de muitos outros. Um agradecimento especialmente grande aos testadores da alpha e também aos membros da comunidade do Discord e aqueles que deram feedback nos vídeos de devlog no YouTube. Eu não teria feito Sapiens sem vocês.
 
-And most of all, thank you to my amazing wife Emma, who supported our family and me through this very long period of development, sacrificing her own career to give me the time to work on mine. This game is every bit as much the result of Emma's hard work, sacrifice, and dedication as it is mine.
+E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à nossa família durante este longo período de desenvolvimento, sacrificando a sua própria carreira para que eu pudesse ter o tempo para trabalhar na minha. Este jogo inteiro é o resultado do trabalho duro da Emma, seu sacrifício e dedicação, assim como o meu.
+
+Traduzido por Jonas Costa Campos
 ]],
 
     -- orderStatus
