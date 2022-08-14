@@ -2495,7 +2495,7 @@ localizations.values = {
         return "Outra tribo foi avistada"
     end,
     notification_discovery = function(values)
-        return "Sua tribo descobriu " .. values.skillName .. "!"
+        return "Sua tribo agora sabe " .. values.skillName .. "!"
     end,
     notification_researchNearlyDone = function(values)
         return "Descoberta quase completa!"
