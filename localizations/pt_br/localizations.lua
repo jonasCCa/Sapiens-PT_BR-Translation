@@ -301,8 +301,8 @@ localizations.values = {
     action_idle_inProgress = "Parado",
     action_gather = "Coletar",
     action_gather_inProgress = "Coletando",
-    action_chop = "Cortar",
-    action_chop_inProgress = "Cortando",
+    action_chop = "Derrubar",
+    action_chop_inProgress = "Derrubando",
     action_pullOut = "Arrancar",
     action_pullOut_inProgress = "Arrancando",
     action_dig = "Escavar",
@@ -660,7 +660,7 @@ localizations.values = {
     -- tools
     tool_treeChop = "Ferramenta de Corte",
     tool_treeChop_plural = "Ferramentas de Corte",
-    tool_treeChop_usage = "Cortar",
+    tool_treeChop_usage = "Derrubar Árvores",
     tool_dig = "Ferramenta de Escavação",
     tool_dig_plural = "Ferramentas de Escavação",
     tool_dig_usage = "Escavar",
@@ -713,8 +713,8 @@ localizations.values = {
     plan_clear_inProgress = "Limpando",
     plan_fill = "Preencher",
     plan_fill_inProgress = "Preenchendo",
-    plan_chop = "Cortar",
-    plan_chop_inProgress = "Cortando",
+    plan_chop = "Derrubar",
+    plan_chop_inProgress = "Derrubando",
     plan_storeObject = "Guardar",
     plan_storeObject_inProgress = "Guardando",
     plan_transferObject = "Transferir",
@@ -1338,8 +1338,8 @@ localizations.values = {
     order_multitask_lookAt_inProgress = "Olhando",
     order_gather = "Coletar",
     order_gather_inProgress = "Coletando",
-    order_chop = "Cortar",
-    order_chop_inProgress = "Cortando",
+    order_chop = "Derrubar",
+    order_chop_inProgress = "Derrubando",
     order_storeObject = "Guardar",
     order_storeObject_inProgress = "Guardando",
     order_transferObject = "Transferir",
@@ -2695,115 +2695,115 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_task_roleAssignment_subtitle_d = "- Atribua qualquer função a um sapien",
     
     -- research
-    tutorial_title_research = "Investigating to advance",
-    tutorial_research_storyText = "In order to advance, sapiens need to investigate the world around them.\n\nThis leads to technological breakthroughs which will unlock new things to build and craft.",
-    tutorial_research_branch = "Investigate a branch",
-    tutorial_research_rock = "Investigate a rock",
-    tutorial_research_hay = "Investigate hay",
+    tutorial_title_research = "Investigar para avançar",
+    tutorial_research_storyText = "Para poder avançar, sapiens precisam investigar o mundo à sua volta.\n\nIsto leva a descobertas tecnológicas que desbloquearão novas coisas para construir e criar.",
+    tutorial_research_branch = "Investigue um galho",
+    tutorial_research_rock = "Investigue uma pedra",
+    tutorial_research_hay = "Investigue feno",
     
     -- tools
-    tutorial_title_tools = "Crafting areas and tools",
-    tutorial_tools_storyText = "With an understanding of rock knapping, sapiens now have the ability to create tools.\n\nHand axes and knives are very useful to start with, so your tribe should craft some now.\n\nThe best way to manage your tribe's crafting activities is to first build designated crafting areas.",
+    tutorial_title_tools = "Áreas de criação e ferramentas",
+    tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nMachados de  mão e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar construindo as áreas de criação.",
     tutorial_tools_buildCraftAreas = function(values)
-        return string.format("Construir %d crafting areas", values.count) 
+        return string.format("Construa %d áreas de criação", values.count) 
     end,
     tutorial_tools_craftHandAxes = function(values)
-        return string.format("Craft and store %d stone hand axes", values.count) 
+        return string.format("Crie e guarde %d machados de mão de pedra", values.count) 
     end,
     tutorial_tools_craftKnives = function(values)
-        return string.format("Craft and store %d stone knives", values.count) 
+        return string.format("Crie e guarde %d facas de pedra", values.count) 
     end,
     
     -- fire
-    tutorial_title_fire = "Acendendo a Fire",
-    tutorial_fire_storyText = "Fire is an important early discovery which provides light at night, helps to keep your tribe warm when it is cold, and allows cooking of food.\n\nNow would be a good time to get a campfire going.",
-    tutorial_fire_place = "Place a campfire",
-    tutorial_fire_waitForBuild = "Wait for the fire to be built and lit",
+    tutorial_title_fire = "Acendendo Fogo",
+    tutorial_fire_storyText = "Fogo é uma descoberta inicial importante que fornece luz à noite, ajuda a manter a sua tribo quentinha quando estiver frio e permite que eles cozinhem comida.\n\nAgora seria uma boa hora para acender uma fogueira.",
+    tutorial_fire_place = "Coloque uma fogueira",
+    tutorial_fire_waitForBuild = "Espere a fogueira ficar pronta e acenda-a",
     
     -- thatchBuilding
-    tutorial_title_thatchBuilding = "Construindo with thatch",
-    tutorial_thatchBuilding_storyText = "With the new understanding of thatch building, now would be a great time for the tribe to start working on some basic structures.\n\nSapiens will be happier if their beds are under cover, and resources stored under a roof will also last longer.",
-    tutorial_thatchBuilding_place = "Place a thatch hut/roof",
+    tutorial_title_thatchBuilding = "Construindo com palha",
+    tutorial_thatchBuilding_storyText = "Com o novo conhecimento da construção com palha, agora seria uma boa hora para a sua tribo começar a trabalhar em algumas estruturas básicas.\n\nSapiens ficam mais felizes se as suas camas estiverem sob um teto e recursos guardados debaixo de um duram mais tempo.",
+    tutorial_thatchBuilding_place = "Coloque uma cabana/telhado de palha",
     tutorial_thatchBuilding_waitForBuild = "Wait for the structure to be built",
     
     -- food
-    tutorial_title_food = "Hunger and food",
-    tutorial_food_storyText = "Your sapiens are starting to get hungry. Sapiens don't gather fruits by themselves, you need to issue orders to gather, hunt, and store food.\n\nDon't gather everything at once though, most fruits will last on the tree until next season, but will quickly rot if picked and left outside.",
+    tutorial_title_food = "Fome e comida",
+    tutorial_food_storyText = "Seus sapiens estão começando a ficar com fome. Sapiens não colhem frutas sozinhos, você deve ordená-los a fazer isso, assim como caçar e guardar a comida.\n\nMas não colete tudo de uma vez, já que a maioria das frutas ficam na árvore até a próxima estação e, uma vez colhidas, apodrecerão rapidamente se deixadas expostas.",
     tutorial_food_storeTask = function(values)
-        return string.format("Coletar and store %d food resources", values.count) 
+        return string.format("Colete e guarde %d recursos de comida", values.count) 
     end,
-    tutorial_food_storeTask_subTitle = "Fruits grow on some types of trees and bushes",
+    tutorial_food_storeTask_subTitle = "Frutas crescem em alguns tipos de árvores e arbustos",
     
     -- farming
-    tutorial_title_farming = "Agriculture",
-    tutorial_farming_storyText = "Now that the tribe's immediate needs are taken care of, we need to start planning ahead.\n\nAs the tribe grows, they will need to grow enough produce to feed everyone.",
-    tutorial_farming_digging = "Discover digging",
-    tutorial_farming_planting = "Discover planting",
+    tutorial_title_farming = "Agricultura",
+    tutorial_farming_storyText = "Agora que as necessidades imediatas da tribo foram atendidas, precisamos começar a planejar o futuro.\n\nEnquanto a tribo cresce, eles precisarão plantar o suficiente para alimentar todos os membros.",
+    tutorial_farming_digging = "Descubra escavação",
+    tutorial_farming_planting = "Descubra plantação",
     tutorial_farming_plantXTrees = function(values)
-        return string.format("Plant %d fruiting trees or plants", values.count) 
+        return string.format("Plante %d árvores ou plantas frutíferas", values.count) 
     end,
     
     -- music
-    tutorial_title_music = "Playing Music",
-    tutorial_music_storyText = "Music makes sapiens happier and more loyal, and musical sapiens can even grow sad if they haven't heard or played music for a long time.",
-    tutorial_music_discoverBoneCarving = "Discover bone carving",
-    tutorial_music_playFlute = "Play a flute",
+    tutorial_title_music = "Tocando Música",
+    tutorial_music_storyText = "Música deixa os sapiens mais felizes e leais. Sapiens musicais podem ficar tristes se ficarem sem escutar ou tocar música por muito tempo.",
+    tutorial_music_discoverBoneCarving = "Descubra artesanato com ossos",
+    tutorial_music_playFlute = "Toque uma flauta",
     
     -- routes
-    tutorial_title_routes = "Rotas and logistics",
-    tutorial_routes_storyText = "Sapiens can move resources from one storage area to another using routes.\n\nRoutes are useful for distributing resources to where they are needed. They can also be used to transfer resources over large distances.",
-    tutorial_routes_create = "Create a transfer route",
-    tutorial_routes_create_subtitle_a = "- Bring up the menu and click \"Rotas\"",
-    tutorial_routes_create_subtitle_b = "- Add a new route, then click \"Adicionar Paradas\"",
-    tutorial_routes_create_subtitle_c = "- Click on the source storage area",
-    tutorial_routes_create_subtitle_d = "- Then click on an empty destination storage area",
-    tutorial_routes_doTransfer = "Transferir any item from one storage area to another",
+    tutorial_title_routes = "Rotas e logística",
+    tutorial_routes_storyText = "Sapiens podem mover recursos de uma área de armazenamento para outra utilizando rotas.\n\nRotas são úteis para distribuir recursos para onde eles são necessários. Elas podem ser usadas também para transferir recursos através de grandes distâncias.",
+    tutorial_routes_create = "Crie uma rota de transferência",
+    tutorial_routes_create_subtitle_a = "- Abra o menu e clique em \"Rotas\"",
+    tutorial_routes_create_subtitle_b = "- Adicione uma nova rota, então clique em \"Adicionar Paradas\"",
+    tutorial_routes_create_subtitle_c = "- Clique na área de armazenamento de origem",
+    tutorial_routes_create_subtitle_d = "- Então clique em uma área de armazenamento destino vazia",
+    tutorial_routes_doTransfer = "Transfira qualquer item de uma área de armazenamento para outra",
     
     -- paths
-    tutorial_title_paths = "Caminhos and Roads",
-    tutorial_paths_storyText = "Sapiens can move faster on paths, which makes your tribe more efficient.",
+    tutorial_title_paths = "Caminhos e Estradas",
+    tutorial_paths_storyText = "Sapiens se movem mais rápido em caminhos, o que faz a sua tribo mais eficiente.",
     tutorial_paths_buildXPaths = function(values)
-        return string.format("Construct %d path segments", values.count) 
+        return string.format("Construa %d segmentos de caminho", values.count) 
     end,
     
     -- woodBuilding
-    tutorial_title_woodBuilding = "Construindo with wood",
-    tutorial_woodBuilding_storyText = "Thatch huts are better than nothing, but your tribe will need to start building with more advanced materials if their new civilization is to stand the test of time.",
-    tutorial_woodBuilding_chopTree = "Cortar down a tree",
-    tutorial_woodBuilding_splitLog = "Split a log",
-    tutorial_woodBuilding_buildWall = "Construir a split log parede",
+    tutorial_title_woodBuilding = "Construindo com madeira",
+    tutorial_woodBuilding_storyText = "Cabanas de palha são melhores que nada, mas sua tribo vai precisar começar a construir com materiais mais avançados se quiserem que sua civilização passe no teste do tempo.",
+    tutorial_woodBuilding_chopTree = "Derrubar uma árvore",
+    tutorial_woodBuilding_splitLog = "Cortar um tronco",
+    tutorial_woodBuilding_buildWall = "Construir uma parede de troncos cortados",
     -- advancedTools
-    tutorial_title_advancedTools = "Crafting advanced tools",
-    tutorial_advancedTools_storyText = "By attaching simple rock tools to a wooden handle, your tribe can make more advanced tools that can last longer, make some tasks faster, and unlock the ability to hunt larger prey.",
+    tutorial_title_advancedTools = "Criando ferramentas avançadas",
+    tutorial_advancedTools_storyText = "Juntando ferramentas de pedra simples com um cabo, sua tribo pode criar ferramentas mais avançadas que duram mais, fazem tarefas mais rapidamente e desbloqueiam a habilidade de caçar presas maiores.",
     tutorial_advancedTools_driedFlax = function(values)
-        return string.format("Find, harvest, and store %d dried flax", values.count) 
+        return string.format("Encontre, colete e guarde %d linhos secos", values.count) 
     end,
     tutorial_advancedTools_twine = function(values)
-        return string.format("Craft and store %d twine", values.count) 
+        return string.format("Crie e guarde %d fios", values.count) 
     end,
-    tutorial_advancedTools_pickAxe = "Craft a pick axe",
-    tutorial_advancedTools_spear = "Craft a spear",
-    tutorial_advancedTools_hatchet = "Craft a hatchet",
+    tutorial_advancedTools_pickAxe = "Crie uma picareta",
+    tutorial_advancedTools_spear = "Crie uma lança",
+    tutorial_advancedTools_hatchet = "Crie uma machadinha",
     -- cookingMeat
-    tutorial_title_cookingMeat = "Cooking meat",
-    tutorial_cookingMeat_storyText = "After a successful hunt, your sapiens need to prepare the carcass to make it ready to eat. To do this, they'll need to butcher and then cook the meat.",
-    tutorial_cookingMeat_butcher = "Butcher a carcass",
-    tutorial_cookingMeat_cook = "Cook some meat",
+    tutorial_title_cookingMeat = "Cozinhando carne",
+    tutorial_cookingMeat_storyText = "Após uma caça bem sucedida, seus sapiens precisam preparar a carcaça para poderem comer. Para isso, eles precisarão cortar e então cozinhar a carne.",
+    tutorial_cookingMeat_butcher = "Corte uma carcaça",
+    tutorial_cookingMeat_cook = "Cozinhe carne",
     -- worldMap
     tutorial_title_worldMap = "Mapa do Mundo",
-    tutorial_worldMap_task = "View the world from above with",
+    tutorial_worldMap_task = "Veja o mundo de cima com",
     -- recruitment
-    tutorial_title_recruitment = "Recruitment",
-    tutorial_recruitment_storyText = "Sometimes nomadic tribes will wonder through the area, or come looking for food.\n\nThis is a good opportunity to grow the tribe, as many will decide to join if we invite them.",
-    tutorial_recruitment_task = "Invite a visitor to join the tribe",
+    tutorial_title_recruitment = "Recrutamento",
+    tutorial_recruitment_storyText = "Às vezes tribos nômades vagarão pela área ou procurarão por comida.\n\nEssa é uma boa oportunidade para aumentar a sua tribo, já que muitos se juntarão se os convidarmos.",
+    tutorial_recruitment_task = "Convide um visitante para se juntar à sua tribo",
 
     -- orderLimit
-    tutorial_title_orderLimit = "Order Limit",
+    tutorial_title_orderLimit = "Limite de Ordens",
     tutorial_orderLimit_storyText = function(values)
-        return string.format("Your sapiens will always pick the closest available order that matches their roles and needs, so it is important not to queue up too many orders that aren't really required.\n\nTo help you with this, there is a tribe-wide limit of %d orders per sapien. After that, they will ignore new orders until previous ones have been completed.\n\nIf an order is marked with a yellow triangle with \"Maximum orders reached\", then you can prioritize it in the radial menu.",
+        return string.format("Seus sapiens sempre escolherão a ordem mais próxima que combine com as suas funções e necessidades, então é importante não colocar muitas ordens de uma vez que não são realmente necessárias.\n\nPara lhe ajudar com isso há um limite de %d ordens na tribo por sapien. Depois disso eles ignorarão ordens novas até que as anteriores sejam concluídas.\n\nSe uma ordem estiver marcada com um triângulo amarelo com \"Máximo de ordens alcançado\", então você pode priorizá-la no menu radial.",
             values.allowedPlansPerFollower)
     end,
-    tutorial_orderLimit_task = "Prioritize any order marked \"Maximum orders reached\"",
+    tutorial_orderLimit_task = "Priorize qualquer ordem marcada com \"Máximo de ordens alcançado\"",
     
     -- notifications
     tutorial_title_notifications = "Notifications",
