@@ -214,8 +214,8 @@ localizations.values = {
     craftable_stoneAxeHead = "Cabeça de Machado de Pedra",
     craftable_stoneAxeHead_plural = "Cabeças de Machado de Pedra",
     craftable_stoneAxeHead_summary = "Pode ser usada para cortar madeira e escavar o chão.",
-    craftable_flintAxeHead = "Flint Hand Axe",
-    craftable_flintAxeHead_plural = "Flint Hand Axes",
+    craftable_flintAxeHead = "Cabeça de Machado de Pederneira",
+    craftable_flintAxeHead_plural = "Cabeças de Machado de Pederneira",
     craftable_flintAxeHead_summary = "Pode ser usada para cortar madeira e escavar o chão.",
     craftable_flintHatchet = "Machadinha de Pederneira",
     craftable_flintHatchet_plural = "Machadinhas de Pederneira",
@@ -1853,7 +1853,7 @@ localizations.values = {
 
     -- resources ui
     ui_resources_allResourceType = function(values)
-        return string.format("Todos %s", values.resourceName)
+        return string.format("Todos tipos de %s", values.resourceName)
     end,
     ui_resources_storedCount = function(values)
         return string.format("%s guardados", values.storedCount)
