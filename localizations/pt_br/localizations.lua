@@ -601,7 +601,7 @@ localizations.values = {
     fruit_beetroot_rotten = "Beterraba Podre",
     fruit_beetroot_rotten_plural = "Beterrabas Podres",
     fruit_beetrootSeed = "Semente de Beterraba",
-    fruit_beetrootSeed_plural = "Smentes de Beterraba",
+    fruit_beetrootSeed_plural = "Sementes de Beterraba",
     fruit_beetrootSeed_rotten = "Semente de Beterraba Podre",
     fruit_beetrootSeed_rotten_plural = "Sementes de Beterraba Podres",
     fruit_wheat = "Trigo",
@@ -1859,7 +1859,7 @@ localizations.values = {
         return string.format("%s guardados", values.storedCount)
     end,
     ui_resources_decorations = "Colocar Decoração",
-    ui_resources_eating = "Comendo",
+    ui_resources_eating = "Comer",
     ui_resources_tool = "Ferramenta ou Arma", --b13
 
     -- look at ui
