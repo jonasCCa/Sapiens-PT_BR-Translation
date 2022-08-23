@@ -222,7 +222,7 @@ localizations.values = {
     craftable_flintHatchet_summary = "Boa para cortar árvores.",
     craftable_splitLog = "Tronco Cortado",
     craftable_splitLog_plural = "Troncos Cortados",
-    craftable_splitLog_summary = "Usado para construção.",
+    craftable_splitLog_summary = "Usado para construção, também pode ser usado de chão.", --b20
     craftable_butcherChicken = "Cortar Galinha",
     craftable_butcherChicken_plural = "Cortar Galinhas",
     craftable_butcherChicken_summary = "Coletar carne de galinha.",
@@ -689,6 +689,10 @@ localizations.values = {
     tool_grinding_plural = "Ferramentas de Moagem",
     tool_grinding_usage = "Moer",
 
+	tool_knappingCrude = "Ferramenta Simples de Lascar", --b20
+    tool_knappingCrude_plural = "Ferramentas Simples de Lascar", --b20
+    tool_knappingCrude_usage = "Lascar Simples", --b20
+	
     --tool properties
     toolProperties_damage = "Dano",
     toolProperties_speed = "Velocidade",
@@ -1794,6 +1798,7 @@ localizations.values = {
     settings_Controls = "Controles",
     settings_Controls_mouseSensitivity = "Sensibilidade do Mouse",
     settings_Controls_invertMouseLookY = "Inverter Mouse Y",
+    settings_Controls_invertMouseWheelZoom = "Inverter Zoom na Roda do Mouse", --b20
     settings_Controls_controllerLookSensitivity = "Sensibilidade do Controle",
     settings_Controls_invertControllerLookY = "Inverter Controle Y",
     settings_Controls_enableDoubleTapForFastMovement = "Clique duplo para mover rápido",
@@ -1953,6 +1958,8 @@ localizations.values = {
     ui_action_dontShowAgain = "Não mostrar novametne",
     ui_action_attemptToPlayAnyway = "Tentar jogar mesmo assim",
     ui_action_setFillType = "Selecionar material de preenchimento",
+	ui_action_update = "Atualizar", --b20
+    ui_action_OK = "Confirmar", --b20
 
     --ui plans
     ui_plan_unavailable_stopOrders = "Cancele outras ordens primeiro",
@@ -2039,6 +2046,7 @@ localizations.values = {
     ui_name_tasks = "Funções",
     ui_name_move = "Mover",
     ui_name_moveAndWait = "Mover & Esperar",
+	ui_name_assignBed = "Atribuir Cama", --b20
     ui_name_mapMode = "Mapa do Mundo",
     ui_name_changeAssignedSapien = "Selecione um Sapien para quem atribuir",
     ui_name_tutorial = "Tutorial",
@@ -2055,10 +2063,15 @@ localizations.values = {
     ui_name_lastPlayed = "Jogado pela última vez em",
     ui_name_created = "Criado em",
     ui_name_lastPlayedVersion = "Última Versão Jogada",
+	ui_name_worldAge = "Idade do Mundo (dias no jogo)", --b20
     ui_name_seed = "Semente",
+	ui_name_manage = "Gerenciar", --b20
     ui_name_saves = "Mundos Salvos",
     ui_name_load = "Carregar",
     ui_name_deleteWorld = "Apagar Mundo",
+	ui_name_changeMods = "Mudar Mods", --b20
+    ui_name_updateMod = "Atualizar Mod", --b20
+    ui_name_steamOverlayDisabled = "Requer Steam Overlay", --b20
     
     
     
@@ -2071,9 +2084,20 @@ localizations.values = {
     ui_info_bindingTimeRemaining = function(values)
         return string.format("Reverte em %d segundos...", values.seconds)
     end,
+    ui_info_changeModAreYouSure = "Tem certeza de que quer mudar os mods deste mundo?\n\nIsto pode causar erros ao carregar o mundo, então você deveria fazer uma cópia de segurança do diretório do mundo antes.", --b20
+    ui_info_updateModAreYouSure = function(values) --b20
+        return string.format("Tem ceteza de que quer atualizar o mod %s?\n\nIsto não pode ser desfeito e pode causar erros ao carregar o mundo.\n\nIsto copiará a última versão (%s) do mod no diretório do mundo, sobrescrevendo a versão antiga (%s).\n\nVocê deveria fazer uma cópia de segurança do diretório do mundo antes.", values.modName, values.newVersion, values.oldVersion)
+    end,  
+    ui_info_steamOverlayDisabled = "Esta função requer o Steam Overlay.\n\nVocê pode habilitar o Steam Overlay a partir das configurações da Steam, tanto para todos os jogos quanto para o Sapiens.", --b20
+
     ui_pause = "Pause",
     ui_play = "Resumir",
     ui_fastForward = "Avanço Rápido",
+	
+	ui_objectBelongingToSapien = function(values) --b20
+        return string.format("%s de %s", values.objectName, values.sapienName)
+    end, 
+	
     tribeUI_sapien = "Sapien",
     tribeUI_distance = "Dist.",
     tribeUI_age = "Idade",
@@ -2144,6 +2168,12 @@ localizations.values = {
     misc_NotLoaded = "Não Carregado",
     misc_Toggle = "Alternar",
     misc_Biome = "Bioma",
+	misc_BiomeDifficulty = "Dificuldade da Localização", --b20
+    misc_BiomeDifficulty_veryEasy = "Muito Fácil", --b20
+    misc_BiomeDifficulty_easy = "Fácil", --b20
+    misc_BiomeDifficulty_normal = "Normal", --b20
+    misc_BiomeDifficulty_hard = "Difícil", --b20
+    misc_BiomeDifficulty_veryHard = "Muito Difícil", --b20
     misc_WIP_Panel = "Este painel ainda não está pronto, mas estará em breve!",
     misc_decorate_with = function(values)--b13
         return string.format("Decorar com %s", values.name)
@@ -2587,11 +2617,11 @@ Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalm
     mods_gameMods = "Mods de jogo",
     mods_gameMods_info = "Aplica ao jogo, em todos os mundos.",
     mods_worldMods = "Mods de mundo",
-    mods_worldMods_info = "Apenas configuráveis quando criar um novo mundo.",
+    mods_worldMods_info = "Apenas configuráveis por mundo.", --b20 changed from "Only configurable when creating a new world.", as now they can be changed for existing worlds in the saves menu
     mods_configureWorldMods = "Configurar mods para este mundo",
-    mods_configureWorldMods_info = "Mods de mundo habilitados aqui são aplicados apenas a este mundo, só podem ser atribuídos quando criar um mundo e não podem ser alterados depois sem diretamente modificar os arquivos do mod, pois elses podem adicionar ou remover objetos e comportamentos que podem corromper o seu mundo se forem alterados. A versão atual dos mods instalados será guardada junto do salvamento do mundo na criação.",
+    mods_configureWorldMods_info = "Mods de mundo são habilitados aqui e se aplicam apenas a este mundo. As versões instaladas atualmente dos mods habilitados serão copiadas no diretório do mundo na criação. Você também pode habilitad/desabilitar ou atualizar mods de mundo no painel \"Mundos Salvos\" mais tarde.", --b20 changed as now they can be changed for existing worlds in the saves menu
     mods_configureGameMods = "Configurar mods do jogo",
-    mods_configureGameMods_info = "Mods de jogo são aplicados ao jogo inteiro e afetam a sua experiência em todos os mundos. Apenas esse tipo de mod pode ser habilitado aqui.\nMods de mundo afetam os mundos mais diretamente e podem ser habilidados a partir do botão Mods na tela de criação de mundo.",
+    mods_configureGameMods_info = "Mods de jogo são aplicados ao jogo inteiro e afetam a sua experiência em todos os mundos. Apenas esse tipo de mod pode ser habilitado aqui.\nMods de mundo afetam os mundos mais diretamente e podem ser habilitados a partir do botão Mods na tela de criação de mundo.",
     mods_findMods = "Encontrar mods na Steam->",
     mods_makeMods = "Faça seus próprios mods->",
     mods_websiteLink = "Website ->",
