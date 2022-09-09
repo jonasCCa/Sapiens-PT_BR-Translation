@@ -1,4 +1,4 @@
-# Sapiens-PT_BR-Translation
+# Sapiens em Português
 
 Este Mod adiciona uma tradução para Português para o jogo Sapiens, que pode ser encontrado na sua <a href="https://store.steampowered.com/app/1060230/Sapiens/">página da Steam</a>.
 
