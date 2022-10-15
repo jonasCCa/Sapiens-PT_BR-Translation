@@ -225,9 +225,11 @@ localizations.values = {
     craftable_splitLog_summary = "Usado para construção, também pode ser usado de chão.", --b20
     craftable_butcherChicken = "Cortar Galinha",
     craftable_butcherChicken_plural = "Cortar Galinhas",
+    craftable_butcherChicken_action = "Cortando uma galinha", --0.3.0
     craftable_butcherChicken_summary = "Coletar carne de galinha.",
     craftable_butcherAlpaca = "Cortar Alpaca",
     craftable_butcherAlpaca_plural = "Cortar Alpacas",
+	craftable_butcherAlpaca_action = "Cortando uma alpaca", --0.3.0
     craftable_butcherAlpaca_summary = "Coletar carne e lã de alpaca.",
     craftable_cookedChicken = "Carne de Galinha Cozida",
     craftable_cookedChicken_plural = "Carnes de Galinha Cozidas",
@@ -243,13 +245,19 @@ localizations.values = {
     craftable_flatbread_summary = "O pão mais simples de todos.",    
     craftable_unfiredUrnWet = "Vaso não Queimado",
     craftable_unfiredUrnWet_plural = "Vasos não Queimados",
-    craftable_unfiredUrnWet_summary = "Pode ser usado para coletar e guardar grãos. Mantém os grãos por mais tempo, se queimado.",
+    craftable_unfiredUrnWet_summary = "Pode ser usado para guardar grãos. Mantém os grãos por mais tempo, se queimado.",
     craftable_firedUrn = "Vaso Queimado",
     craftable_firedUrn_plural = "Vasos Queimados",
-    craftable_firedUrn_summary = "Pode ser usado para coletar e guardar grãos. Mantém os grãos por mais tempo do que não queimado.",
-    craftable_hulledWheat = "Trigo Descascado",
+    craftable_firedUrn_summary = "Pode ser usado para guardar grãos. Mantém os grãos por mais tempo do que não queimado.",
+	craftable_unfiredBowlWet = "Tigela não Queimada", --0.3.0
+    craftable_unfiredBowlWet_plural = "Tigelas não Queimadas", --0.3.0
+    craftable_unfiredBowlWet_summary = "Pode ser usada para guardar medicamentos. Mantém o conteúdo por mais tempo, se queimado.", --0.3.0
+    craftable_firedBowl = "Tigela Queimada", --0.3.0
+    craftable_firedBowl_plural = "Tigelas Queimadas", --0.3.0
+    craftable_firedBowl_summary = "Pode ser usada para guardar medicamentos. Mantém o conteúdo por mais tempo, se queimado.", --0.3.0
+	craftable_hulledWheat = "Trigo Descascado",
     craftable_hulledWheat_plural = "Trigos Descascados",
-    craftable_hulledWheat_summary = "Pode ser usado para fazer sopa ou farinha.",
+    craftable_hulledWheat_summary = "Pode ser usado para fazer farinha.", --0.3.0 removed mention of pottage, as it isn't in the game
     craftable_thatchResearch = "Pesquisar Palha",
     craftable_thatchResearch_plural = "Pesquisar Palhas",
     craftable_thatchResearch_summary = "Pesquisar Palha.",
@@ -296,6 +304,21 @@ localizations.values = {
     craftable_firedBrick_plural = "Tijolos",
     craftable_firedBrick_summary = "Um recurso durável para usar em construções.",
 
+    --0.3.0 group:
+    craftable_injuryMedicine = "Medicamento para Ferimentos",
+    craftable_injuryMedicine_plural = "Medicamentos para Ferimentos",
+    craftable_injuryMedicine_summary = "Trata ferimentos físicos gerais.",
+    craftable_burnMedicine = "Medicamento para Queimaduras",
+    craftable_burnMedicine_plural = "Medicamentos para Queimaduras",
+    craftable_burnMedicine_summary = "Trata queimaduras.",
+    craftable_foodPoisoningMedicine = "Medicamento para Intoxicações",
+    craftable_foodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
+    craftable_foodPoisoningMedicine_summary = "Trata problemas estomacais causados por intoxões alimentares.",
+    craftable_virusMedicine = "Medicamento contra Vírus",
+    craftable_virusMedicine_plural = "Medicamentos contra Vírus",
+    craftable_virusMedicine_summary = "Trata resfriados e outras infecções virais.",
+    --0.3.0 group end
+	
     --actions
     action_idle = "Parado",
     action_idle_inProgress = "Parado",
@@ -353,6 +376,8 @@ localizations.values = {
     action_grind_inProgress = "Moendo",
     action_potteryCraft = "Esculpir",
     action_potteryCraft_inProgress = "Esculpindo",
+	action_craft = "Criar", --0.3.0
+    action_craft_inProgress = "Criando", --0.3.0
     action_spinCraft = "Criar",
     action_spinCraft_inProgress = "Criando",
     action_thresh = "Debulhar",
@@ -376,6 +401,15 @@ localizations.values = {
     action_putOnTorsoClothing = "Vestir Roupa",
     action_putOnTorsoClothing_inProgress = "Vestindo Roupa",
 
+    --0.3.0 group:
+    action_selfApplyOralMedicine = "Tomar Medicamento",
+    action_selfApplyOralMedicine_inProgress = "Tomando Medicamento",
+    action_selfApplyTopicalMedicine = "Aplicar Medicamento",
+    action_selfApplyTopicalMedicine_inProgress = "Aplicando Medicamento",
+    action_giveMedicine = "Dar Medicamento",
+    action_giveMedicine_inProgress = "Dando Medicamento",
+    --0.3.0 group end
+	
     --action modifiers
     action_jog = "Trotar",
     action_jog_inProgress = "Trotando",
@@ -445,6 +479,41 @@ localizations.values = {
     flora_flaxPlant_summary = "Uma planta versátil. Fibras de linho podem ser fiadas para fazer barbante e as sementes podem ser comidas para obter poucas calorias.",
     flora_flaxPlantSapling = "Plantinha de Linho",
     flora_flaxPlantSapling_plural = "Plantinhas de Linho",
+	flora_poppyPlant = "Papoula", --0.3.0
+    flora_poppyPlant_plural = "Papoulas", --0.3.0
+    flora_poppyPlant_summary = "Não apenas bonitas, as flores de papoula também possuem usos medicinais.", --0.3.0
+    flora_poppyPlantSapling = "Plantinha de Papoula", --0.3.0
+    flora_poppyPlantSapling_plural = "Plantinhas de Papoula", --0.3.0
+    flora_echinaceaPlant = "Equinácea", --0.3.0
+    flora_echinaceaPlant_plural = "Equináceas", --0.3.0
+    flora_echinaceaPlant_summary = "Flores de equinácea possuem usos medicinais.", --0.3.0
+    flora_echinaceaPlantSapling = "Plantinha de Equinácea", --0.3.0
+    flora_echinaceaPlantSapling_plural = "Plantinhas de Equinácea", --0.3.0
+    flora_gingerPlant = "Gengibre", --0.3.0
+    flora_gingerPlant_plural = "Gengibres", --0.3.0
+    flora_gingerPlant_summary = "Raízes de gengibre ajudam a acalmar estômagos irritados.", --0.3.0
+    flora_gingerPlantSapling = "Plantinha de Gengibre", --0.3.0
+    flora_gingerPlantSapling_plural = "Plantinhas de Gengibre", --0.3.0
+    flora_turmericPlant = "Cúrcuma", --0.3.0
+    flora_turmericPlant_plural = "Cúrcumas", --0.3.0
+    flora_turmericPlant_summary = "Cúrcumas ajudam com inflamações.", --0.3.0
+    flora_turmericPlantSapling = "Plantinha de Cúrcuma", --0.3.0
+    flora_turmericPlantSapling_plural = "Plantinhas de Cúrcuma", --0.3.0
+    flora_marigoldPlant = "Margarida", --0.3.0
+    flora_marigoldPlant_plural = "Margaridas", --0.3.0
+    flora_marigoldPlant_summary = "Margaridas podem ser uitilizadas para fazer um cataplasma para tratar ferimentos.", --0.3.0
+    flora_marigoldPlantSapling = "Plantinha de Margarida", --0.3.0
+    flora_marigoldPlantSapling_plural = "Plantinhas de Margarida", --0.3.0
+    flora_garlicPlant = "Alho", --0.3.0
+    flora_garlicPlant_plural = "Alho", --0.3.0
+    flora_garlicPlant_summary = "Alho pode ser comido ou usado em medicamentos.", --0.3.0
+    flora_garlicPlantSapling = "Plantinha de Alho", --0.3.0
+    flora_garlicPlantSapling_plural = "Plantinhas de Alho", --0.3.0
+    flora_aloePlant = "Babosa", --0.3.0
+    flora_aloePlant_plural = "Babosas", --0.3.0
+    flora_aloePlant_summary = "Folhas de babosa ajudam a aliviar queimaduras.", --0.3.0
+    flora_aloePlantSapling = "Plantinha de Babosa", --0.3.0
+    flora_aloePlantSapling_plural = "Plantinhas de Babosa", --0.3.0
     flora_aspen = "Álamo",
     flora_aspen_plural = "Álamos",
     flora_aspen_summary = "A tall deciduous tree native to cold regions. Supplies a light wood with white bark.",
@@ -485,6 +554,11 @@ localizations.values = {
     flora_appleTree_summary = "Uma árvore caducifólia compacta que fornece frutas do fim do verão ao outono.",
     flora_appleTree_sapling = "Muda de Macieira",
     flora_appleTree_sapling_plural = "Mudas de Macieira",
+	flora_elderberryTree = "Sabugueiro", --0.3.0
+    flora_elderberryTree_plural = "Sabugueiros", --0.3.0
+    flora_elderberryTree_summary = "Uma pequena árvore com frutinhas que possuem usos medicinais.", --0.3.0
+    flora_elderberryTree_sapling = "Plantinha de Sabugueiro", --0.3.0
+    flora_elderberryTree_sapling_plural = "Plantinhas de Sabugueiro", --0.3.0
     flora_gooseberryBush = "Arbusto de Groselha",
     flora_gooseberryBush_plural = "Arbustos de Groselha",
     flora_gooseberryBush_summary = "Fornece uma fruta suculenta, rica em vitamina C. Colhida no verão.",
@@ -544,6 +618,8 @@ localizations.values = {
     branch_willow_plural = "Galhos de Salgueiro",
     branch_apple = "Galho de Macieira",
     branch_apple_plural = "Galhos de Macieira",
+	branch_elderberry = "Galho de Sabugueiro", --0.3.0
+    branch_elderberry_plural = "Galhos de Sabugueiro", --0.3.0
     branch_orange = "Galho de Laranjeira",
     branch_orange_plural = "Galhos de Laranjeira",
     branch_peach = "Galho de Pessegueiro",
@@ -556,6 +632,8 @@ localizations.values = {
     log_willow_plural = "Troncos de Salgueiro",
     log_apple = "Tronco de Macieira",
     log_apple_plural = "Troncos de Macieira",
+	log_elderberry = "Tronco de Sabugueiro", --0.3.0
+    log_elderberry_plural = "Troncos de Sabugueiro", --0.3.0
     log_orange = "Tronco de Laranjeira",
     log_orange_plural = "Troncos de Laranjeira",
     log_peach = "Tronco de Pessegueiro",
@@ -576,6 +654,10 @@ localizations.values = {
     fruit_apple_plural = "Maçãs",
     fruit_apple_rotten = "Maçã Podre",
     fruit_apple_rotten_plural = "Maçãs Podres",
+	fruit_elderberry = "Sabugo", --0.3.0
+    fruit_elderberry_plural = "Sabugos", --0.3.0
+    fruit_elderberry_rotten = "Sabugo Podre", --0.3.0
+    fruit_elderberry_rotten_plural = "Sabugos Podres", --0.3.0
     fruit_banana = "Banana",
     fruit_banana_plural = "Bananas",
     fruit_banana_rotten = "Banana Podre",
@@ -616,6 +698,34 @@ localizations.values = {
     fruit_flaxSeed_plural = "Sementes de Linho",
     fruit_flaxSeed_rotten = "Semente de Linho Podre",
     fruit_flaxSeed_rotten_plural = "Sementes de Linho Podres",
+	fruit_poppyFlower = "Flor de Papoula", --0.3.0
+    fruit_poppyFlower_plural = "Flores de Papoula", --0.3.0
+    fruit_poppyFlower_rotten = "Flor de Papoula Podre", --0.3.0
+    fruit_poppyFlower_rotten_plural = "Flores de Papoula Podres", --0.3.0
+    fruit_echinaceaFlower = "Flor de Equinácea", --0.3.0
+    fruit_echinaceaFlower_plural = "Flores de Equinácea", --0.3.0
+    fruit_echinaceaFlower_rotten = "Flor de Equinácea Podre", --0.3.0
+    fruit_echinaceaFlower_rotten_plural = "Flores de Equinácea Podres", --0.3.0
+    fruit_marigoldFlower = "Flor de Margarida", --0.3.0
+    fruit_marigoldFlower_plural = "Flores de Margaridas", --0.3.0
+    fruit_marigoldFlower_rotten = "Flor de Margarida Podre", --0.3.0
+    fruit_marigoldFlower_rotten_plural = "Flores de Margaridas Podres", --0.3.0
+    fruit_gingerRoot = "Raíz de Gengibre", --0.3.0
+    fruit_gingerRoot_plural = "Raízes de Gengibre", --0.3.0
+    fruit_gingerRoot_rotten = "Raíz de Gengibre Podre", --0.3.0
+    fruit_gingerRoot_rotten_plural = "Raízes de Gengibre Podres", --0.3.0
+    fruit_turmericRoot = "Raíz de Cúrcuma", --0.3.0
+    fruit_turmericRoot_plural = "Raízes de Cúrcuma", --0.3.0
+    fruit_turmericRoot_rotten = "Raíz de Cúrcuma Podre", --0.3.0
+    fruit_turmericRoot_rotten_plural = "Raízes de Cúrcuma Podres", --0.3.0
+    fruit_garlic = "Bulbo de Alho", --0.3.0
+    fruit_garlic_plural = "Bulbos de Alho", --0.3.0
+    fruit_garlic_rotten = "Bulbo de Alho Podre", --0.3.0
+    fruit_garlic_rotten_plural = "Bulbos de Alho Podres", --0.3.0
+    fruit_aloeLeaf = "Folha de Babosa", --0.3.0
+    fruit_aloeLeaf_plural = "Folhas de Babosa", --0.3.0
+    fruit_aloeLeaf_rotten = "Folha de Babosa Podre", --0.3.0
+    fruit_aloeLeaf_rotten_plural = "Folhas de Babosa Podres", --0.3.0
     fruit_sunflowerSeed = "Semente de Girassol",
     fruit_sunflowerSeed_plural = "Sementes de Girassol",
     fruit_sunflowerSeed_rotten = "Semente de Girassol Podre",
@@ -772,6 +882,15 @@ localizations.values = {
     plan_playInstrument = "Tocar",
     plan_playInstrument_inProgress = "Tocando",
 
+	plan_treatInjury = "Tratar Ferimento", --0.3.0 
+    plan_treatInjury_inProgress = "Tratando Ferimento", --0.3.0 
+    plan_treatBurn = "Tratar Queimadura", --0.3.0 
+    plan_treatBurn_inProgress = "Tratando Queimadura", --0.3.0 
+    plan_treatFoodPoisoning = "Tratar Intoxicação Alimentar", --0.3.0 
+    plan_treatFoodPoisoning_inProgress = "Tratando Intoxicação Alimentar", --0.3.0 
+    plan_treatVirus = "Tratar Infecção Viral", --0.3.0 
+    plan_treatVirus_inProgress = "Tratando Infecção Viral", --0.3.0 
+	
     --research    
     research_fire = researchName,
     research_fire_inProgress = researchingName,
@@ -845,7 +964,10 @@ localizations.values = {
     research_toolAssembly = researchName,
     research_toolAssembly_inProgress = researchingName,
     research_toolAssembly_description = "Uma pedra afiada pode ser usada com muito mais força quando unida a um cabo de madeira. Sua tribo agora consegue criar ferramentas melhores e armas formidáveis.",
-    research_grinding = researchName,
+	research_medicine = researchName, --0.3.0
+    research_medicine_inProgress = researchingName, --0.3.0
+    research_medicine_description = "Ao triturar ervas, raízes e flores, sua tribo descobriu que pode fazer cataplasmas e remédios. Essas misturas podem ajudar com ferimentos e doenças.", --0.3.0
+	research_grinding = researchName,
     research_grinding_inProgress = researchingName,
     research_grinding_description = "Pulverizar coisas pode ser bastante útil, principalmente para liberar as valiosas calorias escondidas dentro dos grãos e sementes. Sua tribo descobriu que o pilão torna muito mais fácil o trabalho de moer.", --modified b13
     research_tiling = researchName,
@@ -872,8 +994,8 @@ localizations.values = {
     object_brickKiln_plural = "Fornos",
     object_torch = "Tocha",
     object_torch_plural = "Tochas",
-    object_alpacaMeatRack = "Carne de Alpaca",
-    object_alpacaMeatRack_plural = "Carnes de Alpaca",
+    object_alpacaMeatRack = "Carne de Alpaca Crua", --0.3.0 adicionado "Crua"
+    object_alpacaMeatRack_plural = "Carnes de Alpaca Cruas", --0.3.0 adicionado "Crua"
     object_alpacaMeatRackCooked = "Carne de Alpaca Cozida",
     object_alpacaMeatRackCooked_plural = "Carnes de Alpaca Cozidas",
     object_dirtWallDoor = "Parede de Terra com Porta",
@@ -974,8 +1096,8 @@ localizations.values = {
     object_greenRockSmall_plural = "Pedras Pequenas Verdes",
     object_greenRockLarge = "Rocha de Pedra Verde",
     object_greenRockLarge_plural = "Rochas de Pedra Verde",
-    object_chickenMeatBreast = "Carne de Galinha",
-    object_chickenMeatBreast_plural = "Carnes de Galinha",
+    object_chickenMeatBreast = "Carne de Galinha Crua", --0.3.0 adicionado "Crua"
+    object_chickenMeatBreast_plural = "Carnes de Galinha Cruas", --0.3.0 adicionado "Crua"
     object_birchWoodenPole = "Poste de Madeira de Bétula",
     object_birchWoodenPole_plural = "Postes de Madeira de Bétula",
     object_willowWoodenPole = "Poste de Madeira de Salgueiro",
@@ -1010,8 +1132,8 @@ localizations.values = {
     object_aspenWoodenPole_plural = "Postes de Madeira de Álamo",
     object_chicken = "Galinha",
     object_chicken_plural = "Galinhas",
-    object_chickenMeat = "Carne de Galinha",
-    object_chickenMeat_plural = "Carnes de Galinha",
+    object_chickenMeat = "Carne de Galinha Crua", --0.3.0 adicionado "Crua"
+    object_chickenMeat_plural = "Carnes de Galinha Cruas", --0.3.0 adicionado "Crua"
     object_build_splitLogFloor = "Chão de Tronco Cortado 2x2",
     object_build_splitLogFloor_plural = "Chãos de Tronco Cortado 2x2",
     object_build_splitLogFloor4x4 = "Chão de Tronco Cortado 4x4",
@@ -1136,8 +1258,8 @@ localizations.values = {
     object_stoneHatchet_plural = "Machadinhas de Pedra",
     object_flintHatchet = "Machadinha de Sílex",
     object_flintHatchet_plural = "Machadinhas de Sílex",
-    object_alpacaMeatLeg = "Carne de Alpaca",
-    object_alpacaMeatLeg_plural = "Carnes de Alpaca",
+    object_alpacaMeatLeg = "Carne de Alpaca Crua", --0.3.0 adicionado "Crua"
+    object_alpacaMeatLeg_plural = "Carnes de Alpaca Cruas", --0.3.0 adicionado "Crua"
     object_alpacaMeatLegCooked = "Carne de Alpaca Cozida",
     object_alpacaMeatLegCooked_plural = "Carnes de Alpaca Cozidas",
     object_hayBed = "Cama de Feno",
@@ -1324,10 +1446,10 @@ localizations.values = {
     object_splitLogWallLargeWindow_plural = "Paredes de Tronco Cortado com Janela",
     object_build_splitLogWallLargeWindow = "Parede de Tronco Cortado com Janela",
     object_build_splitLogWallLargeWindow_plural = "Paredes de Tronco Cortado com Janela",
-    object_mammothMeat = "Carne de Mamute",
-    object_mammothMeat_plural = "Carnes de Mamute",
-    object_mammothMeatTBone = "Carne de Mamute",
-    object_mammothMeatTBone_plural = "Carnes de Mamute",
+    object_mammothMeat = "Carne de Mamute Crua", --0.3.0 adicionado "Crua"
+    object_mammothMeat_plural = "Carnes de Mamute Cruas", --0.3.0 adicionado "Crua"
+    object_mammothMeatTBone = "Carne de Mamute Crua", --0.3.0 adicionado "Crua"
+    object_mammothMeatTBone_plural = "Carnes de Mamute Cruas", --0.3.0 adicionado "Crua"
     object_mammothMeatCooked = "Carne de Mamute Cozida",
     object_mammothMeatCooked_plural = "Carnes de Mamute Cozidas",
     object_mammothMeatTBoneCooked = "Carne de Mamute Cozida",
@@ -1340,6 +1462,11 @@ localizations.values = {
     order_multitask_social_inProgress = "Socializando",
     order_multitask_lookAt = "Olhar",
     order_multitask_lookAt_inProgress = "Olhando",
+	
+	order_moveToMotivation_bed = "Indo para casa", --0.3.0
+    order_moveToMotivation_warmth = "Indo até o calor", --0.3.0
+    order_moveToMotivation_light = "Indo até a luz", --0.3.0
+	
     order_gather = "Coletar",
     order_gather_inProgress = "Coletando",
     order_chop = "Derrubar",
@@ -1410,6 +1537,10 @@ localizations.values = {
     order_putOnClothing_inProgress = "Vestindo Roupa",
     order_takeOffClothing = "Tirar Roupa",
     order_takeOffClothing_inProgress = "Tirando Roupa",
+	order_giveMedicineToSelf = "Se Tratar", --0.3.0
+    order_giveMedicineToSelf_inProgress = "Se Tratando", --0.3.0
+    order_giveMedicineToOtherSapien = "Tratar", --0.3.0
+    order_giveMedicineToOtherSapien_inProgress = "Tratando", --0.3.0
 
     --resource
     resource_branch = "Galho",
@@ -1444,8 +1575,8 @@ localizations.values = {
     resource_deadChickenRotten_plural = "Carcaças de Galinha Podres",
     resource_deadAlpaca = "Carcaça de Alpaca",
     resource_deadAlpaca_plural = "Carcaças de Alpaca",
-    resource_chickenMeat = "Carne de Galinha",
-    resource_chickenMeat_plural = "Carnes de Galinha",
+    resource_chickenMeat = "Carne de Galinha Crua", --0.3.0 adicionado "Crua"
+    resource_chickenMeat_plural = "Carnes de Galinha Cruas", --0.3.0 adicionado "Crua"
     resource_chickenMeatCooked = "Carne de Galinha Cozida",
     resource_chickenMeatCooked_plural = "Carnes de Galinha Cozidas",
     resource_pumpkinCooked = "Abóbora Assada",
@@ -1456,8 +1587,8 @@ localizations.values = {
     resource_flatbread_plural = "Pães Pitas",
     resource_flatbreadRotten = "Pão Pita Mofado",
     resource_flatbreadRotten_plural = "Pães Pitas Mofados",
-    resource_alpacaMeat = "Carne de Alpaca",
-    resource_alpacaMeat_plural = "Carnes de Alpaca",
+    resource_alpacaMeat = "Carne de Alpaca Crua", --0.3.0 adicionado "Crua"
+    resource_alpacaMeat_plural = "Carnes de Alpaca Cruas", --0.3.0 adicionado "Crua"
     resource_alpacaMeatCooked = "Carne de Alpaca Cozida",
     resource_alpacaMeatCooked_plural = "Carnes de Alpaca Cozidas",
     resource_stoneSpear = "Lança de Pedra",
@@ -1532,6 +1663,38 @@ localizations.values = {
     resource_firedUrnFlour_plural = "Farinhas (Vasos Queimados)",
     resource_firedUrnFlourRotten = "Farinha Mofada (Vaso Queimado)",
     resource_firedUrnFlourRotten_plural = "Farinhas Mofadas (Vasos Queimados)",
+	
+	--0.3.0 added group start
+    resource_unfiredBowlWet = "Tigela não Queimada (Úmida)",
+    resource_unfiredBowlWet_plural = "Tigelas não Queimadas (Úmidas)",
+    resource_unfiredBowlDry = "Tigela não Queimada",
+    resource_unfiredBowlDry_plural = "Tigelas não Queimadas",
+    resource_firedBowl = "Tigela Queimada",
+    resource_firedBowl_plural = "Tigelas Queimadas",
+    
+    resource_unfiredBowlInjuryMedicine = "Medicamento para Ferimentos",
+    resource_unfiredBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
+    resource_unfiredBowlBurnMedicine = "Medicamento para Queimaduras",
+    resource_unfiredBowlBurnMedicine_plural = "Medicamentos para Queimaduras",
+    resource_unfiredBowlFoodPoisoningMedicine = "Medicamento para Intoxicações",
+    resource_unfiredBowlFoodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
+    resource_unfiredBowlVirusMedicine = "Medicamento contra Vírus",
+    resource_unfiredBowlVirusMedicine_plural = "Medicamentos contra Vírus",
+    resource_unfiredBowlMedicineRotten = "Medicamento Podre",
+    resource_unfiredBowlMedicineRotten_plural = "Medicamentos Podres",
+    
+    resource_firedBowlInjuryMedicine = "Medicamento para Ferimentos",
+    resource_firedBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
+    resource_firedBowlBurnMedicine = "Medicamento para Queimaduras",
+    resource_firedBowlBurnMedicine_plural = "Medicamentos para Queimaduras",
+    resource_firedBowlFoodPoisoningMedicine = "Medicamento para Intoxicações",
+    resource_firedBowlFoodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
+    resource_firedBowlVirusMedicine = "Medicamento contra Vírus",
+    resource_firedBowlVirusMedicine_plural = "Medicamentos contra Vírus",
+    resource_firedBowlMedicineRotten = "Medicamento Podre",
+    resource_firedBowlMedicineRotten_plural = "Medicamentos Podres",
+    --0.3.0 group end
+	
     resource_branch_rotten = "Galho Podre",
     resource_branch_rotten_plural = "Galhos Podres",
     resource_breadDough = "Massa de Pão",
@@ -1552,16 +1715,18 @@ localizations.values = {
     resource_mudTileDry_plural = "Ladrilhos não Queimados",
     resource_firedTile = "Ladrilho",
     resource_firedTile_plural = "Ladrilhos",
-    resource_mammothMeat = "Carne de Mamute",
-    resource_mammothMeat_plural = "Carnes de Mamute",
+    resource_mammothMeat = "Carne de Mamute Crua", --0.3.0 adicionado "Crua"
+    resource_mammothMeat_plural = "Carnes de Mamute Cruas", --0.3.0 adicionado "Crua"
     resource_mammothMeatCooked = "Carne de Mamute Cozida",
     resource_mammothMeatCooked_plural = "Carnes de Mamute Cozidas",
 
     --resource group
     resource_group_seed = "Semente",
     resource_group_seed_plural = "Sementes",
-    resource_group_container = "Recipiente",
-    resource_group_container_plural = "Recipientes",
+    resource_group_container = "Recipiente Grande", --0.3.0 adicionado "Grande"
+    resource_group_container_plural = "Recipientes Grandes", --0.3.0 adicionado "Grande"
+	resource_group_bowl = "Tigela", --0.3.0
+    resource_group_bowl_plural = "Tigelas", --0.3.0
     resource_group_campfireFuel = "Galho/Tronco/Combustível",
     resource_group_campfireFuel_plural = "Galhos/Troncos/Combustíveis",
     resource_group_kilnFuel = "Galho/Tronco/Combustível",
@@ -1575,6 +1740,17 @@ localizations.values = {
     resource_group_urnHulledWheat = "Trigo Descascado",
     resource_group_urnHulledWheat_plural = "Trigos Descascados",
 
+	--0.3.0 group:
+    resource_group_injuryMedicine = "Medicamento para Ferimentos",
+    resource_group_injuryMedicine_plural = "Medicamentos para Ferimentos",
+    resource_group_burnMedicine = "Medicamento para Queimaduras",
+    resource_group_burnMedicine_plural = "Medicamentos para Queimaduras",
+    resource_group_foodPoisoningMedicine = "Medicamento para Intoxicações",
+    resource_group_foodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
+    resource_group_virusMedicine = "Medicamento contra Vírus",
+    resource_group_virusMedicine_plural = "Medicamentos contra Vírus",
+    --0.3.0 group end
+	
     --desire
     desire_names_none = "Nenhum",
     desire_names_mild = "Um Pouco",
@@ -1634,11 +1810,44 @@ localizations.values = {
     statusEffect_optimist_name = "Otimista",
     statusEffect_optimist_description = "Efeito permanente causado pela personalidade otimista.",
     statusEffect_minorInjury_name = "Pequeno Ferimento",
-    statusEffect_minorInjury_description = "Apenas roxos e cortes. Curam naturalmente, mas podem infeccionar.",
+    statusEffect_minorInjury_description = "Apenas roxos e cortes. Curam naturalmente, mas podem infeccionar se não tratados.", --0.3.0 modificado para mencionar o tratamento
     statusEffect_majorInjury_name = "Ferimentos Graves",
-    statusEffect_majorInjury_description = "Pode se mover, mas não consegue trabalhar. Pode curar com o tempo ou se tornar crítico.",
+    statusEffect_majorInjury_description = "Pode se mover, mas não consegue trabalhar. Pode ser tratado mais rápido com medicamentos ou se tornar crítico.", --0.3.0 modificado para mencionar o tratamento
     statusEffect_criticalInjury_name = "Ferimento Crítico",
-    statusEffect_criticalInjury_description = "Ferimentos que representam risco à vida. Pode curar lentamente ou levar à morte.",
+	
+	--0.3.0 added group start:
+    statusEffect_minorBurn_name = "Queimadura Leve",
+    statusEffect_minorBurn_description = "Um pouco doloroso, mas deve curar sozinho. Pode ser tratado mais rapidamente com o medicamento correto.",
+    statusEffect_majorBurn_name = "Queimadura Grave",
+    statusEffect_majorBurn_description = "Impede algumas atividades. Talvez cure lentamente sem tratamento, mas pode se tornar crítico.",
+    statusEffect_criticalBurn_name = "Queimadura Crítica",
+    statusEffect_criticalBurn_description = "Queimadura de terceiro grau, pode ser letal.",
+    statusEffect_minorFoodPoisoning_name = "Intoxicação Alimentar Leve",
+    statusEffect_minorFoodPoisoning_description = "Deve passar sem problemas, mas não ficará pior se for tratado com o medicamento correto.",
+    statusEffect_majorFoodPoisoning_name = "Intoxicação Alimentar Grave",
+    statusEffect_majorFoodPoisoning_description = "N]ao consegue mais trabalhar. Talvez cure lentamente sem tratamento, mas pode se tornar crítico.",
+    statusEffect_criticalFoodPoisoning_name = "Intoxicação Alimentar Crítica",
+    statusEffect_criticalFoodPoisoning_description = "Pode levar à morte.",
+    statusEffect_minorVirus_name = "Sintomas Virais Leves",
+    statusEffect_minorVirus_description = "Um pequeno resfriado, deve curar sozinho, mas pode ficar pior ou infectar outros sapiens se não tratado.",
+    statusEffect_majorVirus_name = "Infecção Viral Grave",
+    statusEffect_majorVirus_description = "Impede algumas atividades. Pode se tornar crítico e infectará outros sapiens facilmente.",
+    statusEffect_criticalVirus_name = "Infecção Viral Crítica",
+    statusEffect_criticalVirus_description = "Extremamente infeccioso. Sem tratamento, pode levar à morte.",
+    statusEffect_hypothermia_name = "Hipotermia",
+    statusEffect_hypothermia_description = "Precisa se aquecer urgentemente ou morrerá em breve.",
+    
+    statusEffect_injuryTreated_name = "Ferimento tratado",
+    statusEffect_injuryTreated_description = "O ferimento foi tratado e se recuperará mais rapidamente.",
+    statusEffect_burnTreated_name = "Queimadura tratada",
+    statusEffect_burnTreated_description = "A queimadura foi tratada e se recuperará mais rapidamente.",
+    statusEffect_foodPoisoningTreated_name = "Intoxicação alimentar tratada",
+    statusEffect_foodPoisoningTreated_description = "Começando a se sentir melhor.",
+    statusEffect_virusTreated_name = "Infecção tratada",
+    statusEffect_virusTreated_description = "Se recuperando mais rapidamente por conta do medicamento correto.",
+    --0.3.0 group end
+	
+    statusEffect_criticalInjury_description = "Ferimentos que representam risco à vida. Pode curar lentamente, mas sem tratamento pode levar à morte.", --0.3.0 modificado para mencionar o tratamento
     statusEffect_unconscious_name = "Inconsiente",
     statusEffect_unconscious_description = "Não pode se mover.",
     statusEffect_wet_name = "Molhado",
@@ -1652,7 +1861,9 @@ localizations.values = {
 
     --negative
     statusEffect_hungry_name = "Faminto",
-    statusEffect_hungry_description = "Precisa de comida logo ou começará a morrer de fome.",
+    statusEffect_hungry_description = "Precisa de comida em breve.", --0.3.0 atualizado (não anotado no original)
+	statusEffect_veryHungry_name = "Muito Faminto", --0.3.0
+    statusEffect_veryHungry_description = "Precisa de comida logo ou começará a morrer de fome.", --0.3.0
     statusEffect_starving_name = "Morrendo de Fome",
     statusEffect_starving_description = "Precisa de comida desesperadamente.",
     statusEffect_sleptOnGround_name = "Dormiu no Chão",
@@ -1828,6 +2039,8 @@ localizations.values = {
     settings_Performance_grassDensity = "Densidade da Grama",
     settings_Performance_animatedObjectsCount = "Máximo de Objetos Animados",
     settings_Performance_ssao = "Oclusão de Ambiente",
+	settings_Performance_highQualityWater = "Reflexos na Água de Alta Qualidade", --0.3.0
+    settings_Performance_bloomEnabled = "Bloom", --0.3.0
     settings_Debug_display = "Exibição de Debug",
     settings_Debug_Cloud = "Nuvem",
     settings_Debug_setSunrise = "Definir como Manhã",
@@ -1861,13 +2074,14 @@ localizations.values = {
     ui_resources_decorations = "Colocar Decoração",
     ui_resources_eating = "Comer",
     ui_resources_tool = "Ferramenta ou Arma", --b13
+	ui_resources_medicine = "Medicamento", --0.3.0
 
     -- look at ui
     lookatUI_needs = "Necessidades",
     lookatUI_missingStorage = "Nenhuma área de armazenamento vazia ou com o mesmo item nas proximidades",
-    lookatUI_missingCraftArea = "Nenhuma área de criação nas proximidades",
-    lookatUI_missingCampfire = "Nenhuma fogueira acesa nas proximidades",
-    lookatUI_missingKiln = "Nenhum forno aceso nas proximidades",
+    lookatUI_missingCraftArea = "Nenhuma área de criação disponível nas proximidades",
+    lookatUI_missingCampfire = "Nenhuma fogueira acesa disponível nas proximidades",
+    lookatUI_missingKiln = "Nenhum forno aceso disponível nas proximidades", --0.3.0 adicionado "disponível"
     lookatUI_missingStorageAreaContainedObjects = "Nenhum item adequado guardado aqui",
     lookatUI_missingTaskAssignment = function(values)
         return "Nenhum sapien capaz possui a função \"" .. values.taskName .. "\""
@@ -1967,6 +2181,7 @@ localizations.values = {
     ui_plan_unavailable_missingKnowledge = "Conhecimento não Descoberto",
     ui_plan_unavailable_investigatedElsewhere = "Já está sendo investigado em outro lugar",
     ui_plan_unavailable_extinguishFirst = "Apague primeiro",
+	    ui_plan_unavailable_alreadyTreated = "Já Tratado", --0.3.0, para tarefas médicas, tratamento já foi dado
     
 
     -- ui buildMode
@@ -2116,7 +2331,7 @@ localizations.values = {
     misc_undiscovered = "Não Descoberto",
     misc_dry = "Seco",
     misc_newBreakthrough = "Nova Descoberta!",
-    misc_unlocks = "Desbloqueia",
+    misc_unlocks = "Desbloqueado", --0.3.0 alterado de "Desbloqueia"
     misc_pregnant = "Grávida",
     misc_carryingBaby = "Carregando Bebê",
     misc_unnamed = "Não Nomeado",
@@ -2216,6 +2431,8 @@ localizations.values = {
     sapienTrait_optimist_opposite = "Pessimista",
     sapienTrait_musical = "Musical",
     sapienTrait_musical_opposite = "Desafinado",
+	sapienTrait_immune = "Imunidade Forte", --0.3.0
+    sapienTrait_immune_opposite = "Imunidade Fraca", --0.3.0
 
     --skill
     skill_gathering = "Trabalho Geral",
@@ -2268,6 +2485,8 @@ localizations.values = {
     skill_woodWorking_description = "Criar coisas a partir de galhos e troncos.",
     skill_toolAssembly = "Construção de Ferramentas",
     skill_toolAssembly_description = "Criar ferramentas mais complexas combinando múltiplos componentes.",
+	skill_medicine = "Medicina", --0.3.0
+    skill_medicine_description = "Fazer e administrar cataplasmas e medicamentos para ajudar os feridos ou doentes.", --0.3.0
     skill_digging = "Escavação",
     skill_digging_description = "Escavar e preencher solo, arreia e argila.",
     skill_mining = "Mineração",
@@ -2276,7 +2495,7 @@ localizations.values = {
     skill_planting_description = "Plantar sementes para fazer árvores e plantas crescerem.",
     skill_threshing = "Debulha",
     skill_threshing_description = "Debulhar grãos para deixá-los prontos para moer ou cozinhar.",
-    skill_grinding = "Moagem",
+    skill_grinding = "Moagem de Grãos", --0.3.0 adicionado "de Grãos"
     skill_grinding_description = "Puverizar grãos para liberar as valiosas calorias escondidas dentro.",
 
     --storage
@@ -2291,6 +2510,11 @@ localizations.values = {
     storage_pineConeBig = "Pinhas Grandes",
     storage_deadChicken = "Carcaças de Galinha",
     storage_beetroot = "Beterrabas",
+	storage_flower = "Flores", --0.3.0
+    storage_gingerRoot = "Raízes de Gengibre", --0.3.0
+    storage_turmericRoot = "Raízes de Cúrcuma", --0.3.0
+    storage_garlic = "Alho", --0.3.0
+    storage_aloeLeaf = "Folhas de Babosa", --0.3.0
     storage_wheat = "Trigo",
     storage_flax = "Linho",
     storage_knife = "Facas",
@@ -2314,12 +2538,14 @@ localizations.values = {
     storage_hayGrass = "Feno",
     storage_deadAlpaca = "Carcaças de Alpaca",
     storage_apple = "Maçãs",
+    storage_elderberry = "Sabugos", --0.3.0
     storage_banana = "Bananas",
     storage_coconut = "Cocos",
     storage_alpacaMeat = "Carnes de Alpaca",
     storage_gooseberry = "Groselhas",
     storage_pumpkin = "Abóboras",
     storage_urn = "Vasos",
+	storage_bowl = "Tigelas", --0.3.0
     storage_quernstone = "Pilões de Pedra",
     storage_breadDough = "Massas de Pão",
     storage_brick = "Tijolos",
@@ -2355,6 +2581,7 @@ localizations.values = {
     evolution_time_fewDays = "em alguns dias",
     evolution_time_nextYear = "no próximo ano",
     evolution_time_fewYears = "em alguns anos",
+	evolution_time_whenUsable = "quando uso for permitido", --0.3.0. Ficará no estado atual até que "Permitir Uso" seja selecionado
     evolution_timeFunc = function(values)
         return values.actionName .. " " .. values.time
     end,
@@ -2405,6 +2632,7 @@ localizations.values = {
     key_game_radialMenuShortcut3 = "Atalho 3 do Menu Radial",
     key_game_radialMenuShortcut4 = "Atalho 4 do Menu Radial",
     key_game_radialMenuShortcut5 = "Atalho 5 do Menu Radial",
+	key_game_radialMenuShortcut6 = "Atalho 6 do Menu Radial", --0.3.0
     key_game_radialMenuAutomateModifier = "Modificador do Atalho do Menu Radial",
     key_game_radialMenuDeconstruct = "Atalho para Remover/Destruir do Menu Radial",
     key_game_zoomModifier = "Modificador de Zoom no Clique",
@@ -2507,7 +2735,7 @@ localizations.values = {
         return values .. " cresceu"
     end,
     notification_died = function(values)
-        return values.name .. " morreu. Motivo: " .. values.deathReason
+        return values.name .. " morreu de " .. string.lower(values.deathReason) --0.3.0 alterado de "morreu. Motivo: "
     end,
     notification_left = function(values)
         return values.name .. " deixou a tribo."
@@ -2527,22 +2755,28 @@ localizations.values = {
     notification_discovery = function(values)
         return "Sua tribo agora sabe " .. values.skillName .. "!"
     end,
+	notification_craftableDiscovery = function(values) --0.3.0
+        return "Sua tribo descobriu como fazer " .. values.craftablePlural .. "!"
+    end,
     notification_researchNearlyDone = function(values)
         return "Descoberta quase completa!"
     end,
     notification_mammothKill = function(values)
         return values.name .. " matou um mamute"
     end,
-    notification_minorInjuryByMob = function(values)
+	
+	
+    --[[notification_minorInjuryByMob = function(values) --0.3.0 estes foram removidos, substituídos por notification_triggerActionHuntingMob combinado com notification_minorInjury
         return values.name .. " foi ferido por um " .. values.mobTypeName
-    end,
-    --b13
+    end
     notification_majorInjuryByMob = function(values)
         return values.name .. " foi gravemente ferido por um " .. values.mobTypeName
     end,
     notification_criticalInjuryByMob = function(values)
         return values.name .. " foi criticamente ferido por um " .. values.mobTypeName
-    end,
+    end,]]
+	
+	--b13
     notification_majorInjuryDeveloped = function(values)
         return "O ferimento de " .. values.name .. "se tornou grave"
     end,
@@ -2550,6 +2784,134 @@ localizations.values = {
         return "O ferimento de " .. values.name .. "se tornou crítico"
     end,
     --/b13
+	
+	--0.3.0
+    notification_triggerActionCrafting = function(values)
+        return "criava " .. string.lower(values.craftablePlural)
+    end,
+    notification_triggerActionResearching = function(values)
+        return "pesquisava"
+    end,
+    notification_triggerActionDeliveringFuel = function(values)
+        return "levava combustível para " .. string.lower(values.objectName)
+    end,
+    notification_triggerActionHuntingMob = function(values)
+        return "caçava " .. string.lower(values.mobTypeName)
+    end,
+    notification_triggerActionBasic = function(values)  --values.actionName is also available
+        return string.lower(values.actionInProgress)
+    end,
+    
+    notification_minorInjury = function(values)
+        return values.name .. " se feriu enquanto " .. values.triggerAction
+    end,
+    notification_majorInjury = function(values)
+        return values.name .. " se feriu gravemente enquanto " .. values.triggerAction
+    end,
+    notification_criticalInjury = function(values)
+        return values.name .. " se feriu criticamente enquanto " .. values.triggerAction
+    end,
+    notification_minorBurn = function(values)
+        return values.name .. " se queimou enquanto " .. values.triggerAction
+    end,
+    notification_majorBurn = function(values)
+        return values.name .. " se queimou gravemente enquanto " .. values.triggerAction
+    end,
+    notification_criticalBurn = function(values)
+        return values.name .. " se queimou criticamente enquanto " .. values.triggerAction
+    end,
+    notification_majorBurnDeveloped = function(values)
+        return "A queimadura de " .. values.name .. " se tornou grave"
+    end,
+    notification_criticalBurnDeveloped = function(values)
+        return "A queimadura de " .. values.name .. " se tornou crítica"
+    end,
+    notification_minorFoodPoisoning = function(values)
+        return values.name .. " ficou com o estômago irritado ao comer " .. values.resourceName
+    end,
+    notification_minorFoodPoisoningFromContamination = function(values)
+        return values.name .. " ficou com o estômago irritado ao comer " .. values.resourceName .. " contaminado por " .. values.contaminationResourceName
+    end,
+    notification_majorFoodPoisoningDeveloped = function(values)
+        return values.name .. " está com um caso grave de intoxicação alimentar"
+    end,
+    notification_criticalFoodPoisoningDeveloped = function(values)
+        return values.name .. " está criticamente doente por intoxicação alimentar"
+    end,
+    notification_minorVirus = function(values)
+        return values.name .. " pegou um vírus e está com sintomas leves"
+    end,
+    notification_majorVirusDeveloped = function(values)
+        return "Os sintomas de " .. values.name .. " pioraram, uma infecção grave se desenvolveu"
+    end,
+    notification_criticalVirusDeveloped = function(values)
+        return values.name .. " está criticamente doente devido à infecção viral"
+    end,
+    notification_starving = function(values)
+        return values.name .. " está morrendo de fome"
+    end,
+    notification_starvingRemoved = function(values)
+        return values.name .. " não está mais morrendo de fome"
+    end,
+    notification_veryHungry = function(values)
+        return values.name .. " está muito faminto"
+    end,
+    notification_veryHungryRemoved = function(values)
+        return values.name .. " não está mais muito faminto"
+    end,
+    notification_hypothermia = function(values)
+        return values.name .. " está com hipotermia"
+    end,
+    notification_hypothermiaRemoved = function(values)
+        return values.name .. " não está mais com hipotermia"
+    end,
+
+    notification_minorInjuryHealed = function(values)
+        return "O ferimento de " .. values.name .. " se curou completamente"
+    end,
+    notification_majorInjuryBecameMinor = function(values)
+        return "O ferimento de " .. values.name .. " está melhorando"
+    end,
+    notification_criticalInjuryBecameMajor = function(values)
+        return "O ferimento de " .. values.name .. " não é mais crítica"
+    end,
+    notification_minorBurnHealed = function(values)
+        return "A queimadura de " .. values.name .. " se curou completamente"
+    end,
+    notification_majorBurnBecameMinor = function(values)
+        return "A queimadura de " .. values.name .. " está melhorando"
+    end,
+    notification_criticalBurnBecameMajor = function(values)
+        return "A queimadura de " .. values.name .. " não é mais crítica"
+    end,
+    notification_minorFoodPoisoningHealed = function(values)
+        return "A intoxicação alimentar de " .. values.name .. " se curou completamente"
+    end,
+    notification_majorFoodPoisoningBecameMinor = function(values)
+        return "A intoxicação alimentar de " .. values.name .. " está melhorando"
+    end,
+    notification_criticalFoodPoisoningBecameMajor = function(values)
+        return "A intoxicação alimentar de " .. values.name .. " não é mais crítica"
+    end,
+    notification_minorVirusHealed = function(values)
+        return values.name .. " não está mais doente nem infectando outros"
+    end,
+    notification_majorVirusBecameMinor = function(values)
+        return "A infecção viral de " .. values.name .. " está melhorando"
+    end,
+    notification_criticalVirusBecameMajor = function(values)
+        return "A infecção viral de " .. values.name .. " não é mais crítica"
+    end,
+
+    deathReason_criticalInjury = "Ferimento Crítico",
+    deathReason_oldAge = "Velhice",
+    deathReason_burn = "Queimadura Crítica",
+    deathReason_foodPoisoning = "Intoxicação Alimentar",
+    deathReason_virus = "Infecção Viral", 
+    deathReason_starvation = "Fome", 
+    deathReason_hypothermia = "Hipotermia",
+    
+    --/0.3.0
 
     -- menues
     menu_createWorld = "Criar Mundo",
@@ -2605,6 +2967,7 @@ Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalm
     mods_idReceived = "ID recebido. Ao enviar este item, você concorda com os termos de serviço da workshop em:\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement\nClique em enviar para atualizar os arquivos do mod na Steam.",
     mods_failedToSaveID = "Falha ao salvar o ID Steam para",
     mods_failedToAddToSteam = "Falha ao adicionar à Steam.",
+	mods_replaceDescription = "Enviar informações atualizadas (ex.: descrição) de modInfo.lua", --0.3.0
     mods_UploadToSteam = "Enviar à Steam",
     mods_Uploadcomplete = "Envio completo.",
     mods_failedToUploadToSteam = "Falha ao enviar à Steam.",
@@ -2777,7 +3140,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_title_music = "Tocando Música",
     tutorial_music_storyText = "Música deixa os sapiens mais felizes e leais. Sapiens musicais podem ficar tristes se ficarem sem escutar ou tocar música por muito tempo.",
     tutorial_music_discoverBoneCarving = "Descubra artesanato com ossos",
-    tutorial_music_playFlute = "Toque uma flauta",
+    tutorial_music_playFlute = "Toque um instrumento musical", --0.3.0 alterado para "instrumento musical" já que tambores e xilofones agora também contam para completar
     
     -- routes
     tutorial_title_routes = "Rotas e Logística",
@@ -2801,7 +3164,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_woodBuilding_storyText = "Cabanas de palha são melhores que nada, mas sua tribo vai precisar começar a construir com materiais mais avançados se quiser que sua civilização passe no teste do tempo.",
     tutorial_woodBuilding_chopTree = "Derrubar uma árvore",
     tutorial_woodBuilding_splitLog = "Cortar um tronco",
-    tutorial_woodBuilding_buildWall = "Construir uma parede de troncos cortados",
+    tutorial_woodBuilding_buildWall = "Construir algo usando troncos cortados", --0.3.0 alterado de "Construir uma parede" já que agora qualquer construção conta
     -- advancedTools
     tutorial_title_advancedTools = "Criando Ferramentas Avançadas",
     tutorial_advancedTools_storyText = "Juntando ferramentas de pedra simples com um cabo, sua tribo pode criar ferramentas mais avançadas que duram mais, fazem tarefas mais rapidamente e desbloqueiam a habilidade de caçar presas maiores.",
@@ -2887,8 +3250,6 @@ As vozes em Sapiens são em "toki pona", a língua construída por Sonja Lang - 
 Muito obrigado pelo enorme suporte, teste, feedback e ajuda de muitos outros. Um agradecimento especialmente grande aos testadores da alpha e também aos membros da comunidade do Discord e aqueles que deram feedback nos vídeos de devlog no YouTube. Eu não teria feito Sapiens sem vocês.
 
 E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à nossa família durante este longo período de desenvolvimento, sacrificando a sua própria carreira para que eu pudesse ter o tempo para trabalhar na minha. Este jogo inteiro é o resultado do trabalho duro da Emma, seu sacrifício e dedicação, assim como o meu.
-
-Traduzido por Jonas Costa Campos
 ]],
 
     -- orderStatus
@@ -2952,6 +3313,36 @@ Traduzido por Jonas Costa Campos
         return values.planText .. " " .. values.retrievedObjectConstructableTypeName
     end,
     --/b13
+	
+	--0.3.0
+    
+    orderStatus_butchering = "cortando",
+
+    orderStatus_getObjectNameSingleGeneric = function(values) --for things without names. eg chopping "a coconut tree"
+        return "Um " .. values.objectName
+    end,
+    orderStatus_getObjectNameSingleNamed = function(values) -- for named things eg. hunting "Sam The Mammoth"
+        return values.objectName
+    end,
+    orderStatus_getObjectNamePlural = function(values) 
+        return values.objectPlural
+    end,
+
+    orderStatus_addObjectNameSingleGeneric = function(values) --for things without names. eg chopping "a coconut tree"
+        return values.inProgressName .. "um " .. values.objectName
+    end,
+    orderStatus_addObjectNameSingleNamed = function(values) -- for named things eg. hunting "Sam The Mammoth"
+        return values.inProgressName .. " " .. values.objectName
+    end,
+    orderStatus_addObjectNamePlural = function(values) 
+        return values.inProgressName .. " " .. values.objectPlural
+    end,
+
+    -- 0.3.3
+    orderStatus_addWarmingUp = function(values) 
+        return values.currentText .. " (Aquecendo)"
+    end,
+    --/0.3.0
 }
 
 local function getTimeSplit(durationSeconds, dayLength, yearLength)
