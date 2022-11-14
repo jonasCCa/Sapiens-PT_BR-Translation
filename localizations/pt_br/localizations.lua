@@ -2795,8 +2795,8 @@ localizations.values = {
     notification_triggerActionDeliveringFuel = function(values)
         return "levava combustível para " .. string.lower(values.objectName)
     end,
-    notification_triggerActionHuntingMob = function(values)
-        return "caçava " .. string.lower(values.mobTypeName)
+    notification_triggerActionHuntingMob = function(values) --0.3.6 modificado
+        return "caçava um(a) " .. string.lower(values.mobTypeName)
     end,
     notification_triggerActionBasic = function(values)  --values.actionName is also available
         return string.lower(values.actionInProgress)
@@ -2811,6 +2811,17 @@ localizations.values = {
     notification_criticalInjury = function(values)
         return values.name .. " se feriu criticamente enquanto " .. values.triggerAction
     end,
+	
+	notification_minorInjuryBy = function(values) --0.3.6 adicionado
+        return values.name .. " se feriu com um(a) " .. string.lower(values.objectName)
+    end,
+    notification_majorInjuryBy = function(values) --0.3.6 adicionado
+        return values.name .. " se feriu gravemente com um(a) " .. string.lower(values.objectName)
+    end,
+    notification_criticalInjuryBy = function(values) --0.3.6 adicionado
+        return values.name .. " se feriu criticamente com um(a) " .. string.lower(values.objectName)
+    end,
+	
     notification_minorBurn = function(values)
         return values.name .. " se queimou enquanto " .. values.triggerAction
     end,
