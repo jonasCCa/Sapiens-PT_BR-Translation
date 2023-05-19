@@ -1156,6 +1156,8 @@ localizations.values = {
     object_dirtWallDoor_plural = "Parede de Terra com Porta",
     object_build_storageArea = "Área de Armazenamento",
     object_build_storageArea_plural = "Áreas de Armazenamento",
+	object_build_compostBin = "Composteira", --0.4
+    object_build_compostBin_plural = "Composteiras", --0.4
     object_aspenSplitLog = "Tronco Cortado de Álamo",
     object_aspenSplitLog_plural = "Troncos Cortados de Álamo",
     object_dirtRoof = "Telhado de Terra",
@@ -1178,6 +1180,10 @@ localizations.values = {
     object_splitLogFloor_plural = "Chãos de Tronco Cortado 2x2",
     object_splitLogFloor4x4 = "Chão de Tronco Cortado 4x4",
     object_splitLogFloor4x4_plural = "Chãos de Tronco Cortado 4x4",
+	object_splitLogFloorTri2 = "Chão Triangular de Tronco Cortado", --0.4
+    object_splitLogFloorTri2_plural = "Chãos Triangulares de Tronco Cortado", --0.4
+    object_build_splitLogFloorTri2 = "Chão Triangular de Tronco Cortado", --0.4
+    object_build_splitLogFloorTri2_plural = "Chãos Triangulares de Tronco Cortado", --0.4
     object_mudBrickFloor2x2 = "Chão de Tijolos de Barro 2x2",
     object_mudBrickFloor2x2_plural = "Chãos de Tijolos de Barro 2x2",
     object_build_mudBrickFloor2x2 = "Chão de Tijolos de Barro 2x2",
@@ -1186,6 +1192,10 @@ localizations.values = {
     object_mudBrickFloor4x4_plural = "Chãos de Tijolos de Barro 4x4",
     object_build_mudBrickFloor4x4 = "Chão de Tijolos de Barro 4x4",
     object_build_mudBrickFloor4x4_plural = "Chãos de Tijolos de Barro 4x4",
+	object_mudBrickFloorTri2 = "Chão Triangular de Tijolos de Barro", --0.4
+    object_mudBrickFloorTri2_plural = "Chãos Triangulares de Tijolos de Barro", --0.4
+    object_build_mudBrickFloorTri2 = "Chão Triangular de Tijolos de Barro", --0.4
+    object_build_mudBrickFloorTri2_plural = "Chãos Triangulares de Tijolos de Barro", --0.4
     object_tileFloor2x2 = "Chão de Ladrilho 2x2",
     object_tileFloor2x2_plural = "Chãos de Ladrilho 2x2",
     object_build_tileFloor2x2 = "Chão de Ladrilho 2x2",
@@ -1208,16 +1218,70 @@ localizations.values = {
     object_splitLogSteps_plural = "Escadas de Tronco Cortado 2x3 Um Andar",
     object_splitLogSteps2x2 = "Escada de Tronco Cortado 2x2 Meio Andar",
     object_splitLogSteps2x2_plural = "Escadas de Tronco Cortado 2x2 Meio Andar",
+	object_splitLogRoofSlope = "Seção Inclinada de Telhado de Tronco Cortado", --0.4
+    object_splitLogRoofSlope_plural = "Seções Inclinadas de Telhado de Tronco Cortado", --0.4
+    object_build_splitLogRoofSlope = "Seção Inclinada de Telhado de Tronco Cortado", --0.4
+    object_build_splitLogRoofSlope_plural = "Seções Inclinadas de Telhado de Tronco Cortado", --0.4
+    object_splitLogRoofSmallCorner = "Canto de Telhado de Tronco Cortado", --0.4
+    object_splitLogRoofSmallCorner_plural = "Cantos de Telhado de Tronco Cortado", --0.4
+    object_build_splitLogRoofSmallCorner = "Canto de Telhado de Tronco Cortado", --0.4
+    object_build_splitLogRoofSmallCorner_plural = "Cantos de Telhado de Tronco Cortado", --0.4
+    object_splitLogRoofSmallCornerInside = "Canto Interno de Telhado de Tronco Cortado", --0.4
+    object_splitLogRoofSmallCornerInside_plural = "Cantos Internos de Telhado de Tronco Cortado", --0.4
+    object_build_splitLogRoofSmallCornerInside = "Canto Interno de Telhado de Tronco Cortado", --0.4
+    object_build_splitLogRoofSmallCornerInside_plural = "Cantos Internos de Telhado de Tronco Cortado", --0.4
+    object_splitLogRoofTriangle = "Telhado de Tronco Cortado Triangular", --0.4
+    object_splitLogRoofTriangle_plural = "Telhados de Tronco Cortado Triangulares", --0.4
+    object_build_splitLogRoofTriangle = "Telhado de Tronco Cortado Triangular", --0.4
+    object_build_splitLogRoofTriangle_plural = "Telhados de Tronco Cortado Triangulares", --0.4
+    object_splitLogRoofInvertedTriangle = "Telhado de Tronco Cortado Triangular Invertido", --0.4
+    object_splitLogRoofInvertedTriangle_plural = "Telhados de Tronco Cortado Triangulares Invertidos", --0.4
+    object_build_splitLogRoofInvertedTriangle = "Telhado de Tronco Cortado Triangular Invertido", --0.4
+    object_build_splitLogRoofInvertedTriangle_plural = "Telhados de Tronco Cortado Triangulares Invertidos", --0.4
     object_stick = "Graveto",
     object_stick_plural = "Gravetos",
     object_build_thatchRoof = "Telhado de Palha",
     object_build_thatchRoof_plural = "Telhados de Palha",
+	object_build_thatchRoofSlope = "Seção Inclindada de Telhado de Palha", --0.4
+    object_build_thatchRoofSlope_plural = "Seções Inclindadas de Telhado de Palha", --0.4
+    object_build_thatchRoofSmallCorner = "Seção Inclindada de Telhado de Palha", --0.4
+    object_build_thatchRoofSmallCorner_plural = "Seções Inclindadas de Telhado de Palha", --0.4
+    object_build_thatchRoofSmallCornerInside = "Canto Interno de Telhado de Palha", --0.4
+    object_build_thatchRoofSmallCornerInside_plural = "Cantos Internos de Telhado de Palha", --0.4
+    object_build_thatchRoofTriangle = "Telhado de Palha Triangular", --0.4
+    object_build_thatchRoofTriangle_plural = "Telhados de Palha Triangulares", --0.4
+    object_build_thatchRoofInvertedTriangle = "Telhado de Palha Triangular Invertido", --0.4
+    object_build_thatchRoofInvertedTriangle_plural = "Telhados de Palha Triangulares Invertidos", --0.4
     object_build_thatchRoofLarge = "Telhado Grande de Palha",
     object_build_thatchRoofLarge_plural = "Telhados Grandes de Palha",
     object_build_thatchRoofLargeCorner = "Canto de Telhado Grande de Palha",
     object_build_thatchRoofLargeCorner_plural = "Cantos de Telhado Grande de Palha",
     object_build_tileRoof = "Cabana/Telhado de Ladrilho",
     object_build_tileRoof_plural = "Cabanas/Telhados de Ladrilho",
+	object_tileRoofSlope = "Seção Inclinada de Telhado de Ladrilho", --0.4
+    object_tileRoofSlope_plural = "Seções Inclinadas de Telhado de Ladrilho", --0.4
+    object_build_tileRoofSlope = "Seção Inclinada de Telhado de Ladrilho", --0.4
+    object_build_tileRoofSlope_plural = "Seções Inclinadas de Telhado de Ladrilho", --0.4
+    object_tileRoofSmallCorner = "Canto de Telhado de Ladrilho", --0.4
+    object_tileRoofSmallCorner_plural = "Cantos de Telhado de Ladrilho", --0.4
+    object_build_tileRoofSmallCorner = "Canto de Telhado de Ladrilho", --0.4
+    object_build_tileRoofSmallCorner_plural = "Cantos de Telhado de Ladrilho", --0.4
+    object_tileRoofSmallCornerInside = "Canto Interno de Telhado de Ladrilho", --0.4
+    object_tileRoofSmallCornerInside_plural = "Cantos Internos de Telhado de Ladrilho", --0.4
+    object_build_tileRoofSmallCornerInside = "Canto Interno de Telhado de Ladrilho", --0.4
+    object_build_tileRoofSmallCornerInside_plural = "Cantos Internos de Telhado de Ladrilho", --0.4
+    object_tileRoofTriangle = "Telhado de Ladrilho Triangular", --0.4
+    object_tileRoofTriangle_plural = "Telhados de Ladrilho Triangulares", --0.4
+    object_build_tileRoofTriangle = "Telhado de Ladrilho Triangular", --0.4
+    object_build_tileRoofTriangle_plural = "Telhados de Ladrilho Triangulares", --0.4
+    object_tileRoofInvertedTriangle = "Telhado de Ladrilho Triangular Invertido", --0.4
+    object_tileRoofInvertedTriangle_plural = "Telhados de Ladrilho Triangulares Invertidos", --0.4
+    object_build_tileRoofInvertedTriangle = "Telhado de Ladrilho Triangular Invertido", --0.4
+    object_build_tileRoofInvertedTriangle_plural = "Telhados de Ladrilho Triangulares Invertidos", --0.4
+    object_tileFloorTri2 = "Chão Triangular de Ladrilho", --0.4
+    object_tileFloorTri2_plural = "Chãos Triangulares de Ladrilho", --0.4
+    object_build_tileFloorTri2 = "Chão Triangular de Ladrilho", --0.4
+    object_build_tileFloorTri2_plural = "Chãos Triangulares de Ladrilho", --0.4
     object_dirtWall = "Parede de Terra",
     object_dirtWall_plural = "Paredes de Terra",
     object_alpacaWoolskin = "Lã de Alpaca",
@@ -1232,24 +1296,126 @@ localizations.values = {
     object_rockSmall_plural = "Pedras Pequenas",
     object_rockLarge = "Rocha",
     object_rockLarge_plural = "Rochas",
+	object_stoneBlock = "Bloco de Pedra", --0.4,
+    object_stoneBlock_plural = "Blocos de Pedra", --0.4
+    object_stoneTile = "Ladrilho de Pedra", --0.4,
+    object_stoneTile_plural = "Ladrilhos de Pedra", --0.4
+	
     object_limestoneRock = "Pedra de Calcário",
     object_limestoneRock_plural = "Pedras de Calcário",
     object_limestoneRockSmall = "Pedra Pequena de Calcário",
     object_limestoneRockSmall_plural = "Pedras Pequenas de Calcário",
     object_limestoneRockLarge = "Rocha de Calcário",
     object_limestoneRockLarge_plural = "Rochas de Calcário",
+	object_limestoneRockBlock = "Bloco de Calcário", --0.4
+    object_limestoneRockBlock_plural = "Blocos de Calcário", --0.4
+    object_stoneTile_limestone = "Ladrilho de Calcário", --0.4,
+    object_stoneTile_limestone_plural = "Ladrilhos de Calcário", --0.4
+	
     object_redRock = "Pedra Vermelha",
     object_redRock_plural = "Pedras Vermelhas",
     object_redRockSmall = "Pedra Pequena Vermelha",
     object_redRockSmall_plural = "Pedras Pequenas Vermelhas",
     object_redRockLarge = "Rocha de Pedra Vermelha",
     object_redRockLarge_plural = "Rocha de Pedra Vermelha",
+	object_redRockBlock = "Bloco de Pedra Vermelha", --0.4
+    object_redRockBlock_plural = "Blocos de Pedra Vermelha", --0.4
+    object_stoneTile_redRock = "Ladrilho de Pedra Vermelha", --0.4,
+    object_stoneTile_redRock_plural = "Ladrilhos de Pedra Vermelha", --0.4
+	
     object_greenRock = "Pedra Verde",
     object_greenRock_plural = "Pedras Verdes",
     object_greenRockSmall = "Pedra Pequena Verde",
     object_greenRockSmall_plural = "Pedras Pequenas Verdes",
     object_greenRockLarge = "Rocha de Pedra Verde",
     object_greenRockLarge_plural = "Rochas de Pedra Verde",
+	object_greenRockBlock = "Bloco de Pedra Verde", --0.4
+    object_greenRockBlock_plural = "Blocos de Pedra Verde", --0.4
+    object_stoneTile_greenRock = "Ladrilho de Pedra Verde", --0.4
+    object_stoneTile_greenRock_plural = "Ladrilhos de Pedra Verde", --0.4
+	
+	--0.4 added group start
+    
+    object_graniteRock = "Pedra de Granito",
+    object_graniteRock_plural = "Pedras de Granito",
+    object_graniteRockSmall = "Pedra Pequena de Granito",
+    object_graniteRockSmall_plural = "Pedras Pequenas de Granito",
+    object_graniteRockLarge = "Rocha de Granito",
+    object_graniteRockLarge_plural = "Rochas de Granito",
+    object_graniteRockBlock = "Bloco de Granito",
+    object_graniteRockBlock_plural = "Blocos de Granito",
+    object_stoneTile_graniteRock = "Ladrilho de Granito",
+    object_stoneTile_graniteRock_plural = "Ladrilhos de Granito",
+    
+    
+    object_marbleRock = "Pedra de Mármore",
+    object_marbleRock_plural = "Pedras de Mármore",
+    object_marbleRockSmall = "Pedra Pequena de Mármore",
+    object_marbleRockSmall_plural = "Pedras Pequenas de Mármore",
+    object_marbleRockLarge = "Rocha de Mármore",
+    object_marbleRockLarge_plural = "Rochas de Mármore",
+    object_marbleRockBlock = "Bloco de Mármore",
+    object_marbleRockBlock_plural = "Blocos de Mármore",
+    object_stoneTile_marbleRock = "Ladrilho de Mármore",
+    object_stoneTile_marbleRock_plural = "Ladrilhos de Mármore",
+
+    object_lapisRock = "Pedra de Lápis-Lazúli",
+    object_lapisRock_plural = "Pedras de Lápis-Lazúli",
+    object_lapisRockSmall = "Pedra Pequena de Lápis-Lazúli",
+    object_lapisRockSmall_plural = "Pedras Pequenas de Lápis-Lazúli",
+    object_lapisRockLarge = "Rocha de Lápis-Lazúli",
+    object_lapisRockLarge_plural = "Rochas de Lápis-Lazúli",
+    object_lapisRockBlock = "Bloco de Lápis-Lazúli",
+    object_lapisRockBlock_plural = "Blocos de Lápis-Lazúli",
+    object_stoneTile_lapisRock = "Ladrilho de Lápis-Lazúli",
+    object_stoneTile_lapisRock_plural = "Ladrilhos de Lápis-Lazúli",
+
+    object_sandstoneYellowRock = "Pedra de Arenito (Amarelo)",
+    object_sandstoneYellowRock_plural = "Pedras de Arenito (Amarelo)",
+    object_sandstoneYellowRockSmall = "Pedra Pequena de Arenito (Amarelo)",
+    object_sandstoneYellowRockSmall_plural = "Pedras Pequenas de Arenito (Amarelo)",
+    object_sandstoneYellowRockLarge = "Rocha de Arenito (Amarelo)",
+    object_sandstoneYellowRockLarge_plural = "Rochas de Arenito (Amarelo)",
+    object_sandstoneYellowRockBlock = "Bloco de Arenito (Amarelo)",
+    object_sandstoneYellowRockBlock_plural = "Blocos de Arenito (Amarelo)",
+    object_stoneTile_sandstoneYellowRock = "Ladrilho de Arenito (Amarelo)",
+    object_stoneTile_sandstoneYellowRock_plural = "Ladrilhos de Arenito (Amarelo)",
+
+    object_sandstoneRedRock = "Pedra de Arenito (Vermelho)",
+    object_sandstoneRedRock_plural = "Pedras de Arenito (Vermelho)",
+    object_sandstoneRedRockSmall = "Pedra Pequena de Arenito (Vermelho)",
+    object_sandstoneRedRockSmall_plural = "Pedras Pequenas de Arenito (Vermelho)",
+    object_sandstoneRedRockLarge = "Rocha de Arenito (Vermelho)",
+    object_sandstoneRedRockLarge_plural = "Rochas de Arenito (Vermelho)",
+    object_sandstoneRedRockBlock = "Bloco de Arenito (Vermelho)",
+    object_sandstoneRedRockBlock_plural = "Blocos de Arenito (Vermelho)",
+    object_stoneTile_sandstoneRedRock = "Ladrilho de Arenito (Vermelho)",
+    object_stoneTile_sandstoneRedRock_plural = "Ladrilhos de Arenito (Vermelho)",
+
+    object_sandstoneOrangeRock = "Pedra de Arenito (Laranja)",
+    object_sandstoneOrangeRock_plural = "Pedras de Arenito (Laranja)",
+    object_sandstoneOrangeRockSmall = "Pedra Pequena de Arenito (Laranja)",
+    object_sandstoneOrangeRockSmall_plural = "Pedras Pequenas de Arenito (Laranja)",
+    object_sandstoneOrangeRockLarge = "Rocha de Arenito (Laranja)",
+    object_sandstoneOrangeRockLarge_plural = "Rochas de Arenito (Laranja)",
+    object_sandstoneOrangeRockBlock = "Bloco de Arenito (Laranja)",
+    object_sandstoneOrangeRockBlock_plural = "Blocos de Arenito (Laranja)",
+    object_stoneTile_sandstoneOrangeRock = "Ladrilho de Arenito (Laranja)",
+    object_stoneTile_sandstoneOrangeRock_plural = "Ladrilhos de Arenito (Laranja)",
+
+    object_sandstoneBlueRock = "Pedra de Arenito (Azul)",
+    object_sandstoneBlueRock_plural = "Pedras de Arenito (Azul)",
+    object_sandstoneBlueRockSmall = "Pedra Pequena de Arenito (Azul)",
+    object_sandstoneBlueRockSmall_plural = "Pedras Pequenas de Arenito (Azul)",
+    object_sandstoneBlueRockLarge = "Rocha de Arenito (Azul)",
+    object_sandstoneBlueRockLarge_plural = "Rochas de Arenito (Azul)",
+    object_sandstoneBlueRockBlock = "Bloco de Arenito (Azul)",
+    object_sandstoneBlueRockBlock_plural = "Blocos de Arenito (Azul)",
+    object_stoneTile_sandstoneBlueRock = "Ladrilho de Arenito (Azul)",
+    object_stoneTile_sandstoneBlueRock_plural = "Ladrilhos de Arenito (Azul)",
+
+    --0.4 group end
+	
     object_chickenMeatBreast = "Carne de Galinha Crua", --0.3.0 adicionado "Crua"
     object_chickenMeatBreast_plural = "Carnes de Galinha Cruas", --0.3.0 adicionado "Crua"
     object_birchWoodenPole = "Poste de Madeira de Bétula",
@@ -1316,6 +1482,18 @@ localizations.values = {
     object_flint_plural = "Sílices",
     object_clay = "Argila",
     object_clay_plural = "Argilas",
+	object_copperOre = "Minério de Cobre", --0.4
+    object_copperOre_plural = "Minérios de Cobre", --0.4
+    object_tinOre = "Minério de Estanho", --0.4
+    object_tinOre_plural = "Minérios de Estanho", --0.4
+    object_manure = "Estrume", --0.4
+    object_manure_plural = "Estrume", --0.4
+    object_manureRotten = "Estrume Podre", --0.4
+    object_manureRotten_plural = "Estrumes Podres", --0.4
+    object_rottenGoo = "Gosma Podre", --0.4
+    object_rottenGoo_plural = "Gosmas Podres", --0.4
+    object_compost = "Adubo", --0.4
+    object_compost_plural = "Adubos", --0.4
     object_build_craftArea = "Área de Criação",
     object_build_craftArea_plural = "Áreas de Criação",
     object_build_dirtWallDoor = "Parede de Terra com Porta",
@@ -1328,10 +1506,20 @@ localizations.values = {
     object_stoneKnife_redRock_plural = "Facas de Pedra Vermelha",
     object_stoneKnife_greenRock = "Faca de Pedra Verde",
     object_stoneKnife_greenRock_plural = "Facas de Pedra Verde",
+	object_stoneKnife_graniteRock = "Faca de Granito", --0.4
+    object_stoneKnife_graniteRock_plural = "Facas de Granito", --0.4
+    object_stoneKnife_marbleRock = "Faca de Mármore", --0.4
+    object_stoneKnife_marbleRock_plural = "Facas de Mármore", --0.4
+    object_stoneKnife_lapisRock = "Faca de Lápis-Lazúli", --0.4
+    object_stoneKnife_lapisRock_plural = "Facas de Lápis-Lazúli", --0.4
     object_flintKnife = "Faca de Sílex",
     object_flintKnife_plural = "Facas de Sílex",
     object_boneKnife = "Faca de Osso",
     object_boneKnife_plural = "Facas de Osso",
+	object_bronzeKnife = "Faca de Bronze", --0.4
+    object_bronzeKnife_plural = "Facas de Bronze", --0.4
+    object_bronzeChisel = "Cinzel de Bronze", --0.4
+    object_bronzeChisel_plural = "Cinzéis de Bronze", --0.4
     object_boneFlute = "Flauta de Osso",
     object_boneFlute_plural = "Flautas de Osso",
     object_logDrum = "Tambor de Tronco",
@@ -1352,6 +1540,72 @@ localizations.values = {
     object_stoneAxeHead_redRock_plural = "Cabeças de Machado de Pedra Vermelha",
     object_stoneAxeHead_greenRock = "Cabeças de Machado de Pedra Verde",
     object_stoneAxeHead_greenRock_plural = "Cabeças de Machado de Pedra Verde",
+	
+	 --0.4 group start:
+    object_stoneChisel = "Cinzel de Pedra", --0.4
+    object_stoneChisel_plural = "Cinzéis de Pedra", --0.4
+    object_stoneChisel_limestone = "Cinzel de Calcário", --0.4
+    object_stoneChisel_limestone_plural = "Cinzéis de Calcário", --0.4
+    object_stoneChisel_redRock = "Cinzel de Pedra Vermelha", --0.4
+    object_stoneChisel_redRock_plural = "Cinzéis de Pedra Vermelha", --0.4
+    object_stoneChisel_greenRock = "Cinzel de Pedra Verde", --0.4
+    object_stoneChisel_greenRock_plural = "Cinzéis de Pedra Verde", --0.4
+    object_stoneChisel_graniteRock = "Cinzel de Granito", --0.4
+    object_stoneChisel_graniteRock_plural = "Cinzéis de Granito", --0.4
+    object_stoneChisel_marbleRock = "Cinzel de Mármore", --0.4
+    object_stoneChisel_marbleRock_plural = "Cinzéis de Mármore", --0.4
+    object_stoneChisel_lapisRock = "Cinzel de Lápis-Lazúli", --0.4
+    object_stoneChisel_lapisRock_plural = "Cinzéis de Lápis-Lazúli", --0.4
+
+    
+    object_stoneAxeHead_sandstoneYellowRock = "Cabeça de Machado de Arenito (Amarelo)", --0.4
+    object_stoneAxeHead_sandstoneYellowRock_plural = "Cabeças de Machado de Arenito (Amarelo)", --0.4
+    object_quernstone_sandstoneYellowRock = "Pilão de Pedra", --0.4
+    object_quernstone_sandstoneYellowRock_plural = "Pilões de Pedra", --0.4
+
+    object_stoneAxeHead_sandstoneRedRock = "Cabeça de Machado de Arenito (Vermelho)", --0.4
+    object_stoneAxeHead_sandstoneRedRock_plural = "Cabeças de Machado de Arenito (Vermelho)", --0.4
+    object_quernstone_sandstoneRedRock = "Pilão de Pedra", --0.4
+    object_quernstone_sandstoneRedRock_plural = "Pilões de Pedra", --0.4
+
+    object_stoneAxeHead_sandstoneOrangeRock = "Cabeça de Machado de Arenito (Laranja)", --0.4
+    object_stoneAxeHead_sandstoneOrangeRock_plural = "Cabeças de Machado deArenito (Laranja)", --0.4
+    object_quernstone_sandstoneOrangeRock = "Pilão de Pedra", --0.4
+    object_quernstone_sandstoneOrangeRock_plural = "Pilões de Pedra", --0.4
+
+    object_stoneAxeHead_sandstoneBlueRock = "Cabeça de Machado de Arenito (Azul)", --0.4
+    object_stoneAxeHead_sandstoneBlueRock_plural = "Cabeças de Machado de Arenito (Azul)", --0.4
+    object_quernstone_sandstoneBlueRock = "Pilão de Pedra", --0.4
+    object_quernstone_sandstoneBlueRock_plural = "Pilões de Pedra", --0.4
+
+    object_stoneAxeHead_graniteRock = "Cabeça de Machado de Granito", --0.4
+    object_stoneAxeHead_graniteRock_plural = "Cabeças de Machado de Granito", --0.4
+    object_stoneAxeHead_marbleRock = "Cabeça de Machado de Mármore", --0.4
+    object_stoneAxeHead_marbleRock_plural = "Cabeças de Machado de Mármore", --0.4
+    object_stoneAxeHead_lapisRock = "Cabeça de Machado de Lápis-Lazúli", --0.4
+    object_stoneAxeHead_lapisRock_plural = "Cabeças de Machado de Lápis-Lazúli", --0.4
+    object_stoneHammerHead = "Cabeça de Martelo de Pedra", --0.4
+    object_stoneHammerHead_plural = "Cabeças de Martelo de Pedra", --0.4
+    object_stoneHammerHead_redRock = "Cabeça de Martelo de Pedra Vermelha", --0.4
+    object_stoneHammerHead_redRock_plural = "Cabeças de Martelo de Pedra Vermelha", --0.4
+    object_stoneHammerHead_greenRock = "Cabeça de Martelo de Pedra Verde", --0.4
+    object_stoneHammerHead_greenRock_plural = "Cabeças de Martelo de Pedra Verde", --0.4
+    object_stoneHammerHead_graniteRock = "Cabeça de Martelo de Granito", --0.4
+    object_stoneHammerHead_graniteRock_plural = "Cabeças de Martelo de Granito", --0.4
+    object_stoneHammerHead_marbleRock = "Cabeça de Martelo de Mármore", --0.4
+    object_stoneHammerHead_marbleRock_plural = "Cabeças de Martelo de Mármore", --0.4
+    object_stoneHammerHead_lapisRock = "Cabeça de Martelo de Lápis-Lazúli", --0.4
+    object_stoneHammerHead_lapisRock_plural = "Cabeças de Martelo de Lápis-Lazúli", --0.4
+    object_bronzeHammerHead = "Cabeça de Martelo de Bronze", --0.4
+    object_bronzeHammerHead_plural = "Cabeças de Martelo de Bronze", --0.4
+    object_bronzeAxeHead = "Cabeça de Machado de Bronze", --0.4
+    object_bronzeAxeHead_plural = "Cabeças de Machado de Bronze", --0.4
+    object_bronzePickaxeHead = "Cabeça de Picareta de Bronze", --0.4
+    object_bronzePickaxeHead_plural = "Cabeças de Picareta de Bronze", --0.4
+    object_compostBin = "Composteira", --0.4
+    object_compostBin_plural = "Composteiras", --0.4
+    --0.4 group end
+	
     object_flintAxeHead = "Cabeça de Machado de Sílex",
     object_flintAxeHead_plural = "Cabeças de Machado de Sílex",
     object_chickenMeatCooked = "Carne de Galinha Cozida",
@@ -1412,6 +1666,12 @@ localizations.values = {
     object_stoneHatchet_plural = "Machadinhas de Pedra",
     object_flintHatchet = "Machadinha de Sílex",
     object_flintHatchet_plural = "Machadinhas de Sílex",
+	object_bronzeHatchet = "Machadinha de Bronze", --0.4
+    object_bronzeHatchet_plural = "Machadinhas de Bronze", --0.4
+    object_bronzePickaxe = "Picareta de Bronze", --0.4
+    object_bronzePickaxe_plural = "Picaretas de Bronze", --0.4
+    object_bronzeSpear = "Lança de Bronze", --0.4
+    object_bronzeSpear_plural = "Lanças de Bronze", --0.4
     object_alpacaMeatLeg = "Carne de Alpaca Crua", --0.3.0 adicionado "Crua"
     object_alpacaMeatLeg_plural = "Carnes de Alpaca Cruas", --0.3.0 adicionado "Crua"
     object_alpacaMeatLegCooked = "Carne de Alpaca Cozida",
@@ -1424,10 +1684,22 @@ localizations.values = {
     object_sapien_plural = "Sapiens",
     object_thatchRoof = "Telhado de Palha",
     object_thatchRoof_plural = "Telhados de Palha",
+	object_thatchRoofSlope = "Seção Inclinada de Telhado de Palha", --0.4
+    object_thatchRoofSlope_plural = "Seções Inclinadas de Telhado de Palha", --0.4
+    object_thatchRoofSmallCorner = "Canto de Telhado de Palha", --0.4
+    object_thatchRoofSmallCorner_plural = "Cantos de Telhado de Palha", --0.4
+    object_thatchRoofSmallCornerInside = "Canto Interno de Telhado de Palha", --0.4
+    object_thatchRoofSmallCornerInside_plural = "Cantos Internos de Telhado de Palha", --0.4
+    object_thatchRoofTriangle = "Telhado de Palha Triangular", --0.4
+    object_thatchRoofTriangle_plural = "Telhados de Palha Triangulares", --0.4
+    object_thatchRoofInvertedTriangle = "Telhado de Palha Triangular Invertido", --0.4
+    object_thatchRoofInvertedTriangle_plural = "Telhados de Palha Triangulares Invertidos", --0.4
     object_thatchRoofLarge = "Telhado Grande de Palha",
     object_thatchRoofLarge_plural = "Telhados Grandes de Palha",
     object_thatchRoofLargeCorner = "Canto de Telhado Grande de Palha",
     object_thatchRoofLargeCorner_plural = "Cantos de Telhado Grande de Palha",
+	object_thatchRoofLargeCornerInside = "Canto de Telhado Grande de Palha", --0.4
+    object_thatchRoofLargeCornerInside_plural = "Cantos de Telhado Grande de Palha", --0.4
     object_tileRoof = "Cabana/Telhado de Ladrilho",
     object_tileRoof_plural = "Cabanas/Telhados de Ladrilho",
     object_pineWoodenPole = "Poste de Madeira de Pinheiro",
@@ -1450,12 +1722,18 @@ localizations.values = {
     object_redSand_plural = "Areias Vermelhas",
     object_stoneSpearHead = "Ponta de Lança de Pedra",
     object_stoneSpearHead_plural = "Pontas de Lança de Pedra",
-    object_stoneSpearHead_limestone = "Cabeça de Lança de Calcário",
-    object_stoneSpearHead_limestone_plural = "Cabeças de Lança de Calcário",
-    object_stoneSpearHead_redRock = "Cabeça de Lança de Pedra Vermelha",
-    object_stoneSpearHead_redRock_plural = "Cabeças de Lança de Pedra Vermelha",
-    object_stoneSpearHead_greenRock = "Cabeça de Lança de Pedra Verde",
-    object_stoneSpearHead_greenRock_plural = "Cabeças de Lança de Pedra Verde",
+    object_stoneSpearHead_limestone = "Ponta de Lança de Calcário",
+    object_stoneSpearHead_limestone_plural = "Pontas de Lança de Calcário",
+    object_stoneSpearHead_redRock = "Ponta de Lança de Pedra Vermelha",
+    object_stoneSpearHead_redRock_plural = "Pontas de Lança de Pedra Vermelha",
+    object_stoneSpearHead_greenRock = "Ponta de Lança de Pedra Verde",
+    object_stoneSpearHead_greenRock_plural = "Pontas de Lança de Pedra Verde",
+	object_stoneSpearHead_graniteRock = "Ponta de Lança de Granito", --0.4
+    object_stoneSpearHead_graniteRock_plural = "Pontas de Lança de Granito", --0.4
+    object_stoneSpearHead_marbleRock = "Ponta de Lança de Mármore", --0.4
+    object_stoneSpearHead_marbleRock_plural = "Pontas de Lança de Mármore", --0.4
+    object_stoneSpearHead_lapisRock = "Ponta de Lança de Lápis-Lazúli", --0.4
+    object_stoneSpearHead_lapisRock_plural = "Pontas de Lança de Lápis-Lazúli", --0.4
     object_stonePickaxeHead = "Cabeça de Picareta de Pedra",
     object_stonePickaxeHead_plural = "Cabeças de Picareta de Pedra",
     object_stonePickaxeHead_limestone = "Cabeça de Picareta de Calcário",
@@ -1464,12 +1742,24 @@ localizations.values = {
     object_stonePickaxeHead_redRock_plural = "Cabeças de Picareta de Pedra Vermelha",
     object_stonePickaxeHead_greenRock = "Cabeça de Picareta de Pedra Verde",
     object_stonePickaxeHead_greenRock_plural = "Cabeças de Picareta de Pedra Verde",
+	object_stonePickaxeHead_graniteRock = "Cabeça de Picareta de Granito", --0.4
+    object_stonePickaxeHead_graniteRock_plural = "Cabeças de Picareta de Granito", --0.4
+    object_stonePickaxeHead_marbleRock = "Cabeça de Picareta de Mármore", --0.4
+    object_stonePickaxeHead_marbleRock_plural = "Cabeças de Picareta de Mármore", --0.4
+    object_stonePickaxeHead_lapisRock = "Cabeça de Picareta de Lápis-Lazúli", --0.4
+    object_stonePickaxeHead_lapisRock_plural = "Cabeças de Picareta de Lápis-Lazúli", --0.4
     object_flintSpearHead = "Ponta de Lança de Sílex",
     object_flintSpearHead_plural = "Pontas de Lança de Sílex",
+	object_bronzeSpearHead = "Ponta de Lança de Bronze", --0.4
+    object_bronzeSpearHead_plural = "Pontas de Lança de Bronze", --0.4
     object_boneSpearHead = "Ponta de Lança de Osso",
     object_boneSpearHead_plural = "Pontas de Lança de Osso",
     object_flintPickaxeHead = "Cabeça de Picareta de Sílex",
     object_flintPickaxeHead_plural = "Cabeças de Picareta de Sílex",
+	object_stoneHammer = "Martelo de Pedra", --0.4
+    object_stoneHammer_plural = "Martelos de Pedra", --0.4
+    object_bronzeHammer = "Martelo de Bronze", --0.4
+    object_bronzeHammer_plural = "Martelos de Bronze", --0.4
     object_build_thatchWallDoor = "Parede de Palha com Porta",
     object_build_thatchWallDoor_plural = "Parede de Palha com Porta",
     object_pineSplitLog = "Tronco Cortado de Pinheiro",
@@ -1490,6 +1780,44 @@ localizations.values = {
     object_firedUrnHulledWheat_plural = "Trigos Descascados (Vaso Queimado)",
     object_firedUrnHulledWheatRotten = "Trigo Descascado Mofado (Vaso Queimado)",
     object_firedUrnHulledWheatRotten_plural = "Trigos Descascados Mofados (Vaso Queimado)",
+	
+	--0.3.0 added group start
+    object_unfiredBowlWet = "Tigela não Queimada (Úmido)",
+    object_unfiredBowlWet_plural = "Tigelas não Queimadas (Úmidos)",
+    object_unfiredBowlDry = "Tigela não Queimada",
+    object_unfiredBowlDry_plural = "Tigelas não Queimadas",
+    object_firedBowl = "Tigela Queimada",
+    object_firedBowl_plural = "Tigelas Queimadas",
+    
+    object_unfiredBowlInjuryMedicine = "Medicamento para Ferimentos",
+    object_unfiredBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
+    object_unfiredBowlBurnMedicine = "Medicamento para Queimaduras",
+    object_unfiredBowlBurnMedicine_plural = "Medicamentos para Queimaduras",
+    object_unfiredBowlFoodPoisoningMedicine = "Medicamento para Intoxicações",
+    object_unfiredBowlFoodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
+    object_unfiredBowlVirusMedicine = "Medicamento contra Vírus (Tigela não Queimada)",
+    object_unfiredBowlVirusMedicine_plural = "Medicamentos contra Vírus (Tigelas não Queimadas)",
+    object_unfiredBowlMedicineRotten = "Medicamento Estragado",
+    object_unfiredBowlMedicineRotten_plural = "Medicamentos Estragados",
+    
+    object_firedBowlInjuryMedicine = "Medicamento para Ferimentos",
+    object_firedBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
+    object_firedBowlBurnMedicine = "Medicamento para Queimaduras",
+    object_firedBowlBurnMedicine_plural = "Medicamentos para Queimaduras",
+    object_firedBowlFoodPoisoningMedicine = "Medicamento para Intoxicações",
+    object_firedBowlFoodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
+    object_firedBowlVirusMedicine = "Medicamento contra Vírus",
+    object_firedBowlVirusMedicine_plural = "Medicamentos contra Vírus",
+    object_firedBowlMedicineRotten = "Medicamento Estragado",
+    object_firedBowlMedicineRotten_plural = "Medicamentos Estragados",
+    --0.3.0 group end
+
+    
+    object_crucibleWet = "Crisol (Úmido)", --0.4
+    object_crucibleWet_plural = "Crisóis (Úmidos)", --0.4
+    object_crucibleDry = "Crisol", --0.4
+    object_crucibleDry_plural = "Crisóis", --0.4
+	
     object_temporaryCraftArea = "Criar",
     object_temporaryCraftArea_plural = "Criar",
     object_quernstone = "Pilão de Pedra",
@@ -1500,6 +1828,12 @@ localizations.values = {
     object_quernstone_redRock_plural = "Pilões de Pedra",
     object_quernstone_greenRock = "Pilão de Pedra",
     object_quernstone_greenRock_plural = "Pilões de Pedra",
+	object_quernstone_graniteRock = "Pilões de Pedra", --0.4
+    object_quernstone_graniteRock_plural = "Pilões de Pedra", --0.4
+    object_quernstone_marbleRock = "Pilões de Pedra", --0.4
+    object_quernstone_marbleRock_plural = "Pilões de Pedra", --0.4
+    object_quernstone_lapisRock = "Pilões de Pedra", --0.4
+    object_quernstone_lapisRock_plural = "Pilões de Pedra", --0.4
     object_unfiredUrnFlour = "Farinha (Vaso não Queimado)",
     object_unfiredUrnFlour_plural = "Farinhas (Vasos não Queimados)",
     object_unfiredUrnFlourRotten = "Farinha Mofada (Vaso não Queimado)",
@@ -1564,6 +1898,10 @@ localizations.values = {
     object_build_mudBrickWall4x1_plural = "Paredes Baixas de Tijolos de Barro",
     object_build_mudBrickWall2x2 = "Parede Quadrada de Tijolos de Barro",
     object_build_mudBrickWall2x2_plural = "Paredes Quadradas de Tijolos de Barro",
+	object_mudBrickRoofEnd = "Parede de Telhado de Tijolos de Barro", --0.4
+    object_mudBrickRoofEnd_plural = "Paredes de Telhado de Tijolos de Barro",--0.4
+    object_build_mudBrickRoofEnd = "Parede de Telhado de Tijolos de Barro",--0.4
+    object_build_mudBrickRoofEnd_plural = "Paredes de Telhado de Tijolos de Barro",--0.4
     object_mudBrickWallDoor = "Parede de Tijolos de Barro com Porta",
     object_mudBrickWallDoor_plural = "Parede de Tijolos de Barro com Porta",
     object_build_mudBrickWallDoor = "Parede de Tijolos de Barro com Porta",
@@ -1576,6 +1914,36 @@ localizations.values = {
     object_mudBrickColumn_plural = "Colunas de Tijolos de Barro",
     object_build_mudBrickColumn = "Coluna de Tijolos de Barro",
     object_build_mudBrickColumn_plural = "Colunas de Tijolos de Barro",
+	
+	object_stoneBlockWall = "Parede de Blocos de Pedra", --0.4
+    object_stoneBlockWall_plural = "Paredes de Blocos de Pedra", --0.4
+    object_build_stoneBlockWall = "Parede de Blocos de Pedra", --0.4
+    object_build_stoneBlockWall_plural = "Paredes de Blocos de Pedra", --0.4
+    object_stoneBlockWallDoor = "Parede de Blocos de Pedra com Porta", --0.4
+    object_stoneBlockWallDoor_plural = "Paredes de Blocos de Pedra com Porta", --0.4
+    object_build_stoneBlockWallDoor = "Parede de Blocos de Pedra com Porta", --0.4
+    object_build_stoneBlockWallDoor_plural = "Paredes de Blocos de Pedra com Porta", --0.4
+    object_stoneBlockWallLargeWindow = "Parede de Blocos de Pedra com Janela", --0.4
+    object_stoneBlockWallLargeWindow_plural = "Paredes de Blocos de Pedra com Janela", --0.4
+    object_build_stoneBlockWallLargeWindow = "Parede de Blocos de Pedra com Janela", --0.4
+    object_build_stoneBlockWallLargeWindow_plural = "Paredes de Blocos de Pedra com Janela", --0.4
+    object_stoneBlockWall4x1 = "Parede Baixa de Blocos de Pedra", --0.4
+    object_stoneBlockWall4x1_plural = "Paredes Baixas de Blocos de Pedra", --0.4
+    object_build_stoneBlockWall4x1 = "Parede Baixa de Blocos de Pedra", --0.4
+    object_build_stoneBlockWall4x1_plural = "Paredes Baixas de Blocos de Pedra", --0.4
+    object_stoneBlockWall2x2 = "Parede Quadrada de Blocos de Pedra", --0.4
+    object_stoneBlockWall2x2_plural = "Paredes Quadradas de Blocos de Pedra", --0.4
+    object_build_stoneBlockWall2x2 = "Parede Quadrada de Blocos de Pedra", --0.4
+    object_build_stoneBlockWall2x2_plural = "Paredes Quadradas de Blocos de Pedra", --0.4
+    object_stoneBlockRoofEnd = "Parede de Telhado de Blocos de Pedra", --0.4
+    object_stoneBlockRoofEnd_plural = "Paredes de Telhado de Blocos de Pedra",--0.4
+    object_build_stoneBlockRoofEnd = "Parede de Telhado de Blocos de Pedra",--0.4
+    object_build_stoneBlockRoofEnd_plural = "Paredes de Telhado de Blocos de Pedra",--0.4
+    object_stoneBlockColumn = "Coluna de Blocos de Pedra", --0.4
+    object_stoneBlockColumn_plural = "Colunas de Blocos de Pedra", --0.4
+    object_build_stoneBlockColumn = "Coluna de Blocos de Pedra", --0.4
+    object_build_stoneBlockColumn_plural = "Colunas de Blocos de Pedra", --0.4
+	
     object_brickWall = "Parede de Tijolos",
     object_brickWall_plural = "Paredes de Tijolos",
     object_build_brickWall = "Parede de Tijolos",
@@ -1596,6 +1964,10 @@ localizations.values = {
     object_brickWall2x2_plural = "Paredes Quadradas de Tijolos",
     object_build_brickWall2x2 = "Parede Quadrada de Tijolos",
     object_build_brickWall2x2_plural = "Paredes Quadradas de Tijolos",
+	object_brickRoofEnd = "Parede de Telhado de Tijolos", --0.4
+    object_brickRoofEnd_plural = "Paredes de Telhado de Tijolos",--0.4
+    object_build_brickRoofEnd = "Parede de Telhado de Tijolos",--0.4
+    object_build_brickRoofEnd_plural = "Paredes de Telhado de Tijolos",--0.4
     object_splitLogWallLargeWindow = "Parede de Tronco Cortado com Janela",
     object_splitLogWallLargeWindow_plural = "Paredes de Tronco Cortado com Janela",
     object_build_splitLogWallLargeWindow = "Parede de Tronco Cortado com Janela",
@@ -1608,6 +1980,8 @@ localizations.values = {
     object_mammothMeatCooked_plural = "Carnes de Mamute Cozidas",
     object_mammothMeatTBoneCooked = "Carne de Mamute Cozida",
     object_mammothMeatTBoneCooked_plural = "Carnes de Mamute Cozidas",
+	object_bronzeIngot = "Barra de Bronze", --0.4
+    object_bronzeIngot_plural = "Barras de Bronze", --0.4
 
     --order
     order_idle = "Parado",
@@ -1695,6 +2069,17 @@ localizations.values = {
     order_giveMedicineToSelf_inProgress = "Se Tratando", --0.3.0
     order_giveMedicineToOtherSapien = "Tratar", --0.3.0
     order_giveMedicineToOtherSapien_inProgress = "Tratando", --0.3.0
+	
+	order_fertilize = "Adubar", --0.4
+    order_fertilize_inProgress = "Adubando", --0.4
+    order_deliverToCompost = "Compostar", --0.4
+    order_deliverToCompost_inProgress = "Compostando", --0.4
+    order_chiselStone = "Cinzelar", --0.4
+    order_chiselStone_inProgress = "Cinzelando", --0.4
+	
+	
+	
+	
 
     --resource
     resource_branch = "Galho",
@@ -1703,8 +2088,10 @@ localizations.values = {
     resource_burntBranch_plural = "Galhos Queimados",
     resource_log = "Tronco",
     resource_log_plural = "Troncos",
-    resource_rock = "Pedra Grande",
-    resource_rock_plural = "Pedras Grandes",
+    resource_rock = "Pedra Grande (Dura)", --0.4 added "Hard"
+    resource_rock_plural = "Pedras Grandes (Duras)", --0.4 added "Hard"
+	resource_rockSoft = "Pedra Grande (Macia)", --0.4
+    resource_rockSoft_plural = "Pedra Grande (Macias)", --0.4
     resource_dirt = "Terra",
     resource_dirt_plural = "Terras",
     resource_hay = "Feno",
@@ -1717,12 +2104,30 @@ localizations.values = {
     resource_flaxDried_plural = "Linhos Secos",
     resource_sand = "Areia",
     resource_sand_plural = "Areias",
-    resource_rockSmall = "Pedra Pequena",
-    resource_rockSmall_plural = "Pedras Pequenas",
+    resource_rockSmall = "Pedra Pequena (Dura)", --0.4 added "Hard"
+    resource_rockSmall_plural = "Pedras Pequenas (Duras)", --0.4 added "Hard"
+	resource_rockSmallSoft = "Pedra Pequena (Macia)", --0.4
+    resource_rockSmallSoft_plural = "Pedra Pequena (Macias)", --0.4
+    resource_stoneBlockSoft = "Bloco de Pedra (Macias)", --0.4
+    resource_stoneBlockSoft_plural = "Blocos de Pedra (Macia)", --0.4
+    resource_stoneBlockHard = "Bloco de Pedra (Dura)", --0.4
+    resource_stoneBlockHard_plural = "Blocos de Pedra (Hard)", --0.4
     resource_flint = "Sílex",
     resource_flint_plural = "Sílices",
     resource_clay = "Argila",
     resource_clay_plural = "Argilas",
+	resource_copperOre = "Minério de Cobre", --0.4
+    resource_copperOre_plural = "Minérios de Cobre", --0.4
+    resource_tinOre = "Minério de Estanho", --0.4
+    resource_tinOre_plural = "Minérios de Estanho", --0.4
+    resource_manure = "Estrume", --0.4
+    resource_manure_plural = "Estrumes", --0.4
+    resource_manureRotten = "Estrume Podre", --0.4
+    resource_manureRotten_plural = "Estrumes Podres", --0.4
+    resource_rottenGoo = "Gosma Podre", --0.4
+    resource_rottenGoo_plural = "Gosmas Podres", --0.4
+    resource_compost = "Adubo", --0.4
+    resource_compost_plural = "Adubos", --0.4
     resource_deadChicken = "Carcaça de Galinha",
     resource_deadChicken_plural = "Carcaças de Galinha",
     resource_deadChickenRotten = "Carcaça de Galinha Podre",
@@ -1755,14 +2160,28 @@ localizations.values = {
     resource_stonePickaxeHead_plural = "Cabeças de Picareta de Pedra",
     resource_stoneHatchet = "Machadinha de Pedra",
     resource_stoneHatchet_plural = "Machadinhas de Pedra",
-    resource_stoneAxeHead = "Cabeça de Machado",
-    resource_stoneAxeHead_plural = "Cabeças de Machado",
+    resource_stoneAxeHead = "Cabeça de Machado de Pedra (Dura)", --0.4 added (Hard)
+    resource_stoneAxeHead_plural = "Cabeças de Machado de Pedra (Dura)", --0.4 added (Hard)
+	resource_stoneAxeHeadSoft = "Cabeça de Machado de Pedra (Macia)", --0.4
+    resource_stoneAxeHeadSoft_plural = "Cabeças de Machado de Pedra (Macia)", --0.4
+    resource_stoneHammerHead = "Cabeça de Martelo de Pedra", --0.4
+    resource_stoneHammerHead_plural = "Cabeças de Martelo de Pedra", --0.4
+    resource_stoneHammer = "Martelo de Pedra", --0.4
+    resource_stoneHammer_plural = "Martelos de Pedra", --0.4
+    resource_bronzeHammerHead = "Cabeça de Martelo de Bronze", --0.4
+    resource_bronzeHammerHead_plural = "Cabeças de Martelo de Bronze", --0.4
+    resource_bronzeHammer = "Martelo de Bronze", --0.4
+    resource_bronzeHammer_plural = "Martelos de Bronze", --0.4
     resource_stoneKnife = "Faca de Pedra",
     resource_stoneKnife_plural = "Facas de Pedra",
+	resource_stoneChisel = "Cinzel de Pedra", --0.4
+    resource_stoneChisel_plural = "Cinzéis de Pedra", --0.4
     resource_flintSpear = "Lança de Sílex",
     resource_flintSpear_plural = "Lanças de Sílex",
     resource_boneSpear = "Lança de Osso",
     resource_boneSpear_plural = "Lanças de Osso",
+	resource_bronzeSpear = "Lança de Bronze", --0.4
+    resource_bronzeSpear_plural = "Lanças de Bronze", --0.4
     resource_flintPickaxe = "Picareta de Sílex",
     resource_flintPickaxe_plural = "Picaretas de Sílex",
     resource_flintHatchet = "Machadinha de Sílex",
@@ -1775,10 +2194,22 @@ localizations.values = {
     resource_flintPickaxeHead_plural = "Cabeças de Picareta de Sílex",
     resource_flintAxeHead = "Cabeça de Machado de Sílex",
     resource_flintAxeHead_plural = "Cabeças de Machado de Sílex",
+	resource_bronzeAxeHead = "Cabeça de Machado de Bronze", --0.4
+    resource_bronzeAxeHead_plural = "Cabeças de Machado de Bronze", --0.4
+    resource_bronzeHatchet = "Machadinha de Bronze", --0.4
+    resource_bronzeHatchet_plural = "Machadinhas de Bronze", --0.4
+    resource_bronzePickaxeHead = "Cabeça de Picareta de Bronze", --0.4
+    resource_bronzePickaxeHead_plural = "Cabeças de Picareta de Bronze", --0.4
+    resource_bronzePickaxe = "Picareta de Bronze", --0.4
+    resource_bronzePickaxe_plural = "Picaretas de Bronze", --0.4
     resource_flintKnife = "Faca de Pedra",
     resource_flintKnife_plural = "Facas de Pedra",
     resource_boneKnife = "Faca de Osso",
     resource_boneKnife_plural = "Facas de Osso",
+	resource_bronzeKnife = "Faca de Bronze", --0.4
+    resource_bronzeKnife_plural = "Facas de Bronze", --0.4
+    resource_bronzeChisel = "Cinzel de Bronze", --0.4
+    resource_bronzeChisel_plural = "Cinzéis de Bronze", --0.4
     resource_boneFlute = "Flauta de Osso",
     resource_boneFlute_plural = "Flautas de Osso",
     resource_logDrum = "Tambor de Tronco",
@@ -1834,8 +2265,8 @@ localizations.values = {
     resource_unfiredBowlFoodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
     resource_unfiredBowlVirusMedicine = "Medicamento contra Vírus",
     resource_unfiredBowlVirusMedicine_plural = "Medicamentos contra Vírus",
-    resource_unfiredBowlMedicineRotten = "Medicamento Podre",
-    resource_unfiredBowlMedicineRotten_plural = "Medicamentos Podres",
+    resource_unfiredBowlMedicineRotten = "Medicamento Estragado",
+    resource_unfiredBowlMedicineRotten_plural = "Medicamentos Estragados",
     
     resource_firedBowlInjuryMedicine = "Medicamento para Ferimentos",
     resource_firedBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
@@ -1845,9 +2276,14 @@ localizations.values = {
     resource_firedBowlFoodPoisoningMedicine_plural = "Medicamentos para Intoxicações",
     resource_firedBowlVirusMedicine = "Medicamento contra Vírus",
     resource_firedBowlVirusMedicine_plural = "Medicamentos contra Vírus",
-    resource_firedBowlMedicineRotten = "Medicamento Podre",
-    resource_firedBowlMedicineRotten_plural = "Medicamentos Podres",
+    resource_firedBowlMedicineRotten = "Medicamento Estragado",
+    resource_firedBowlMedicineRotten_plural = "Medicamentos Estragados",
     --0.3.0 group end
+	
+	resource_crucibleWet = "Crisol (Úmido)", --0.4
+    resource_crucibleWet_plural = "Cisóis (Úmidos)", --0.4
+    resource_crucibleDry = "Crisol", --0.4
+    resource_crucibleDry_plural = "Crisóis", --0.4
 	
     resource_branch_rotten = "Galho Podre",
     resource_branch_rotten_plural = "Galhos Podres",
@@ -1869,6 +2305,8 @@ localizations.values = {
     resource_mudTileDry_plural = "Ladrilhos não Queimados",
     resource_firedTile = "Ladrilho",
     resource_firedTile_plural = "Ladrilhos",
+	resource_bronzeIngot = "Barra de Bronze", --0.4
+    resource_bronzeIngot_plural = "Barras de Bronze", --0.4
     resource_mammothMeat = "Carne de Mamute Crua", --0.3.0 adicionado "Crua"
     resource_mammothMeat_plural = "Carnes de Mamute Cruas", --0.3.0 adicionado "Crua"
     resource_mammothMeatCooked = "Carne de Mamute Cozida",
@@ -1904,6 +2342,18 @@ localizations.values = {
     resource_group_virusMedicine = "Medicamento contra Vírus",
     resource_group_virusMedicine_plural = "Medicamentos contra Vírus",
     --0.3.0 group end
+	
+	resource_group_fertilizer = "Estrume/Adubo", --0.4
+    resource_group_fertilizer_plural = "Estrumes/Adubos", --0.4
+    resource_group_compostable = "Item podre", --0.4
+    resource_group_compostable_plural = "Itens podres", --0.4
+
+    resource_group_rockSmallAny = "Pedra Pequena", --0.4
+    resource_group_rockSmallAny_plural = "Pedras Pequenas", --0.4
+    resource_group_rockAny = "Pedra Grande", --0.4
+    resource_group_rockAny_plural = "Pedras Grandes", --0.4
+    resource_group_stoneBlockAny = "Bloco de Pedra", --0.4
+    resource_group_stoneBlockAny_plural = "Blocos de Pedra", --0.4
 	
     --desire
     desire_names_none = "Nenhum",
@@ -2165,14 +2615,21 @@ localizations.values = {
     settings_Controls_invertMouseLookY = "Inverter Mouse Y",
     settings_Controls_invertMouseWheelZoom = "Inverter Zoom na Roda do Mouse", --b20
     settings_Controls_controllerLookSensitivity = "Sensibilidade do Controle",
+	settings_Controls_controllerZoomSensitivity = "Sensibilidade do Zoom", --0.4
     settings_Controls_invertControllerLookY = "Inverter Controle Y",
     settings_Controls_enableDoubleTapForFastMovement = "Clique duplo para mover rápido",
+	settings_Controls_reticle = "Retícula de Mira", --0.4 - refers to the pointer/crosshairs image setting
+    settings_Controls_reticleSize = "Tamanho da Retícula", --0.4
+    settings_Controls_reticleType_dot = "Ponto", --0.4
+    settings_Controls_reticleType_bullseye = "Alvo", --0.4
+    settings_Controls_reticleType_crosshairs = "Mira", --0.4
     settings_Audio = "Áudio",
     settings_Audio_MusicVolume = "Volume da Música",
     settings_Audio_SoundVolume = "Volume dos Sons",
     settings_Other = "Outros",
     settings_allowLanConnections = "Permitir conexões Multijogador em LAN",
     settings_pauseOnLostFocus = "Pausar quando a janela não estiver em foco", --b19
+	settings_pauseOnInactivity = "Pausar quando inativo", --0.4
     settings_enableTutorialForThisWorld = "Habilitar tutorial para este mundo",
     settings_enableTutorialForNewWorlds = "Habilitar tutorial para novos mundos",
     settings_GeneralGraphics = "Gráficos Gerais",
@@ -2243,7 +2700,10 @@ localizations.values = {
     lookatUI_needsTools = function(values)-- b16
         local planInfoString = "Necessita de "
         for i,missingToolInfo in ipairs(values.missingToolInfos) do
-            planInfoString = planInfoString .. missingToolInfo.toolName .. " (ex.: " .. missingToolInfo.exampleObjectName .. ")"
+            planInfoString = planInfoString .. missingToolInfo.toolName
+            if missingToolInfo.exampleObjectName and missingToolInfo.exampleObjectName ~= missingToolInfo.toolName then --0.4 modified to only add example if it is present and different.
+                planInfoString = planInfoString .. " (ex.: " .. missingToolInfo.exampleObjectName .. ")"
+            end
             if i ~= #values.missingToolInfos then
                 planInfoString = planInfoString .. ", "
             end
@@ -2274,6 +2734,7 @@ localizations.values = {
     lookatUI_tooDistantRequiresCapable = function(values)
         return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\" (Requer levantar peso)"
     end,
+	lookatUI_missingSuitableTerrain = "Nenhum terreno do tipo requerido disponível nas proximidades", --0.4
     
     sapien_ui_roles = "Funções",
     sapien_ui_inventory = "Inventário",
@@ -2547,6 +3008,20 @@ localizations.values = {
     misc_decorate_with = function(values)--b13
         return string.format("Decorar com %s", values.name)
     end,
+	
+	misc_compostNotEnoughMaterialStored = "O material armazenado não é suficiente, adicione mais itens podres", --0.4
+    misc_compostNextInLessThanAnHour = "Próximo adubo pronto em < 1 hora", --0.4
+    misc_compostNextInXHours = function(values) --0.4
+        return string.format("Próximo adubo pronto em %d horas", values.hours)
+    end,
+    misc_compostPreviousWasLessThanAnHour = "Último adubo produzido há < 1 hora", --0.4
+    misc_compostPreviousWasXHours = function(values) --0.4
+        return string.format("Último adubo produzido há %d horas", values.hours)
+    end,
+    
+    misc_disabled = "Desabilitado", --0.4
+    misc_maxQuantity = "Quantidade Máxima", --0.4
+    misc_max = "Máximo", --0.4
 
     --loading
     loading_connecting = "Conectando ao Servidor",
@@ -2617,10 +3092,10 @@ localizations.values = {
     skill_spinning_description = "Criar fios e cordas a partir de fibras de plantas.",
     skill_thatchBuilding = "Construção com Palha",
     skill_thatchBuilding_description = "Construir abrigos simples de feno, palha e galhos.",
-    skill_mudBrickBuilding = "Construção com Tijolos de Barro",
-    skill_mudBrickBuilding_description = "Construir estruturas com tijolos de barro.",
-    skill_brickBuilding = "Construção com Tijolos",
-    skill_brickBuilding_description = "Construir estruturas com tijolos queimados.",
+    skill_mudBrickBuilding = "Alvenaria", --0.4 changed from mud brick building to masonry, now applies to all brick/block based building
+    skill_mudBrickBuilding_description = "Construir estruturas com tijolos e blocos de pedra.", --0.4 changed to "bricks and stone blocks" from "mud bricks"
+    skill_brickBuilding = "Construção com Tijolos", --deprecated (0.4)
+    skill_brickBuilding_description = "Construir estruturas com tijolos queimados.", --deprecated (0.4)
     skill_tiling = "Ladrilhagem",
     skill_tiling_description = "Construir telhados, chãos e caminhos com ladrilhos de cerâmica.",
     skill_basicHunting = "Caça Básica",
@@ -2644,13 +3119,17 @@ localizations.values = {
     skill_digging = "Escavação",
     skill_digging_description = "Escavar e preencher solo, arreia e argila.",
     skill_mining = "Mineração",
-    skill_mining_description = "Minerar materiais duros como pedra.",
+    skill_mining_description = "Minerar materiais duros como pedra e minérios.", --0.4 added "and ore"
     skill_planting = "Plantação",
     skill_planting_description = "Plantar sementes para fazer árvores e plantas crescerem.",
     skill_threshing = "Debulha",
     skill_threshing_description = "Debulhar grãos para deixá-los prontos para moer ou cozinhar.",
     skill_grinding = "Moagem de Grãos", --0.3.0 adicionado "de Grãos"
     skill_grinding_description = "Puverizar grãos para liberar as valiosas calorias escondidas dentro.",
+	skill_blacksmithing = "Ferraria", --0.4
+    skill_blacksmithing_description = "Fundir minérios e construir com metais.", --0.4
+    skill_chiselStone = "Escultura em Pedra", --0.4
+    skill_chiselStone_description = "Cinzelar blocos de pedra diretamente de terreno rochoso.", --0.4
 
     --storage
     storage_rockSmall = "Pedras Pequenas",
@@ -2673,11 +3152,13 @@ localizations.values = {
     storage_flax = "Linho",
     storage_knife = "Facas",
     storage_axeHead = "Cabeças de Machado",
+	storage_hammerHead = "Cabeças de Martelo", --0.4
+    storage_hammer = "Martelos", --0.4
     storage_pickaxeHead = "Cabeças de Picareta",
     storage_pickaxe = "Picaretas",
     storage_hatchet = "Machadinhas",
     storage_branch = "Galhos",
-    storage_spearHead = "Cabeças de Lança",
+    storage_spearHead = "Pontas de Lança",
     storage_raspberry = "Framboesas",
     storage_peach = "Pêssegos",
     storage_flatbread = "Pães Pitas",
@@ -2709,6 +3190,16 @@ localizations.values = {
     storage_logDrum = "Tambores de Tronco",
     storage_balafon = "Xilofones",
     storage_tile = "Ladrilhos",
+	
+	storage_copperOre = "Minérios de Cobre", --0.4
+    storage_tinOre = "Minérios de Estanho", --0.4
+    storage_manure = "Estrumes", --0.4
+    storage_rottenGoo = "Gosmas Podres", --0.4
+    storage_compost = "Adubos", --0.4
+    storage_crucible = "Crisóis", --0.4
+    storage_ingot = "Barras", --0.4
+    storage_chisel = "Cinzéis", --0.4
+    storage_stoneBlock = "Blocos de Pedra", --0.4
 
     -- constructable_classification
     constructable_classification_build = "Construções",
@@ -2725,6 +3216,8 @@ localizations.values = {
     constructable_classification_fill_action = "Preencher",
     constructable_classification_research = "Descobertas",
     constructable_classification_research_action = researchName,
+	constructable_classification_fertilize = "Adubo", --0.4
+    constructable_classification_fertilize_action = "Adubar", --0.4
 
     --evolution
     evolution_dryAction = "Seca",
@@ -2747,6 +3240,8 @@ localizations.values = {
     time_day_plural = "Dias",
     time_second = "Segundo",
     time_second_plural = "Segundos",
+	time_hour = "Hora", --0.4
+    time_hour_plural = "Horas", --0.4
 
     --weather
     weather_temperatureZone_veryCold = "Muito Frio",
@@ -2787,8 +3282,9 @@ localizations.values = {
     key_game_radialMenuShortcut4 = "Atalho 4 do Menu Radial",
     key_game_radialMenuShortcut5 = "Atalho 5 do Menu Radial",
 	key_game_radialMenuShortcut6 = "Atalho 6 do Menu Radial", --0.3.0
-    key_game_radialMenuAutomateModifier = "Modificador do Atalho do Menu Radial",
+    key_game_radialMenuAutomateModifier = "Modificador da Opção do Menu Radial", --0.4 modified, changed "Automate" to "Options"
     key_game_radialMenuDeconstruct = "Atalho para Remover/Destruir do Menu Radial",
+	key_game_moveCommandAddWaitOrderModifier = "Mover Sapien - E Esperar Modificador de Ordem", --0.4
     key_game_zoomModifier = "Modificador de Zoom no Clique",
     key_game_multiselectModifier = "Atalho de Multi-Seleção no Clique",
     key_game_radialMenuClone = "Atalho de Construir Mais do Menu Radial",--b13
@@ -2812,6 +3308,9 @@ localizations.values = {
     key_movement_backAlt = "Trás (Alternativo)",
     key_movement_leftAlt = "Esquerda (Alternativo)",
     key_movement_rightAlt = "Direita (Alternativo)",
+	key_movement_zoomIn = "Mais Zoom", --0.4
+    key_movement_zoomOut = "Menos Zoom", --0.4
+	
     key_building_cancel = "Cancelar",
     key_building_confirm = "Confirmar",
     key_building_zAxisModifier = "Mudar Eixo / Desabilitar Encaixe Automático",
@@ -2867,6 +3366,10 @@ localizations.values = {
     selectionGroup_smallRock_objectName = "Pedra Pequena",
     selectionGroup_smallRock_plural = "Pedras Pequenas",
     selectionGroup_smallRock_descriptive = "Quaisquer Pedras Pequenas",
+	
+	selectionGroup_stoneBlock_objectName = "Bloco de Pedra", --0.4
+    selectionGroup_stoneBlock_plural = "Blocos de Pedra", --0.4
+    selectionGroup_stoneBlock_descriptive = "Quaisquer Blocos de Pedra", --0.4
     
     -- notifications
     notification_becamePregnant = function(values)
@@ -3067,6 +3570,17 @@ localizations.values = {
     notification_criticalVirusBecameMajor = function(values)
         return "A infecção viral de " .. values.name .. " não é mais crítica"
     end,
+	
+	notification_windDestruction = function(values) --0.4. values.name is not a sapien's name, it is an object's name like "Thatch Roof/Hut"
+        return "Um(a) " .. values.name .. " recebeu danos por conta dos ventos fortes"
+    end,
+    notification_rainDestruction = function(values) --0.4. values.name is not a sapien's name, it is an object's name like "Thatch Roof/Hut"
+        return "Um(a) " .. values.name .. " recebeu danos por conta dos ventos fortes"
+    end,
+    
+    notification_addWindBlownAdjective = function(values) --0.4 Used in a wind storm eg: "Bob was majorly injured by a 'flying banana'"
+        return string.lower(values.objectName) .. " voador(a)"
+    end,
 
     deathReason_criticalInjury = "Ferimento Crítico",
     deathReason_oldAge = "Velhice",
@@ -3086,9 +3600,9 @@ localizations.values = {
     menu_rainfall = "Pluviosidade",
     menu_temperature = "Temperatura",
     menu_continentSize = "Tamanho dos Continentes",
-    menu_continentHeight = "Altura das Montanhas",
-    menu_featureSize = "Tamanho dos Morros",
-    menu_featureHeight = "Altura dos Morros",
+    menu_continentHeight = "Altura dos Continentes", --0.4 modified
+    menu_featureSize = "Montanhas", --0.4 modified
+    menu_featureHeight = "Altura das Montanhas", --0.4 modified
     menu_mods = "Mods",
 
     --bug reporting
@@ -3508,6 +4022,12 @@ E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à 
         return values.currentText .. " (Aquecendo)"
     end,
     --/0.3.0
+	
+	--0.4
+    orderStatus_deliverToCompost = function(values)
+        return values.inProgressName .. " " .. values.heldObjectName .. " em " .. values.retrievedObjectName
+    end,
+    --/0.4
 }
 
 local function getTimeSplit(durationSeconds, dayLength, yearLength)
