@@ -538,6 +538,8 @@ localizations.values = {
     action_scrapeWood_inProgress = "Talhando",
     action_fireStickCook = "Cozinhar",
     action_fireStickCook_inProgress = "Cozinhando",
+	action_smeltMetal = "Fundir", --0.4.2
+    action_smeltMetal_inProgress = "Fundindo", --0.4.2
     action_recruit = "Recrutar",
     action_recruit_inProgress = "Recruitando",
     action_sneak = "Esgueirar",
@@ -1494,6 +1496,8 @@ localizations.values = {
     object_rottenGoo_plural = "Gosmas Podres", --0.4
     object_compost = "Adubo", --0.4
     object_compost_plural = "Adubos", --0.4
+	object_compostRotten = "Adubo Podre", --0.4.1
+    object_compostRotten_plural = "Adubos Podres", --0.4.1
     object_build_craftArea = "Área de Criação",
     object_build_craftArea_plural = "Áreas de Criação",
     object_build_dirtWallDoor = "Parede de Terra com Porta",
@@ -2128,6 +2132,8 @@ localizations.values = {
     resource_rottenGoo_plural = "Gosmas Podres", --0.4
     resource_compost = "Adubo", --0.4
     resource_compost_plural = "Adubos", --0.4
+	resource_compostRotten = "Adubo Podre", --0.4.1
+    resource_compostRotten_plural = "Adubos Podres", --0.4.1
     resource_deadChicken = "Carcaça de Galinha",
     resource_deadChicken_plural = "Carcaças de Galinha",
     resource_deadChickenRotten = "Carcaça de Galinha Podre",
@@ -2771,6 +2777,7 @@ localizations.values = {
     ui_action_assignDifferentSapien = "Atribuir a Outro Sapien",
     ui_action_assignSapien = "Atribuir a Sapien",
     ui_action_prioritize = "Priorizar",
+	ui_action_deprioritize = "Despriorizar", --0.4.2
     ui_action_manageSapien = function(values)
         return "Gerenciar " .. values.name
     end,
@@ -3872,10 +3879,10 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     -- orderLimit
     tutorial_title_orderLimit = "Limite de Ordens",
     tutorial_orderLimit_storyText = function(values)
-        return string.format("Seus sapiens sempre escolherão a ordem mais próxima que combine com as suas funções e necessidades, então é importante não colocar muitas ordens de uma vez que não são realmente necessárias.\n\nPara lhe ajudar com isso há um limite de %d ordens na tribo por sapien. Depois disso eles ignorarão ordens novas até que as anteriores sejam concluídas.\n\nSe uma ordem estiver marcada com um triângulo amarelo com \"Máximo de ordens alcançado\", então você pode priorizá-la no menu radial.",
+        return string.format("Há um limite de %d por sapien dentro da tribo. Depois disso, eles ignorarão ordens de baixa prioridade até que outras tenham sido compeltadas.\n\nVocê pode priorizar ordens no menu radial.", --0.4.1 modified due to change in prioritization mechanics
             values.allowedPlansPerFollower)
     end,
-    tutorial_orderLimit_task = "Priorize qualquer ordem marcada com \"Máximo de ordens alcançado\"",
+    tutorial_orderLimit_task = "Priorize qualquer ordem",
     
     -- notifications
     tutorial_title_notifications = "Notificações",
