@@ -8,9 +8,9 @@ local modInfo = {
     name = "Sapiens em Português",
     description = "Este mod adiciona uma Tradução para Português ao jogo!\n  1 - Ative este Mod\n  2 - Vá para Settings\n  3 - Em Language, selecione Português\n  4 - Clique em Relaunch.",
     preview = "preview.png",
-    version = "0.4.2a",
+    version = "0.5.0.44-pbu",
     type = "app",
-    developer = "Jonas Costa Campos, Renan Tavares",
+    developer = "Jonas Costa Campos",
     website = "https://github.com/jonasCCa/Sapiens-PT_BR-Translation",
     loadOrder = 1, --default load order for all assets for this mod. Higher numbers are loaded after lower numbers. 
                    --For lua scripts, this can be optionally overriden in the mod table per lua script.

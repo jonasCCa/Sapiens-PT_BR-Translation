@@ -19,9 +19,15 @@ localizations.values = {
     buildable_craftArea = "Área de Criação",
     buildable_craftArea_plural = "Áreas de Criação",
     buildable_craftArea_summary = "Crie itens básicos, ferramentas simples.",
-    buildable_storageArea = "Área de Armazenamento",
-    buildable_storageArea_plural = "Áreas de Armazenamento",
+    buildable_storageArea = "Área de Armazenamento 2x2", --0.5
+    buildable_storageArea_plural = "Áreas de Armazenamento 2x2", --0.5
     buildable_storageArea_summary = "Colete tudo que você tem por aí e guarde em uma pilha organizada.",
+    buildable_storageArea1x1 = "Área de Armazenamento Pequena 1x1", --0.5
+    buildable_storageArea1x1_plural = "Áreas de Armazenamento Pequenas 1x1", --0.5
+    buildable_storageArea1x1_summary = "Espaços menores para quantidades menores. Não cabem itens grandes.", --0.5
+    buildable_storageArea4x4 = "Área de Armazenamento Grande 4x4", --0.5
+    buildable_storageArea4x4_plural = "Áreas de Armazenamento Grandes 4x4", --0.5
+    buildable_storageArea4x4_summary = "Guarda uma quantidade grande de recursos.", --0.5
 	buildable_compostBin = "Composteira", --0.4
     buildable_compostBin_plural = "Composteiras", --0.4
     buildable_compostBin_summary = "Composteiras transformam matéria orgânica em adubo, que pode ser utilizado para enriquecer o solo.", --0.4
@@ -82,6 +88,9 @@ localizations.values = {
     buildable_thatchWall2x2 = "Parede Quadrada de Palha",
     buildable_thatchWall2x2_plural = "Paredes Quadradas de Palha",
     buildable_thatchWall2x2_summary = "A parede mais simples e rápida de contruir. Dimensões: 2x2",
+    buildable_thatchWall2x1 = "Parede Baixa de Palha 2x1", --0.5
+    buildable_thatchWall2x1_plural = "Paredes Baixas de Palha 2x1", --0.5
+    buildable_thatchWall2x1_summary = "A parede mais simples e rápida de contruir. Dimensões: 2x1", --0.5
     buildable_thatchRoofEnd = "Parede de Telhado de Palha",
     buildable_thatchRoofEnd_plural = "Paredes de Telhado de Palha",
     buildable_thatchRoofEnd_summary = "A parede mais simples e rápida de contruir. Preenche o triângulo de uma cabana/telhado.", --0.4 modified
@@ -103,6 +112,9 @@ localizations.values = {
     buildable_splitLogWall2x2 = "Parede Quadrada de Tronco Cortado",
     buildable_splitLogWall2x2_plural = "Paredes Quadradas de Tronco Cortado",
     buildable_splitLogWall2x2_summary = "Uma parede resistente feita de madeira. Dimensões: 2x2",
+    buildable_splitLogWall2x1 = "Parede Baixa de Tronco Cortado 2x1", --0.5
+    buildable_splitLogWall2x1_plural = "Paredes Baixas de Tronco Cortado 2x1", --0.5
+    buildable_splitLogWall2x1_summary = "Uma parede resistente feita de madeira. Dimensões: 2x1", --0.5
     buildable_splitLogWallDoor = "Parede de Tronco Cortado com Porta",
     buildable_splitLogWallDoor_plural = "Paredes de Tronco Cortado com Porta",
     buildable_splitLogWallDoor_summary = "Uma parede resistente feita de madeira. Dimensões: 4x2",
@@ -111,10 +123,19 @@ localizations.values = {
     buildable_splitLogWallLargeWindow_summary = "Uma parede resistente feita de madeira. Dimensões: 4x2",
     buildable_splitLogRoofEnd = "Parede de Telhado de Tronco Cortado",
     buildable_splitLogRoofEnd_plural = "Paredes de Telhado de Tronco Cortado",
-    buildable_splitLogRoofEnd_summary = "Uma parede resistente feita de madeira. Preenche o triângulo de uma cabana/telhado.",
+    buildable_splitLogRoofEnd_summary = "Uma parede resistente feita de madeira. Preenche o triângulo de uma cabana/telhado.", --0.4 modified
     buildable_splitLogBench = "Banco de Tronco Cortado",
     buildable_splitLogBench_plural = "Bancos de Tronco Cortado",
     buildable_splitLogBench_summary = "Um bom local para sentar.",
+    buildable_splitLogShelf = "Prateleira de Tronco Cortado", --0.5
+    buildable_splitLogShelf_plural = "Prateleiras de Tronco Cortado", --0.5
+    buildable_splitLogShelf_summary = "Funciona como uma Área de Armazenamento, para guardar e exibir itens pequenos.", --0.5
+    buildable_splitLogToolRack = "Suporte para Ferramentas de Tronco Cortado", --0.5
+    buildable_splitLogToolRack_plural = "Suportes para Ferramentas de Tronco Cortado", --0.5
+    buildable_splitLogToolRack_summary = "Funciona como uma Área de Armazenamento para guardar lanças, machados e outas ferramentas longas.", --0.5
+    buildable_sled = "Trenó", --0.5
+    buildable_sled_plural = "Trenós", --0.5
+    buildable_sled_summary = "Transporta pilhas de itens a longa distâncias. Funciona como uma Área de Armazenamento, mas pode ser arrastado para locais diferentes sobre qualquer tipo de terreno.", --0.5
     buildable_splitLogSteps = "Escada de Tronco Cortado 2x3 Um Andar",
     buildable_splitLogSteps_plural = "Escadas de Tronco Cortado 2x3 Um Andar",
     buildable_splitLogSteps_summary = "Para se mover entre andares ou subir encostas.",
@@ -191,7 +212,7 @@ localizations.values = {
     buildable_stoneBlockColumn = "Coluna de Tijolos de Pedra", --0.4
     buildable_stoneBlockColumn_plural = "Colunas de Tijolos de Pedra", --0.4
     buildable_stoneBlockColumn_summary = "Uma coluna decorativa.", --0.4
-	
+
     buildable_brickWall = "Parede de Tijolos",
     buildable_brickWall_plural = "Paredes de Tijolos",
     buildable_brickWall_summary = "Uma parede resistente. Dimensões: 4x2",
@@ -241,7 +262,7 @@ localizations.values = {
     buildable_fertilize = "Adubo", --0.4
     buildable_fertilize_plural = "Adubos", --0.4
     buildable_fertilize_summary = "Enriquece o solo ao enterrar adubo ou estrume.", --0.4
-    
+
     --craftables
     craftable_rockSmall = "Pedra Dura Pequena", --0.4 added "Hard"
     craftable_rockSmall_plural = "Pedras Duras Pequenas", --0.4 added "Hard"
@@ -327,7 +348,7 @@ localizations.values = {
     craftable_flintHatchet = "Machadinha de Sílex",
     craftable_flintHatchet_plural = "Machadinhas de Sílex",
     craftable_flintHatchet_summary = "Boa para cortar árvores.",
-	
+
     craftable_bronzeAxeHead = "Cabeça de Machado de Bronze", --0.4
     craftable_bronzeAxeHead_plural = "Cabeças de Machado de Bronze", --0.4
     craftable_bronzeAxeHead_summary = "Pode ser usada para cortar madeira e escavar o chão.", --0.4
@@ -358,7 +379,7 @@ localizations.values = {
     craftable_bronzeHammer = "Martelo de Bronze", --0.4
     craftable_bronzeHammer_plural = "Martelos de Bronze", --0.4
     craftable_bronzeHammer_summary = "Usado para ferraria.", --0.4
-	
+
     craftable_splitLog = "Tronco Cortado",
     craftable_splitLog_plural = "Troncos Cortados",
     craftable_splitLog_summary = "Usado para construção, também pode ser usado de chão.", --b20
@@ -381,7 +402,7 @@ localizations.values = {
     craftable_campfireRoastedBeetroot_summary = "Melhor que comer cru.",
     craftable_flatbread = "Pão Pita",
     craftable_flatbread_plural = "Pães Pitas",
-    craftable_flatbread_summary = "O pão mais simples de todos.",    
+    craftable_flatbread_summary = "O pão mais simples de todos.",
     craftable_unfiredUrnWet = "Vaso não Queimado",
     craftable_unfiredUrnWet_plural = "Vasos não Queimados",
     craftable_unfiredUrnWet_summary = "Pode ser usado para guardar grãos. Mantém os grãos por mais tempo, se queimado.",
@@ -460,7 +481,7 @@ localizations.values = {
     craftable_virusMedicine_plural = "Medicamentos contra Vírus",
     craftable_virusMedicine_summary = "Trata resfriados e outras infecções virais.",
     --0.3.0 group end
-	
+
 	craftable_bronzeIngot = "Barra de Bronze", --0.4
     craftable_bronzeIngot_plural = "Barras de Bronze", --0.4
     craftable_bronzeIngot_summary = "Usada para criar ferramentas e armas mais fortes.", --0.4
@@ -470,7 +491,7 @@ localizations.values = {
     craftable_stoneTileHard = "Ladrilho de Pedra (Dura)", --0.4
     craftable_stoneTileHard_plural = "Ladrilhos de Pedra (Dura)", --0.4
     craftable_stoneTileHard_summary = "Cinzele pedra dura, granito ou mármore para criar ladrilhos para chão, telhados e caminhos.", --0.4
-	
+
     --actions
     action_idle = "Parado",
     action_idle_inProgress = "Parado",
@@ -563,12 +584,12 @@ localizations.values = {
     action_giveMedicine = "Dar Medicamento",
     action_giveMedicine_inProgress = "Dando Medicamento",
     --0.3.0 group end
-	
+
 	action_smithHammer = "Trabalhar com Ferraria", --0.4
     action_smithHammer_inProgress = "Trabalhando com Ferraria", --0.4
     action_chiselStone = "Cinzelar", --0.4
     action_chiselStone_inProgress = "Cinzelando", --0.4
-	
+
     --action modifiers
     action_jog = "Trotar",
     action_jog_inProgress = "Trotando",
@@ -781,7 +802,7 @@ localizations.values = {
     flora_flower1 = "Flor",
     flora_flower1_plural = "Flores",
     flora_flower1_summary = "É uma Flor.",
-    
+
     -- branches
     branch_birch = "Galho de Bétula",
     branch_birch_plural = "Galhos de Bétula",
@@ -943,7 +964,7 @@ localizations.values = {
     -- tool groups
     toolGroup_weapon = "Arma",
     toolGroup_weapon_plural = "Armas",
-    
+
     -- tools
     tool_treeChop = "Ferramenta de Corte",
     tool_treeChop_plural = "Ferramentas de Corte",
@@ -979,8 +1000,8 @@ localizations.values = {
 	tool_knappingCrude = "Ferramenta Simples de Lascar", --b20
     tool_knappingCrude_plural = "Ferramentas Simples de Lascar", --b20
     tool_knappingCrude_usage = "Lascar Simples", --b20
-	
-	
+
+
 	tool_crucible = "Crisol", --0.4
     tool_crucible_plural = "Crisóis", --0.4
     tool_crucible_usage = "Usar Crisol", --0.4
@@ -993,8 +1014,8 @@ localizations.values = {
     tool_hardChiselling = "Cinzel (Pedra Dura)", --0.4
     tool_hardChiselling_plural = "Cinzéis (Pedra Dura)", --0.4
     tool_hardChiselling_usage = "Cinzelando (Pedra Dura)", --0.4
-	
-	
+
+
     --tool properties
     toolProperties_damage = "Dano",
     toolProperties_speed = "Velocidade",
@@ -1087,14 +1108,14 @@ localizations.values = {
     plan_treatFoodPoisoning_inProgress = "Tratando Intoxicação Alimentar", --0.3.0 
     plan_treatVirus = "Tratar Infecção Viral", --0.3.0 
     plan_treatVirus_inProgress = "Tratando Infecção Viral", --0.3.0 
-	
+
 	plan_fertilize = "Adubar", --0.4
     plan_fertilize_inProgress = "Adubando", --0.4
     plan_deliverToCompost = "Compostar", --0.4
     plan_deliverToCompost_inProgress = "Compostando", --0.4
     plan_chiselStone = "Cinzelar", --0.4
     plan_chiselStone_inProgress = "Cinzelando", --0.4
-	
+
     --research    
     research_fire_description = "Sua tribo descobriu que calor é gerado do atrito quando você esfrega dois galhos. Se ficar quente o suficiente, uma brasa pode ser produzida para iniciar uma fogueira, fornecendo calor e luz.",
     research_thatchBuilding_description = "Sua tribo descobriu que quando vegetação seca é alinhada e colocada em uma estrutura de suporte ela pode fornecer um abrigo à prova d'água.",
@@ -1130,7 +1151,7 @@ localizations.values = {
 	research_composting_name = "Compostar", --0.4 --the name is usually derived from the skill, so research types that don't have an associated skill must be given a name.
     research_composting_description = "Matéria orgânica podre pode ser empilhada e transformada em adubo, que então pode ser utilizado para enriquecer o solo.", --0.4
     research_blacksmithing_description = "Ao aquecer e combinar certos tipos de minerais em altas temperaturas, sua tribo descobriu como produzir e utilizar bronze. Ferramentas de bronze duram muito mais tempo e podem ser utilizadas para fabricar tipos de ferramentas inteiramente novos.", --0.4
-	
+
     -- paths
     path_dirt = "Caminho de Terra",
     path_dirt_plural = "Caminhos de Terra",
@@ -1302,7 +1323,7 @@ localizations.values = {
     object_stoneBlock_plural = "Blocos de Pedra", --0.4
     object_stoneTile = "Ladrilho de Pedra", --0.4,
     object_stoneTile_plural = "Ladrilhos de Pedra", --0.4
-	
+
     object_limestoneRock = "Pedra de Calcário",
     object_limestoneRock_plural = "Pedras de Calcário",
     object_limestoneRockSmall = "Pedra Pequena de Calcário",
@@ -1313,7 +1334,7 @@ localizations.values = {
     object_limestoneRockBlock_plural = "Blocos de Calcário", --0.4
     object_stoneTile_limestone = "Ladrilho de Calcário", --0.4,
     object_stoneTile_limestone_plural = "Ladrilhos de Calcário", --0.4
-	
+
     object_redRock = "Pedra Vermelha",
     object_redRock_plural = "Pedras Vermelhas",
     object_redRockSmall = "Pedra Pequena Vermelha",
@@ -1324,7 +1345,7 @@ localizations.values = {
     object_redRockBlock_plural = "Blocos de Pedra Vermelha", --0.4
     object_stoneTile_redRock = "Ladrilho de Pedra Vermelha", --0.4,
     object_stoneTile_redRock_plural = "Ladrilhos de Pedra Vermelha", --0.4
-	
+
     object_greenRock = "Pedra Verde",
     object_greenRock_plural = "Pedras Verdes",
     object_greenRockSmall = "Pedra Pequena Verde",
@@ -1335,9 +1356,9 @@ localizations.values = {
     object_greenRockBlock_plural = "Blocos de Pedra Verde", --0.4
     object_stoneTile_greenRock = "Ladrilho de Pedra Verde", --0.4
     object_stoneTile_greenRock_plural = "Ladrilhos de Pedra Verde", --0.4
-	
+
 	--0.4 added group start
-    
+
     object_graniteRock = "Pedra de Granito",
     object_graniteRock_plural = "Pedras de Granito",
     object_graniteRockSmall = "Pedra Pequena de Granito",
@@ -1348,8 +1369,8 @@ localizations.values = {
     object_graniteRockBlock_plural = "Blocos de Granito",
     object_stoneTile_graniteRock = "Ladrilho de Granito",
     object_stoneTile_graniteRock_plural = "Ladrilhos de Granito",
-    
-    
+
+
     object_marbleRock = "Pedra de Mármore",
     object_marbleRock_plural = "Pedras de Mármore",
     object_marbleRockSmall = "Pedra Pequena de Mármore",
@@ -1417,7 +1438,7 @@ localizations.values = {
     object_stoneTile_sandstoneBlueRock_plural = "Ladrilhos de Arenito (Azul)",
 
     --0.4 group end
-	
+
     object_chickenMeatBreast = "Carne de Galinha Crua", --0.3.0 adicionado "Crua"
     object_chickenMeatBreast_plural = "Carnes de Galinha Cruas", --0.3.0 adicionado "Crua"
     object_birchWoodenPole = "Poste de Madeira de Bétula",
@@ -1544,7 +1565,7 @@ localizations.values = {
     object_stoneAxeHead_redRock_plural = "Cabeças de Machado de Pedra Vermelha",
     object_stoneAxeHead_greenRock = "Cabeças de Machado de Pedra Verde",
     object_stoneAxeHead_greenRock_plural = "Cabeças de Machado de Pedra Verde",
-	
+
 	 --0.4 group start:
     object_stoneChisel = "Cinzel de Pedra", --0.4
     object_stoneChisel_plural = "Cinzéis de Pedra", --0.4
@@ -1561,7 +1582,7 @@ localizations.values = {
     object_stoneChisel_lapisRock = "Cinzel de Lápis-Lazúli", --0.4
     object_stoneChisel_lapisRock_plural = "Cinzéis de Lápis-Lazúli", --0.4
 
-    
+
     object_stoneAxeHead_sandstoneYellowRock = "Cabeça de Machado de Arenito (Amarelo)", --0.4
     object_stoneAxeHead_sandstoneYellowRock_plural = "Cabeças de Machado de Arenito (Amarelo)", --0.4
     object_quernstone_sandstoneYellowRock = "Pilão de Pedra", --0.4
@@ -1609,7 +1630,7 @@ localizations.values = {
     object_compostBin = "Composteira", --0.4
     object_compostBin_plural = "Composteiras", --0.4
     --0.4 group end
-	
+
     object_flintAxeHead = "Cabeça de Machado de Sílex",
     object_flintAxeHead_plural = "Cabeças de Machado de Sílex",
     object_chickenMeatCooked = "Carne de Galinha Cozida",
@@ -1784,7 +1805,7 @@ localizations.values = {
     object_firedUrnHulledWheat_plural = "Trigos Descascados (Vaso Queimado)",
     object_firedUrnHulledWheatRotten = "Trigo Descascado Mofado (Vaso Queimado)",
     object_firedUrnHulledWheatRotten_plural = "Trigos Descascados Mofados (Vaso Queimado)",
-	
+
 	--0.3.0 added group start
     object_unfiredBowlWet = "Tigela não Queimada (Úmido)",
     object_unfiredBowlWet_plural = "Tigelas não Queimadas (Úmidos)",
@@ -1792,7 +1813,7 @@ localizations.values = {
     object_unfiredBowlDry_plural = "Tigelas não Queimadas",
     object_firedBowl = "Tigela Queimada",
     object_firedBowl_plural = "Tigelas Queimadas",
-    
+
     object_unfiredBowlInjuryMedicine = "Medicamento para Ferimentos",
     object_unfiredBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
     object_unfiredBowlBurnMedicine = "Medicamento para Queimaduras",
@@ -1803,7 +1824,7 @@ localizations.values = {
     object_unfiredBowlVirusMedicine_plural = "Medicamentos contra Vírus (Tigelas não Queimadas)",
     object_unfiredBowlMedicineRotten = "Medicamento Estragado",
     object_unfiredBowlMedicineRotten_plural = "Medicamentos Estragados",
-    
+
     object_firedBowlInjuryMedicine = "Medicamento para Ferimentos",
     object_firedBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
     object_firedBowlBurnMedicine = "Medicamento para Queimaduras",
@@ -1816,12 +1837,12 @@ localizations.values = {
     object_firedBowlMedicineRotten_plural = "Medicamentos Estragados",
     --0.3.0 group end
 
-    
+
     object_crucibleWet = "Crisol (Úmido)", --0.4
     object_crucibleWet_plural = "Crisóis (Úmidos)", --0.4
     object_crucibleDry = "Crisol", --0.4
     object_crucibleDry_plural = "Crisóis", --0.4
-	
+
     object_temporaryCraftArea = "Criar",
     object_temporaryCraftArea_plural = "Criar",
     object_quernstone = "Pilão de Pedra",
@@ -1918,7 +1939,7 @@ localizations.values = {
     object_mudBrickColumn_plural = "Colunas de Tijolos de Barro",
     object_build_mudBrickColumn = "Coluna de Tijolos de Barro",
     object_build_mudBrickColumn_plural = "Colunas de Tijolos de Barro",
-	
+
 	object_stoneBlockWall = "Parede de Blocos de Pedra", --0.4
     object_stoneBlockWall_plural = "Paredes de Blocos de Pedra", --0.4
     object_build_stoneBlockWall = "Parede de Blocos de Pedra", --0.4
@@ -1947,7 +1968,7 @@ localizations.values = {
     object_stoneBlockColumn_plural = "Colunas de Blocos de Pedra", --0.4
     object_build_stoneBlockColumn = "Coluna de Blocos de Pedra", --0.4
     object_build_stoneBlockColumn_plural = "Colunas de Blocos de Pedra", --0.4
-	
+
     object_brickWall = "Parede de Tijolos",
     object_brickWall_plural = "Paredes de Tijolos",
     object_build_brickWall = "Parede de Tijolos",
@@ -1994,11 +2015,11 @@ localizations.values = {
     order_multitask_social_inProgress = "Socializando",
     order_multitask_lookAt = "Olhar",
     order_multitask_lookAt_inProgress = "Olhando",
-	
+
 	order_moveToMotivation_bed = "Indo para casa", --0.3.0
     order_moveToMotivation_warmth = "Indo até o calor", --0.3.0
     order_moveToMotivation_light = "Indo até a luz", --0.3.0
-	
+
     order_gather = "Coletar",
     order_gather_inProgress = "Coletando",
     order_chop = "Derrubar",
@@ -2073,17 +2094,17 @@ localizations.values = {
     order_giveMedicineToSelf_inProgress = "Se Tratando", --0.3.0
     order_giveMedicineToOtherSapien = "Tratar", --0.3.0
     order_giveMedicineToOtherSapien_inProgress = "Tratando", --0.3.0
-	
+
 	order_fertilize = "Adubar", --0.4
     order_fertilize_inProgress = "Adubando", --0.4
     order_deliverToCompost = "Compostar", --0.4
     order_deliverToCompost_inProgress = "Compostando", --0.4
     order_chiselStone = "Cinzelar", --0.4
     order_chiselStone_inProgress = "Cinzelando", --0.4
-	
-	
-	
-	
+
+
+
+
 
     --resource
     resource_branch = "Galho",
@@ -2254,7 +2275,7 @@ localizations.values = {
     resource_firedUrnFlour_plural = "Farinhas (Vasos Queimados)",
     resource_firedUrnFlourRotten = "Farinha Mofada (Vaso Queimado)",
     resource_firedUrnFlourRotten_plural = "Farinhas Mofadas (Vasos Queimados)",
-	
+
 	--0.3.0 added group start
     resource_unfiredBowlWet = "Tigela não Queimada (Úmida)",
     resource_unfiredBowlWet_plural = "Tigelas não Queimadas (Úmidas)",
@@ -2262,7 +2283,7 @@ localizations.values = {
     resource_unfiredBowlDry_plural = "Tigelas não Queimadas",
     resource_firedBowl = "Tigela Queimada",
     resource_firedBowl_plural = "Tigelas Queimadas",
-    
+
     resource_unfiredBowlInjuryMedicine = "Medicamento para Ferimentos",
     resource_unfiredBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
     resource_unfiredBowlBurnMedicine = "Medicamento para Queimaduras",
@@ -2273,7 +2294,7 @@ localizations.values = {
     resource_unfiredBowlVirusMedicine_plural = "Medicamentos contra Vírus",
     resource_unfiredBowlMedicineRotten = "Medicamento Estragado",
     resource_unfiredBowlMedicineRotten_plural = "Medicamentos Estragados",
-    
+
     resource_firedBowlInjuryMedicine = "Medicamento para Ferimentos",
     resource_firedBowlInjuryMedicine_plural = "Medicamentos para Ferimentos",
     resource_firedBowlBurnMedicine = "Medicamento para Queimaduras",
@@ -2285,12 +2306,12 @@ localizations.values = {
     resource_firedBowlMedicineRotten = "Medicamento Estragado",
     resource_firedBowlMedicineRotten_plural = "Medicamentos Estragados",
     --0.3.0 group end
-	
+
 	resource_crucibleWet = "Crisol (Úmido)", --0.4
     resource_crucibleWet_plural = "Cisóis (Úmidos)", --0.4
     resource_crucibleDry = "Crisol", --0.4
     resource_crucibleDry_plural = "Crisóis", --0.4
-	
+
     resource_branch_rotten = "Galho Podre",
     resource_branch_rotten_plural = "Galhos Podres",
     resource_breadDough = "Massa de Pão",
@@ -2348,7 +2369,7 @@ localizations.values = {
     resource_group_virusMedicine = "Medicamento contra Vírus",
     resource_group_virusMedicine_plural = "Medicamentos contra Vírus",
     --0.3.0 group end
-	
+
 	resource_group_fertilizer = "Estrume/Adubo", --0.4
     resource_group_fertilizer_plural = "Estrumes/Adubos", --0.4
     resource_group_compostable = "Item podre", --0.4
@@ -2360,7 +2381,7 @@ localizations.values = {
     resource_group_rockAny_plural = "Pedras Grandes", --0.4
     resource_group_stoneBlockAny = "Bloco de Pedra", --0.4
     resource_group_stoneBlockAny_plural = "Blocos de Pedra", --0.4
-	
+
     --desire
     desire_names_none = "Nenhum",
     desire_names_mild = "Um Pouco",
@@ -2424,7 +2445,7 @@ localizations.values = {
     statusEffect_majorInjury_name = "Ferimentos Graves",
     statusEffect_majorInjury_description = "Pode se mover, mas não consegue trabalhar. Pode ser tratado mais rápido com medicamentos ou se tornar crítico.", --0.3.0 modificado para mencionar o tratamento
     statusEffect_criticalInjury_name = "Ferimento Crítico",
-	
+
 	--0.3.0 added group start:
     statusEffect_minorBurn_name = "Queimadura Leve",
     statusEffect_minorBurn_description = "Um pouco doloroso, mas deve curar sozinho. Pode ser tratado mais rapidamente com o medicamento correto.",
@@ -2446,7 +2467,7 @@ localizations.values = {
     statusEffect_criticalVirus_description = "Extremamente infeccioso. Sem tratamento, pode levar à morte.",
     statusEffect_hypothermia_name = "Hipotermia",
     statusEffect_hypothermia_description = "Precisa se aquecer urgentemente ou morrerá em breve.",
-    
+
     statusEffect_injuryTreated_name = "Ferimento tratado",
     statusEffect_injuryTreated_description = "O ferimento foi tratado e se recuperará mais rapidamente.",
     statusEffect_burnTreated_name = "Queimadura tratada",
@@ -2456,7 +2477,7 @@ localizations.values = {
     statusEffect_virusTreated_name = "Infecção tratada",
     statusEffect_virusTreated_description = "Se recuperando mais rapidamente por conta do medicamento correto.",
     --0.3.0 group end
-	
+
     statusEffect_criticalInjury_description = "Ferimentos que representam risco à vida. Pode curar lentamente, mas sem tratamento pode levar à morte.", --0.3.0 modificado para mencionar o tratamento
     statusEffect_unconscious_name = "Inconsiente",
     statusEffect_unconscious_description = "Não pode se mover.",
@@ -2561,7 +2582,7 @@ localizations.values = {
     manage_build = "Construir",
     manage_tribe = "Tribo",
     manage_storageLogistics = "Rotas",
-    
+
     -- build ui
     build_ui_build = "Construir",
     build_ui_place = "Decorar",
@@ -2595,10 +2616,10 @@ localizations.values = {
     storage_ui_hit = "Pressione",
     storage_ui_whenDone = "Quando Terminar",
     storage_ui_NoDestinations = "Sem Destino",
-    
+
     --resources ui
     resources_ui_allowUse = "Permitir uso",
-    
+
     -- tribe ui
     tribe_ui_tribe = "Sapiens",
     tribe_ui_roles = "Funções",
@@ -2741,7 +2762,7 @@ localizations.values = {
         return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\" (Requer levantar peso)"
     end,
 	lookatUI_missingSuitableTerrain = "Nenhum terreno do tipo requerido disponível nas proximidades", --0.4
-    
+
     sapien_ui_roles = "Funções",
     sapien_ui_inventory = "Inventário",
     sapien_ui_relationships = "Família",
@@ -2804,7 +2825,7 @@ localizations.values = {
     ui_plan_unavailable_investigatedElsewhere = "Já está sendo investigado em outro lugar",
     ui_plan_unavailable_extinguishFirst = "Apague primeiro",
 	    ui_plan_unavailable_alreadyTreated = "Já Tratado", --0.3.0, para tarefas médicas, tratamento já foi dado
-    
+
 
     -- ui buildMode
     ui_buildMode_fail_needsAttachment = "Precisa estar ligado a algo",
@@ -2874,7 +2895,7 @@ localizations.values = {
             return string.format("%d porções", values.portionCount)
         end
     end,
-    
+
 
     -- ui names
     ui_name_traits = "Características",
@@ -2909,14 +2930,14 @@ localizations.values = {
 	ui_name_changeMods = "Mudar Mods", --b20
     ui_name_updateMod = "Atualizar Mod", --b20
     ui_name_steamOverlayDisabled = "Requer Steam Overlay", --b20
-    
-    
-    
+
+
+
 
     -- ui infos
     ui_info_deleteWorldAreYouSure = function(values)
         return string.format("Tem certeza de que quer apagar o mundo \"%s\"? Esta ação não pode ser desfeita, o mundo salvo será perdido para sempre.", values.worldName)
-    end,    
+    end,
     ui_info_bindingPopUpViewInstructions = "Pressione e solte a tecla para atribuí-la a este comando.",
     ui_info_bindingTimeRemaining = function(values)
         return string.format("Reverte em %d segundos...", values.seconds)
@@ -2924,17 +2945,17 @@ localizations.values = {
     ui_info_changeModAreYouSure = "Tem certeza de que quer mudar os mods deste mundo?\n\nIsto pode causar erros ao carregar o mundo, então você deveria fazer uma cópia de segurança do diretório do mundo antes.", --b20
     ui_info_updateModAreYouSure = function(values) --b20
         return string.format("Tem ceteza de que quer atualizar o mod %s?\n\nIsto não pode ser desfeito e pode causar erros ao carregar o mundo.\n\nIsto copiará a última versão (%s) do mod no diretório do mundo, sobrescrevendo a versão antiga (%s).\n\nVocê deveria fazer uma cópia de segurança do diretório do mundo antes.", values.modName, values.newVersion, values.oldVersion)
-    end,  
+    end,
     ui_info_steamOverlayDisabled = "Esta função requer o Steam Overlay.\n\nVocê pode habilitar o Steam Overlay a partir das configurações da Steam, tanto para todos os jogos quanto para o Sapiens.", --b20
 
     ui_pause = "Pause",
     ui_play = "Resumir",
     ui_fastForward = "Avanço Rápido",
-	
+
 	ui_objectBelongingToSapien = function(values) --b20
         return string.format("%s de %s", values.objectName, values.sapienName)
-    end, 
-	
+    end,
+
     tribeUI_sapien = "Sapien",
     tribeUI_distance = "Dist.",
     tribeUI_age = "Idade",
@@ -2996,7 +3017,7 @@ localizations.values = {
     misc_cantDoPlan = function(values)
         return string.format("Não pode %s", values.planName)
     end,
-    
+
     misc_settings = "Configurações",
     misc_continuous = "Continuamente",
     misc_Empty = "Vazio",
@@ -3015,7 +3036,7 @@ localizations.values = {
     misc_decorate_with = function(values)--b13
         return string.format("Decorar com %s", values.name)
     end,
-	
+
 	misc_compostNotEnoughMaterialStored = "O material armazenado não é suficiente, adicione mais itens podres", --0.4
     misc_compostNextInLessThanAnHour = "Próximo adubo pronto em < 1 hora", --0.4
     misc_compostNextInXHours = function(values) --0.4
@@ -3025,7 +3046,7 @@ localizations.values = {
     misc_compostPreviousWasXHours = function(values) --0.4
         return string.format("Último adubo produzido há %d horas", values.hours)
     end,
-    
+
     misc_disabled = "Desabilitado", --0.4
     misc_maxQuantity = "Quantidade Máxima", --0.4
     misc_max = "Máximo", --0.4
@@ -3197,7 +3218,7 @@ localizations.values = {
     storage_logDrum = "Tambores de Tronco",
     storage_balafon = "Xilofones",
     storage_tile = "Ladrilhos",
-	
+
 	storage_copperOre = "Minérios de Cobre", --0.4
     storage_tinOre = "Minérios de Estanho", --0.4
     storage_manure = "Estrumes", --0.4
@@ -3303,7 +3324,7 @@ localizations.values = {
     key_menu_right = "Direita",
     key_menu_select = "Selecionar",
     key_menu_back = "Voltar",
-    
+
     -- key_movement
     key_movement_forward = "Frente",
     key_movement_back = "Trás",
@@ -3317,7 +3338,7 @@ localizations.values = {
     key_movement_rightAlt = "Direita (Alternativo)",
 	key_movement_zoomIn = "Mais Zoom", --0.4
     key_movement_zoomOut = "Menos Zoom", --0.4
-	
+
     key_building_cancel = "Cancelar",
     key_building_confirm = "Confirmar",
     key_building_zAxisModifier = "Mudar Eixo / Desabilitar Encaixe Automático",
@@ -3373,11 +3394,11 @@ localizations.values = {
     selectionGroup_smallRock_objectName = "Pedra Pequena",
     selectionGroup_smallRock_plural = "Pedras Pequenas",
     selectionGroup_smallRock_descriptive = "Quaisquer Pedras Pequenas",
-	
+
 	selectionGroup_stoneBlock_objectName = "Bloco de Pedra", --0.4
     selectionGroup_stoneBlock_plural = "Blocos de Pedra", --0.4
     selectionGroup_stoneBlock_descriptive = "Quaisquer Blocos de Pedra", --0.4
-    
+
     -- notifications
     notification_becamePregnant = function(values)
         return values.name .. " está grávida"
@@ -3428,8 +3449,8 @@ localizations.values = {
     notification_mammothKill = function(values)
         return values.name .. " matou um mamute"
     end,
-	
-	
+
+
     --[[notification_minorInjuryByMob = function(values) --0.3.0 estes foram removidos, substituídos por notification_triggerActionHuntingMob combinado com notification_minorInjury
         return values.name .. " foi ferido por um " .. values.mobTypeName
     end
@@ -3439,7 +3460,7 @@ localizations.values = {
     notification_criticalInjuryByMob = function(values)
         return values.name .. " foi criticamente ferido por um " .. values.mobTypeName
     end,]]
-	
+
 	--b13
     notification_majorInjuryDeveloped = function(values)
         return "O ferimento de " .. values.name .. "se tornou grave"
@@ -3448,7 +3469,7 @@ localizations.values = {
         return "O ferimento de " .. values.name .. "se tornou crítico"
     end,
     --/b13
-	
+
 	--0.3.0
     notification_triggerActionCrafting = function(values)
         return "criava " .. string.lower(values.craftablePlural)
@@ -3465,7 +3486,7 @@ localizations.values = {
     notification_triggerActionBasic = function(values)  --values.actionName is also available
         return string.lower(values.actionInProgress)
     end,
-    
+
     notification_minorInjury = function(values)
         return values.name .. " se feriu enquanto " .. values.triggerAction
     end,
@@ -3475,7 +3496,7 @@ localizations.values = {
     notification_criticalInjury = function(values)
         return values.name .. " se feriu criticamente enquanto " .. values.triggerAction
     end,
-	
+
 	notification_minorInjuryBy = function(values) --0.3.6 adicionado
         return values.name .. " se feriu com um(a) " .. string.lower(values.objectName)
     end,
@@ -3485,7 +3506,7 @@ localizations.values = {
     notification_criticalInjuryBy = function(values) --0.3.6 adicionado
         return values.name .. " se feriu criticamente com um(a) " .. string.lower(values.objectName)
     end,
-	
+
     notification_minorBurn = function(values)
         return values.name .. " se queimou enquanto " .. values.triggerAction
     end,
@@ -3577,14 +3598,14 @@ localizations.values = {
     notification_criticalVirusBecameMajor = function(values)
         return "A infecção viral de " .. values.name .. " não é mais crítica"
     end,
-	
+
 	notification_windDestruction = function(values) --0.4. values.name is not a sapien's name, it is an object's name like "Thatch Roof/Hut"
         return "Um(a) " .. values.name .. " recebeu danos por conta dos ventos fortes"
     end,
     notification_rainDestruction = function(values) --0.4. values.name is not a sapien's name, it is an object's name like "Thatch Roof/Hut"
         return "Um(a) " .. values.name .. " recebeu danos por conta dos ventos fortes"
     end,
-    
+
     notification_addWindBlownAdjective = function(values) --0.4 Used in a wind storm eg: "Bob was majorly injured by a 'flying banana'"
         return string.lower(values.objectName) .. " voador(a)"
     end,
@@ -3593,10 +3614,10 @@ localizations.values = {
     deathReason_oldAge = "Velhice",
     deathReason_burn = "Queimadura Crítica",
     deathReason_foodPoisoning = "Intoxicação Alimentar",
-    deathReason_virus = "Infecção Viral", 
-    deathReason_starvation = "Fome", 
+    deathReason_virus = "Infecção Viral",
+    deathReason_starvation = "Fome",
     deathReason_hypothermia = "Hipotermia",
-    
+
     --/0.3.0
 
     -- menues
@@ -3721,19 +3742,19 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_issueOrder_instructions_a = "- Clique em um chão gramado próximo à sua tribo e selecione",
     tutorial_issueOrder_instructions_b = "Limpar",
     tutorial_basicControls_clearHexes = function(values)
-        return string.format("Limpar %d áreas de grama", values.count) 
+        return string.format("Limpar %d áreas de grama", values.count)
     end,
 
     -- storingResources
     tutorial_title_storingResources = "Áreas de Armazenamento",
     tutorial_storingResources_storyText = "Para guardar e gerenciar todos os recursos que a sua tribo encontrar e criar, você precisará de áreas de armazenamento\n\nCada área de armazenamento guarda apenas um tipo de recurso, então você precisará construir várias enquanto progride, pelo menos uma para cada tipo de recurso.",
     tutorial_storingResources_build = function(values)
-        return string.format("Construir %d áreas de armazenamento", values.count) 
+        return string.format("Construir %d áreas de armazenamento", values.count)
     end,
     tutorial_storingResources_subTitle_accessWith = "- Acesse o menu de construção com",
     tutorial_storingResources_subTitle_andPlace = "- Coloque áreas de armazenamento próximas à sua tribo",
     tutorial_storingResources_store = function(values)
-        return string.format("Guardar %d %s", values.count, values.typeName) 
+        return string.format("Guardar %d %s", values.count, values.typeName)
     end,
     tutorial_storingResources_storeTip_a = "- Você talvez precise esperar a grama secar",
     tutorial_storingResources_storeTip_b = "Você pode coletar galhos das árvores",
@@ -3747,7 +3768,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_title_multiselect = "Selecionando Múltiplas Coisas",
     tutorial_description_multiselect = "Você pode selecionar vários objetos ou áreas do terreno de uma vez e então dar ou cancelar orens para todos eles ao mesmo tempo.\n\nIsto é particularmente útil para limpar grandes áreas ou coletar de várias plantas.",
     tutorial_task_multiselect = function(values)
-        return string.format("Dê quaisquer ordens para %d ou mais coisas ao mesmo tempo", values.count) 
+        return string.format("Dê quaisquer ordens para %d ou mais coisas ao mesmo tempo", values.count)
     end,
     tutorial_task_multiselect_subtitle = "- Clique em qualquer objeto ou área do chão",
     tutorial_task_multiselect_subtitle_b = "- Pressione \"Selecionar Mais\"",
@@ -3757,7 +3778,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_title_beds = "Dormindo em Camas",
     tutorial_beds_storyText = "Sapiens ficarão mais felizes se dormirem em uma cama ao invés do chão duro. Então agora que temos feno suficiente guardado, vamos construir algumas camas.",
     tutorial_beds_build = function(values)
-        return string.format("Coloque %d ou mais camas", values.count) 
+        return string.format("Coloque %d ou mais camas", values.count)
     end,
     tutorial_beds_subTitle_accessWith = "- Acesse o menu de construção com",
     tutorial_beds_subTitle_andPlace = "- Coloque camas próximas à sua tribo",
@@ -3772,62 +3793,62 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_task_roleAssignment_subtitle_b = "e então selecione o menu da tribo",
     tutorial_task_roleAssignment_subtitle_c = "- Selecione \"Funções\"",
     tutorial_task_roleAssignment_subtitle_d = "- Atribua qualquer função a um sapien",
-    
+
     -- research
     tutorial_title_research = "Investigar para Avançar",
     tutorial_research_storyText = "Para poder avançar, sapiens precisam investigar o mundo à sua volta.\n\nIsto leva a descobertas tecnológicas que desbloquearão novas coisas para construir e criar.",
     tutorial_research_branch = "Investigue um galho",
     tutorial_research_rock = "Investigue uma pedra",
     tutorial_research_hay = "Investigue feno",
-    
+
     -- tools
     tutorial_title_tools = "Áreas de Criação e Ferramentas",
     tutorial_tools_storyText = "Com o conhecimento da pedra lascada, os sapiens agora tem a habilidade para criar ferramentas.\n\nCabeças de machado e facas são muito úteis para começar, então a sua tribo deveria criar alguns agora.\n\nA melhor maneira de gerenciar as atividades de criação da sua tribo é começar a construir as áreas de criação.",
     tutorial_tools_buildCraftAreas = function(values)
-        return string.format("Construa %d áreas de criação", values.count) 
+        return string.format("Construa %d áreas de criação", values.count)
     end,
     tutorial_tools_craftHandAxes = function(values)
-        return string.format("Crie e guarde %d cabeças de machado de pedra", values.count) 
+        return string.format("Crie e guarde %d cabeças de machado de pedra", values.count)
     end,
     tutorial_tools_craftKnives = function(values)
-        return string.format("Crie e guarde %d facas de pedra", values.count) 
+        return string.format("Crie e guarde %d facas de pedra", values.count)
     end,
-    
+
     -- fire
     tutorial_title_fire = "Acendendo Fogo",
     tutorial_fire_storyText = "Fogo é uma descoberta inicial importante que fornece luz durante a noite, ajuda a manter a sua tribo quentinha quando estiver frio e permite que eles cozinhem comida.\n\nAgora seria uma boa hora para acender uma fogueira.",
     tutorial_fire_place = "Coloque uma fogueira",
     tutorial_fire_waitForBuild = "Espere a fogueira ficar pronta e acenda-a",
-    
+
     -- thatchBuilding
     tutorial_title_thatchBuilding = "Construindo com Palha",
     tutorial_thatchBuilding_storyText = "Com o novo conhecimento da construção com palha, agora seria uma boa hora para a sua tribo começar a trabalhar em algumas estruturas básicas.\n\nSapiens ficam mais felizes se as suas camas estiverem sob um teto e recursos guardados debaixo de um duram mais tempo.",
     tutorial_thatchBuilding_place = "Coloque uma cabana/telhado de palha",
     tutorial_thatchBuilding_waitForBuild = "Espere até que a estrutura seja construída",
-    
+
     -- food
     tutorial_title_food = "Fome e Comida",
     tutorial_food_storyText = "Seus sapiens estão começando a ficar com fome. Sapiens não colhem frutas sozinhos, você deve ordená-los a fazer isso, assim como caçar e guardar a comida.\n\nMas não colete tudo de uma vez, já que a maioria das frutas ficam na árvore até a próxima estação e, uma vez colhidas, apodrecerão rapidamente se deixadas expostas.",
     tutorial_food_storeTask = function(values)
-        return string.format("Colete e guarde %d recursos de comida", values.count) 
+        return string.format("Colete e guarde %d recursos de comida", values.count)
     end,
     tutorial_food_storeTask_subTitle = "Frutas crescem em alguns tipos de árvores e arbustos",
-    
+
     -- farming
     tutorial_title_farming = "Agricultura",
     tutorial_farming_storyText = "Agora que as necessidades imediatas da tribo foram atendidas, precisamos começar a pensar no futuro.\n\nEnquanto a tribo cresce, eles precisarão plantar o suficiente para alimentar todos os membros.",
     tutorial_farming_digging = "Descubra escavação",
     tutorial_farming_planting = "Descubra plantação",
     tutorial_farming_plantXTrees = function(values)
-        return string.format("Plante %d árvores ou plantas frutíferas", values.count) 
+        return string.format("Plante %d árvores ou plantas frutíferas", values.count)
     end,
-    
+
     -- music
     tutorial_title_music = "Tocando Música",
     tutorial_music_storyText = "Música deixa os sapiens mais felizes e leais. Sapiens musicais podem ficar tristes se ficarem sem escutar ou tocar música por muito tempo.",
     tutorial_music_discoverBoneCarving = "Descubra artesanato com ossos",
     tutorial_music_playFlute = "Toque um instrumento musical", --0.3.0 alterado para "instrumento musical" já que tambores e xilofones agora também contam para completar
-    
+
     -- routes
     tutorial_title_routes = "Rotas e Logística",
     tutorial_routes_storyText = "Sapiens podem mover recursos de uma área de armazenamento para outra utilizando rotas.\n\nRotas são úteis para distribuir recursos para onde eles são necessários. Elas podem ser usadas também para transferir recursos através de grandes distâncias.",
@@ -3837,14 +3858,14 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_routes_create_subtitle_c = "- Clique na área de armazenamento de origem",
     tutorial_routes_create_subtitle_d = "- Então clique em uma área de armazenamento destino vazia",
     tutorial_routes_doTransfer = "Transfira qualquer item de uma área de armazenamento para outra",
-    
+
     -- paths
     tutorial_title_paths = "Caminhos e Estradas",
     tutorial_paths_storyText = "Sapiens se movem mais rápido em caminhos, o que faz a sua tribo ser mais eficiente.",
     tutorial_paths_buildXPaths = function(values)
-        return string.format("Construa %d segmentos de caminho", values.count) 
+        return string.format("Construa %d segmentos de caminho", values.count)
     end,
-    
+
     -- woodBuilding
     tutorial_title_woodBuilding = "Construindo com Madeira",
     tutorial_woodBuilding_storyText = "Cabanas de palha são melhores que nada, mas sua tribo vai precisar começar a construir com materiais mais avançados se quiser que sua civilização passe no teste do tempo.",
@@ -3855,10 +3876,10 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_title_advancedTools = "Criando Ferramentas Avançadas",
     tutorial_advancedTools_storyText = "Juntando ferramentas de pedra simples com um cabo, sua tribo pode criar ferramentas mais avançadas que duram mais, fazem tarefas mais rapidamente e desbloqueiam a habilidade de caçar presas maiores.",
     tutorial_advancedTools_driedFlax = function(values)
-        return string.format("Encontre, colete e guarde %d linhos secos", values.count) 
+        return string.format("Encontre, colete e guarde %d linhos secos", values.count)
     end,
     tutorial_advancedTools_twine = function(values)
-        return string.format("Crie e guarde %d fios", values.count) 
+        return string.format("Crie e guarde %d fios", values.count)
     end,
     tutorial_advancedTools_pickAxe = "Crie uma picareta",
     tutorial_advancedTools_spear = "Crie uma lança",
@@ -3883,7 +3904,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
             values.allowedPlansPerFollower)
     end,
     tutorial_orderLimit_task = "Priorize qualquer ordem",
-    
+
     -- notifications
     tutorial_title_notifications = "Notificações",
     tutorial_notifications_task = "Vá até a notificação mais recente",
@@ -3999,9 +4020,9 @@ E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à 
         return values.planText .. " " .. values.retrievedObjectConstructableTypeName
     end,
     --/b13
-	
+
 	--0.3.0
-    
+
     orderStatus_butchering = "cortando",
 
     orderStatus_getObjectNameSingleGeneric = function(values) --for things without names. eg chopping "a coconut tree"
@@ -4010,7 +4031,7 @@ E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à 
     orderStatus_getObjectNameSingleNamed = function(values) -- for named things eg. hunting "Sam The Mammoth"
         return values.objectName
     end,
-    orderStatus_getObjectNamePlural = function(values) 
+    orderStatus_getObjectNamePlural = function(values)
         return values.objectPlural
     end,
 
@@ -4020,16 +4041,16 @@ E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à 
     orderStatus_addObjectNameSingleNamed = function(values) -- for named things eg. hunting "Sam The Mammoth"
         return values.inProgressName .. " " .. values.objectName
     end,
-    orderStatus_addObjectNamePlural = function(values) 
+    orderStatus_addObjectNamePlural = function(values)
         return values.inProgressName .. " " .. values.objectPlural
     end,
 
     -- 0.3.3
-    orderStatus_addWarmingUp = function(values) 
+    orderStatus_addWarmingUp = function(values)
         return values.currentText .. " (Aquecendo)"
     end,
     --/0.3.0
-	
+
 	--0.4
     orderStatus_deliverToCompost = function(values)
         return values.inProgressName .. " " .. values.heldObjectName .. " em " .. values.retrievedObjectName
@@ -4043,17 +4064,17 @@ local function getTimeSplit(durationSeconds, dayLength, yearLength)
         days = 0,
         hours = 0,
     }
-    
+
     if durationSeconds >= yearLength then
         result.years = math.floor(durationSeconds / yearLength)
         durationSeconds = durationSeconds - result.years * yearLength
     end
-    
+
     if durationSeconds >= dayLength then
         result.days = math.floor(durationSeconds / dayLength)
         durationSeconds = durationSeconds - result.days * dayLength
     end
-    
+
     if durationSeconds > 0 then
         result.hours = math.floor(durationSeconds / dayLength * 24)
     end
@@ -4082,11 +4103,11 @@ local function getTimeDurationDescriptionFromSplitTime(timeSplit)
         if not empty then
             result = result .. ", "
         end
-        
+
         result = result .. mj:tostring(timeSplit.days) .. postfix
         empty = false
     end
-    
+
     if timeSplit.hours > 0 then
         local postfix = " hora"
         if timeSplit.hours > 1 then
@@ -4096,10 +4117,10 @@ local function getTimeDurationDescriptionFromSplitTime(timeSplit)
         if not empty then
             result = result .. ", "
         end
-        
+
         result = result .. mj:tostring(timeSplit.hours) .. postfix
         empty = false
-    else 
+    else
         if empty then
         return "< 1 hora"
         end
@@ -4124,7 +4145,7 @@ function localizations.getTimeRangeDescription(durationSecondsMin, durationSecon
         local maxDescription = localizations.getTimeDurationDescription(durationSecondsMax, dayLength, yearLength)
         return "< " .. maxDescription
     end
-    
+
     local timeSplitMin = getTimeSplit(durationSecondsMin, dayLength, yearLength)
     local timeSplitMax = getTimeSplit(durationSecondsMax, dayLength, yearLength)
 
@@ -4170,15 +4191,15 @@ function localizations.getBiomeForestDescription(biomeTags)
         else
             typeString = "Pinheiro"
         end
-    else 
+    else
         typeString = "Bétula"
     end
-    
+
     if not typeString then
         return "Sem Árvores."
     end
 
-    local forestString = true
+    local forestString = nil
     if biomeTags.mediumForest then
         forestString = string.format("Floresta de %s.", typeString) -- removed mj:capitalize
     elseif biomeTags.denseForest then
@@ -4240,7 +4261,7 @@ function localizations.getBiomeMainDescription(biomeTags)
 end
 
 function localizations.getBiomeTemperatureDescription(biomeTags)
-    
+
     local descriptionString = nil
 
     if biomeTags.temperatureSummerVeryHot then
@@ -4274,5 +4295,5 @@ function localizations.getBiomeFullDescription(biomeTags) --b13
 end
 
 --mj:log("localizations count:", #(localizations.localizations))
-        
+
 return localizations
