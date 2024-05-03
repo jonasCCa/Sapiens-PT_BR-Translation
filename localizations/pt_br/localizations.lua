@@ -597,6 +597,8 @@ localizations.values = {
     action_takeOffTorsoClothing_inProgress = "Tirando Roupa",
     action_putOnTorsoClothing = "Vestir Roupa",
     action_putOnTorsoClothing_inProgress = "Vestindo Roupa",
+    action_greet = "Cumprimentar", --0.5
+    action_greet_inProgress = "Cumprimentando", --0.5
 
     --0.3.0 group:
     action_selfApplyOralMedicine = "Tomar Medicamento",
@@ -611,6 +613,9 @@ localizations.values = {
     action_smithHammer_inProgress = "Trabalhando com Ferraria", --0.4
     action_chiselStone = "Cinzelar", --0.4
     action_chiselStone_inProgress = "Cinzelando", --0.4
+
+    action_dragObject = "Arrastar", --0.5
+    action_dragObject_inProgress = "Arrastando", --0.5
 
     --action modifiers
     action_jog = "Trotar",
@@ -1137,6 +1142,13 @@ localizations.values = {
     plan_deliverToCompost_inProgress = "Compostando", --0.4
     plan_chiselStone = "Cinzelar", --0.4
     plan_chiselStone_inProgress = "Cinzelando", --0.4
+
+    plan_haulObject = "Mover", --0.5 used when moving a large object, eg dragging a sled
+    plan_haulObject_inProgress = "Movendo", --0.5 
+    plan_greet = "Cumprimentar", --0.5 used when meeting a sapien from another tribe
+    plan_greet_inProgress = "Cumprimentando", --0.5
+    plan_manageTribeRelations = "Relações", --0.5
+    plan_manageTribeRelations_inProgress = "Relações", --0.5
 
     --research    
     research_fire_description = "Sua tribo descobriu que calor é gerado do atrito quando você esfrega dois galhos. Se ficar quente o suficiente, uma brasa pode ser produzida para iniciar uma fogueira, fornecendo calor e luz.",
