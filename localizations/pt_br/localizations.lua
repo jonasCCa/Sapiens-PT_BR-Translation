@@ -2877,6 +2877,7 @@ localizations.values = {
 
     -- ui actions    
     ui_action_chooseTribe = "Liderar esta Tribo",
+    ui_action_resumeTribe = "Continuar nesta Tribo", --0.5, from the map view, for tribes you have already played
     ui_action_place = "Colocar",
     ui_action_plant = "Plantar",
     ui_action_build = "Construir",
@@ -2886,6 +2887,7 @@ localizations.values = {
     ui_action_assign = "Atribuir",
     ui_action_cancel = "Cancelar",
     ui_action_cancelling = "Cancelando",
+    ui_action_retry = "Tentar Novamente", --0.5 when you are disconnected from a server in multiplayer, you can use the "Retry" button to attempt to connect again
     ui_action_stop = "Parar",
     ui_action_next = "Próximo",
     ui_action_choose = "Escolher",
@@ -2925,6 +2927,21 @@ localizations.values = {
     ui_action_setFillType = "Selecionar material de preenchimento",
 	ui_action_update = "Atualizar", --b20
     ui_action_OK = "Confirmar", --b20
+    ui_action_filter = "Filtrar", --0.5
+    ui_action_maybeLater = "Talvez Mais Tarde", --0.5 used on a button when a tribe has a quest to dismiss the UI, however the quest remains available for later
+    ui_action_acceptQuest = "Aceitar Missão", --0.5
+    ui_action_acceptDelivery = "Aceitar Entrega", --0.5
+    ui_action_multiplayer = "Multijogador", --0.5 button on main menu
+    ui_action_buy = "Comprar", --0.5 on button for purchasing in trade offers
+    
+    ui_action_craftX = function(values) --0.5
+        return "Criar " .. values.countText
+    end,
+    ui_action_maintainX = function(values) --0.5
+        return "Manter " .. values.countText
+    end,
+
+    ui_maintainToolTip = "A criação irá começar quando o número de recursos por perto fica abaixo de uma certa quantidade.", --0.5
 
     --ui plans
     ui_plan_unavailable_stopOrders = "Cancele outras ordens primeiro",
@@ -2932,7 +2949,8 @@ localizations.values = {
     ui_plan_unavailable_missingKnowledge = "Conhecimento não Descoberto",
     ui_plan_unavailable_investigatedElsewhere = "Já está sendo investigado em outro lugar",
     ui_plan_unavailable_extinguishFirst = "Apague primeiro",
-	    ui_plan_unavailable_alreadyTreated = "Já Tratado", --0.3.0, para tarefas médicas, tratamento já foi dado
+    ui_plan_unavailable_alreadyTreated = "Já Tratado", --0.3.0, para tarefas médicas, tratamento já foi dado
+    ui_plan_unavailable_tribeSettingsDontAllowUse = "Permitir uso de itens primeiro", --0.5 either the "Allow Use" checkbox is unchecked, or tribe settings disallow use, tool tip in action UI
 
 
     -- ui buildMode
@@ -3003,7 +3021,9 @@ localizations.values = {
             return string.format("%d porções", values.portionCount)
         end
     end,
-
+    ui_notInYourTribe = "Não é um membro da sua tribo", --0.5 displayed in changeAssignedSapienUI when you look at a visiting sapien that has not been recruited
+    ui_tooTiredToWork = "Muito cansado para trabalhar", --0.5 displayed in changeAssignedSapienUI when sapien is too tired to work
+    ui_slowConnection = "Problemas de Conexão", --0.5 tool tip when hovering over connection alert icon near the time controls. Displayed if there is a bad connection with the server
 
     -- ui names
     ui_name_traits = "Características",
@@ -3012,6 +3032,9 @@ localizations.values = {
     ui_name_tasks = "Funções",
     ui_name_move = "Mover",
     ui_name_moveAndWait = "Mover & Esperar",
+    ui_moveObject = function(values) --0.5 displayed at top of screen when moving a draggable object like a sled
+        return "Mover " .. values.objectName
+    end,
 	ui_name_assignBed = "Atribuir Cama", --b20
     ui_name_mapMode = "Mapa do Mundo",
     ui_name_changeAssignedSapien = "Selecione um Sapien para quem atribuir",
@@ -3019,7 +3042,7 @@ localizations.values = {
     ui_name_terrain = "Terreno",
     ui_name_craftCount = "Quantidade a Criar",
     ui_name_ipAddress = "Endereço de IP",
-    ui_name_port = "Porta (16161 por padrão)",
+    ui_name_port = "Porta UDP", --0.5 added "UDP", removed default info
     ui_name_notApplicable = "N/A",
     ui_name_today = "Hoje",
     ui_name_yesterday = "Ontem",
@@ -3032,12 +3055,35 @@ localizations.values = {
 	ui_name_worldAge = "Idade do Mundo (dias no jogo)", --b20
     ui_name_seed = "Semente",
 	ui_name_manage = "Gerenciar", --b20
+    ui_name_manageWorld = "Gerenciar Mundo", --0.5 replaces ui_name_manage in saves panel in main menu
     ui_name_saves = "Mundos Salvos",
     ui_name_load = "Carregar",
+    ui_name_tribes = "Tribos",
+    ui_name_startNewTribe = "Selecionar Nova Tribo", --0.5 new button in load menu, loads world map, where you can start a new tribe or select an existing one
     ui_name_deleteWorld = "Apagar Mundo",
 	ui_name_changeMods = "Mudar Mods", --b20
     ui_name_updateMod = "Atualizar Mod", --b20
     ui_name_steamOverlayDisabled = "Requer Steam Overlay", --b20
+    ui_name_quest = "Misssão", --0.5
+    ui_name_activeQuest = "Missão Ativa", --0.5
+    ui_name_availableQuest = "Missão Disponível", --0.5
+    ui_name_completedQuest = "Missão Completa", --0.5
+    ui_name_failedQuest = "Missão Fracassada", --0.5
+    ui_name_trade_offers = "Ofertas de Troca", --0.5
+    ui_name_trade_requests = "Pedidos de Troca", --0.5
+    ui_name_trade_settings = "Configurações da Tribo", --0.5 (not "trade settings", these settings apply to the tribe as a whole, not just trade)
+    ui_name_favor = "Confiança", --0.5 this might be tricky to translate, broadly it is a representation of trust and respect, a kind of social debt/currency. 
+    ui_name_joinMultiplayer = "Entrar em Multijogador", --0.5 title for multiplayer panel in main menu
+    ui_name_world = "Mundo", --0.5 used in load menu
+    ui_name_previous = "Anteriores", --0.5 in Multiplayer menu, title for previous connections
+    ui_name_request = "Solicitação", --0.5 hovering over trade request storage area
+    ui_name_offer = "Oferta", --0.5 hovering over trade offer storage area
+    ui_name_purchased = "Comprado", -- hovering over trade offer storage area eg. "Offer: 45 Stone Axe Heads - Purchased:40"
+    ui_name_delivered = "Entregue", -- hovering over trade request storage area eg. "Request: 45 Stone Axe Heads - Delivered:40"
+
+    ui_name_connected = "Conectado", --0.5 displayed in the chat message ui when players connect
+    ui_name_disconnected = "Desconectado", --0.5 displayed in the chat message ui when players disconnect
+    ui_name_hibernated = "Tribo hibernada", --0.5 displayed in the chat message ui when players hibernate
 
 
 
@@ -3056,6 +3102,9 @@ localizations.values = {
     end,
     ui_info_steamOverlayDisabled = "Esta função requer o Steam Overlay.\n\nVocê pode habilitar o Steam Overlay a partir das configurações da Steam, tanto para todos os jogos quanto para o Sapiens.", --b20
 
+    ui_info_joinMultiplayerDescription = "Multijogador é um novo recurso experimental e ainda deve conter problemas e bugs significativos. O lançamento final do multijogador será lançado em breve.\n\nOs binários de servidor dedicado estão disponíveis na Steam para Windows, Linux e macOS e você também pode abrir qualquer jogo de jogador único para conexão LAN a partir do menu de pause. Se estiver hospedando e precisar abrir portas no firewall para conexões externas, a porta UDP padrão é 16161 e você precisará abrir 16162 para Steam e 16168 para conexões HTTP também.", --0.5 in multiplayer join main menu
+
+
     ui_pause = "Pause",
     ui_play = "Resumir",
     ui_fastForward = "Avanço Rápido",
@@ -3073,6 +3122,14 @@ localizations.values = {
     tribeUI_roles = "Funções",
     tribeUI_skills = "Habilidade",
     tribeUI_population = "População",
+
+    ui_questSummary = function(values) --0.5 used for markers and UI when looking at a quest object
+        return "Entregar " .. values.count .. " " .. values.resourcePlural
+    end,
+
+    ui_questSummaryWithDeliveredCount = function(values) --0.5
+        return "Entregar " .. values.count .. " " .. values.resourcePlural .. " (" .. values.deliveredCount .. "/" .. values.count .. ")"
+    end,
 
     --misc
     misc_no_summary_available = "Nenhum resumo disponível",
