@@ -3158,9 +3158,9 @@ localizations.values = {
     misc_routes = "Rotas",
     misc_addStops = "Adicionar Paradas",
     misc_addNewRoute = "Adicionar Nova Rota",
-    misc_addNewRouteStartingHere = "Adicionar Nova Rota Começando Aqui",
+    misc_addNewRouteStartingHere = "Adicionar Nova Rota Daqui", --0.5
     misc_setFillType = "Selecionar Material de Preenchimento",
-    misc_debug = "Debug",
+    misc_debug = "Depuração",
     misc_cheat = "Trapaça",
     misc_fmodCredit = "Para o áudio, Sapiens usa FMOD Studio feito por Firelight Technologies Pty Ltd.",
     misc_version = "Versão",
@@ -3215,6 +3215,48 @@ localizations.values = {
     misc_disabled = "Desabilitado", --0.4
     misc_maxQuantity = "Quantidade Máxima", --0.4
     misc_max = "Máximo", --0.4
+
+
+    misc_needsLargerStorageArea = "Necessita de uma Área de Armazenamento maior", --0.5 this is displayed for large items like logs in the "Accept Only" popup button in a small storage area
+    misc_tribeName = function(values) --0.5 displayed on tribe selection. No longer actually adds anything, but could be used to display things like "The tribeName Tribe"
+        return values.tribeName
+    end,
+    misc_tribeNameFormal = function(values) --0.5 displayed as title on greeting panel
+        return "Tribo " .. values.tribeName
+    end,
+    misc_tribeLedBy = function(values) --0.5 displayed when selecting a tribe to lead, inspecting a tribe owned by another player
+        return "Liderada por " .. values.playerName
+    end,
+    misc_aiTribe = "Tribo IA", --0.5 displayed when selecting a tribe to lead but it has been loaded up as an AI tribe and can no longer be led
+
+    misc_expires = "Expira", --in tribe relationship UI, under quest title
+    misc_timeRemaining = "Tempo restante", --in tribe relationship UI, under quest title, when quest is assigned
+    misc_timeUntilNextQuest = "Próxima Missão", --in tribe relationship UI, under quest title, when quest is failed or complete
+
+    -- multiplayer server responses, new in 0.5
+    serverRejectionTitle_bad_player_name_or_id = "Erro de Conexão: Nome de jogador inválido", --0.5
+    serverRejectionMessage_bad_player_name_or_id = "Por favor cheque se seu nome de jogador não é curto ou longo demais.", --0.5
+
+    serverRejectionTitle_client_too_old = "Erro de Conexão: Por favor, atualize o jogo", --0.5
+    serverRejectionMessage_client_too_old = function(values) --0.5
+        return "O servidor requer uma versão mais recente de Sapiens: " .. values.requiredVersion .. ".\nSua versão: " .. values.localVersion
+    end,
+
+    serverRejectionTitle_client_too_new = "Erro de Conexão: Por favor, atualize o servidor", --0.5
+    serverRejectionMessage_client_too_new = function(values) --0.5
+        return "O servidor está operando uma versão mais antiga de Sapiens: " .. values.requiredVersion .. ".\nSua versão: " .. values.localVersion
+    end,
+
+    serverRejectionTitle_steam_authentication_failed = "Não foi possível se autenticar à Steam", --0.5
+    serverRejectionMessage_steam_authentication_failed = "Algo errado aconteceu enquenato tentava autenticar o usuário Steam. Por favor, verifique se não está logado em outro dispositivo e tente novamente.", --0.5
+
+    serverRejectionTitle_server_authentication_failed = "O servidor não aceitou o seu pedido de conexão", --0.5
+    serverRejectionMessage_server_authentication_failed = "O servidor pode estar restingindo conexões ou você pode ter sido banido dele.", --0.5
+
+    serverRejectionTitle_generic = "Erro de Conexão", --0.5
+    serverRejectionMessage_generic = function(values) --0.5
+        return "O servidor rejeitou o seu pedido de conexão. Motivo:" .. values.rejectionReason .. " Contexto:" .. values.rejectionContext
+    end,
 
     --loading
     loading_connecting = "Conectando ao Servidor",
@@ -3456,6 +3498,7 @@ localizations.values = {
     -- key_game
     key_game_escape = "Fechar/Esconder",
     key_game_chat = "Chat",
+    key_game_luaPrompt = "Console Lua", --0.5
     key_game_toggleMap = "Mapa",
     key_game_confirm = "Confirmar/Entrar",
     key_game_confirmSpecial = "Confirmação Secundária",
