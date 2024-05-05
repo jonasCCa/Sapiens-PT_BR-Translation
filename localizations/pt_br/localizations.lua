@@ -2195,10 +2195,12 @@ localizations.values = {
     resource_burntBranch_plural = "Galhos Queimados",
     resource_log = "Tronco",
     resource_log_plural = "Troncos",
-    resource_rock = "Pedra Grande (Dura)", --0.4 added "Hard"
-    resource_rock_plural = "Pedras Grandes (Duras)", --0.4 added "Hard"
-	resource_rockSoft = "Pedra Grande (Macia)", --0.4
-    resource_rockSoft_plural = "Pedra Grande (Macias)", --0.4
+    resource_rock = "Pedra Dura Grande", --0.4 added "Hard", --0.5 changed from x (Hard) to Hard x
+    resource_rock_plural = "Pedras Duras Grandes", --0.4 added "Hard", --0.5 changed from x (Hard) to Hard x
+	resource_rockSoft = "Pedra Macia Grande", --0.4, 0.5
+    resource_rockSoft_plural = "Pedras Macias Grandes", --0.4, 0.5
+    resource_rockGeneric = "Pedra Grande", --0.5
+    resource_rockGeneric_plural = "Pedras Grandes ", --0.5
     resource_dirt = "Terra",
     resource_dirt_plural = "Terras",
     resource_hay = "Feno",
@@ -2211,14 +2213,16 @@ localizations.values = {
     resource_flaxDried_plural = "Linhos Secos",
     resource_sand = "Areia",
     resource_sand_plural = "Areias",
-    resource_rockSmall = "Pedra Pequena (Dura)", --0.4 added "Hard"
-    resource_rockSmall_plural = "Pedras Pequenas (Duras)", --0.4 added "Hard"
-	resource_rockSmallSoft = "Pedra Pequena (Macia)", --0.4
-    resource_rockSmallSoft_plural = "Pedra Pequena (Macias)", --0.4
-    resource_stoneBlockSoft = "Bloco de Pedra (Macias)", --0.4
-    resource_stoneBlockSoft_plural = "Blocos de Pedra (Macia)", --0.4
-    resource_stoneBlockHard = "Bloco de Pedra (Dura)", --0.4
-    resource_stoneBlockHard_plural = "Blocos de Pedra (Hard)", --0.4
+    resource_rockSmall = "Pedra Dura Pequena", --0.4 added "Hard"
+    resource_rockSmall_plural = "Pedras Druas Pequenas", --0.4 added "Hard"
+	resource_rockSmallSoft = "Pedra Macia Pequena", --0.4, 0.5 changed
+    resource_rockSmallSoft_plural = "Pedras Macias Pequena", --0.4, 0.5 changed
+    resource_stoneBlockSoft = "Bloco de Pedra Macia", --0.4, 0.5 changed
+    resource_stoneBlockSoft_plural = "Blocos de Pedra Macia", --0.4, 0.5 changed
+    resource_stoneBlockHard = "Bloco de Pedra Dura", --0.4, 0.5 changed
+    resource_stoneBlockHard_plural = "Blocos de Pedra Dura", --0.4, 0.5 changed
+    resource_stoneBlockGeneric = "Bloco de Pedra", --0.5
+    resource_stoneBlockGeneric_plural = "Blocos de Pedra", --0.5
     resource_flint = "Sílex",
     resource_flint_plural = "Sílices",
     resource_clay = "Argila",
@@ -2269,10 +2273,12 @@ localizations.values = {
     resource_stonePickaxeHead_plural = "Cabeças de Picareta de Pedra",
     resource_stoneHatchet = "Machadinha de Pedra",
     resource_stoneHatchet_plural = "Machadinhas de Pedra",
-    resource_stoneAxeHead = "Cabeça de Machado de Pedra (Dura)", --0.4 added (Hard)
-    resource_stoneAxeHead_plural = "Cabeças de Machado de Pedra (Dura)", --0.4 added (Hard)
-	resource_stoneAxeHeadSoft = "Cabeça de Machado de Pedra (Macia)", --0.4
-    resource_stoneAxeHeadSoft_plural = "Cabeças de Machado de Pedra (Macia)", --0.4
+    resource_stoneAxeHead = "Cabeça de Machado de Pedra Dura", --0.4 added (Hard), 0.5 changed to Hard x
+    resource_stoneAxeHead_plural = "Cabeças de Machado de Pedra Dura", --0.4 added (Hard), 0.5 changed to Hard x
+	resource_stoneAxeHeadSoft = "Cabeça de Machado de Pedra Macia", --0.4, 0.5
+    resource_stoneAxeHeadSoft_plural = "Cabeças de Machado de Pedra Macia", --0.4, 0.5
+    resource_stoneAxeHeadGeneric = "Cabeça de Machado de Pedra", --0.5
+    resource_stoneAxeHeadGeneric_plural = "Cabeças de Machado de Pedra", --0.5
     resource_stoneHammerHead = "Cabeça de Martelo de Pedra", --0.4
     resource_stoneHammerHead_plural = "Cabeças de Martelo de Pedra", --0.4
     resource_stoneHammer = "Martelo de Pedra", --0.4
@@ -2707,6 +2713,9 @@ localizations.values = {
     tribe_ui_roles = "Funções",
     tribe_ui_stats = "Estatísticas",
     tribe_ui_resources = "Recursos",
+    tribe_ui_notifications = "Eventos", --0.5
+
+
 
     --settings ui
     settings_options = "Configurações",
@@ -2714,6 +2723,7 @@ localizations.values = {
     settings_header = "Configurações: Geral",
     settings_general = "Geral",
     settings_graphics = "Gráficos",
+    settings_world = "Mundo", --0.5
     settings_KeyBindings = "Controles de Teclado",
     settings_Debug = "Debug",
     settings_Exit = "Sair",
@@ -2739,7 +2749,7 @@ localizations.values = {
     settings_allowLanConnections = "Permitir conexões Multijogador em LAN",
     settings_pauseOnLostFocus = "Pausar quando a janela não estiver em foco", --b19
 	settings_pauseOnInactivity = "Pausar quando inativo", --0.4
-    settings_enableTutorialForThisWorld = "Habilitar tutorial para este mundo",
+    settings_enableTutorialForThisWorld = "Tutorial", --0.5 modified, removed "Enable tutorial for this world", as it has its own section for world settings now
     settings_enableTutorialForNewWorlds = "Habilitar tutorial para novos mundos",
     settings_GeneralGraphics = "Gráficos Gerais",
     settings_graphics_brightness = "Brilho",
@@ -2770,10 +2780,16 @@ localizations.values = {
     settings_Debug_startServerProfile = "Perfil do Servidor",
     settings_Debug_startLogicProfile = "Perfil da Thread Lógica",
     settings_Debug_startMainThreadProfile = "Perfil da Thread Principal",
+    settings_Debug_toggleAnchorMarkers = "Alternar Marcadores", --0.5
     settings_exitAreYouSure = "Tem certeza de que quer sair de Sapiens?",
     settings_exitAreYouSure_info = "O jogo é salvo constantemente enquanto você joga.",
     settings_exitMainMenu = "Sair para Menu Principal",
     settings_exitDesktop = "Sair para a Área de Trabalho",
+    
+    worldSettings_tribeSpawns = "Estabelecer Aldeias Próximas", -- 0.5
+    worldSettings_tribeSpawns_tip = "Criar novas aldeias IA próximas à sua tribo ao longo do tempo e quando outos jogadores se unem no modo multijogador.", -- 0.5
+
+
     --stats ui
     ui_stats_days_ago = function(values)
         return string.format("%d Dias atrás", values.dayCount)
@@ -2783,6 +2799,9 @@ localizations.values = {
     --roles ui
     ui_roles_allowed = "Atribuído",
     ui_roles_disallowed = "Não Atribuído",
+
+    ui_roles_assignAutomatically = "Atribuir papéis automaticamente", --0.5
+    ui_roles_assignAutomatically_toolTip = "Se ativo, sapiens ociosos receberão papéis necessários se ninguém mais estiver disponível.", --0.5
 
     -- resources ui
     ui_resources_allResourceType = function(values)
@@ -2844,6 +2863,13 @@ localizations.values = {
         return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\" (Requer levantar peso)"
     end,
 	lookatUI_missingSuitableTerrain = "Nenhum terreno do tipo requerido disponível nas proximidades", --0.4
+    lookatUI_maintainQuantityThresholdMet = function(values) --0.5
+        return "Manter quantidade alcançada: " .. values.storedCount .. "/" .. values.maintainCount .. " " .. values.resourcePlural
+    end,
+    lookatUI_maintainQuantityThresholdMetNoData = "Manter quantidade alcançada", -- 0.5
+    lookatUI_maintainQuantityInProgress = function(values) --0.5
+        return values.actionInProgressName .. " para manter " .. values.maintainCount .. " " .. values.resourcePlural .. ": " .. values.storedCount .. "/" .. values.maintainCount
+    end,
 
     sapien_ui_roles = "Funções",
     sapien_ui_inventory = "Inventário",
