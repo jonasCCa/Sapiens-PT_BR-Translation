@@ -2800,8 +2800,8 @@ localizations.values = {
     ui_roles_allowed = "Atribuído",
     ui_roles_disallowed = "Não Atribuído",
 
-    ui_roles_assignAutomatically = "Atribuir papéis automaticamente", --0.5
-    ui_roles_assignAutomatically_toolTip = "Se ativo, sapiens ociosos receberão papéis necessários se ninguém mais estiver disponível.", --0.5
+    ui_roles_assignAutomatically = "Atribuir Funções automaticamente", --0.5
+    ui_roles_assignAutomatically_toolTip = "Se ativo, sapiens ociosos receberão Funções necessárias se ninguém mais estiver disponível.", --0.5
 
     -- resources ui
     ui_resources_allResourceType = function(values)
@@ -2855,12 +2855,12 @@ localizations.values = {
     lookatUI_needsLit = "Precisa ser aceso antes",
     lookatUI_disabledDueToOrderLimit = "Máximo de ordens alcançado",
     lookatUI_tooDark = "Sem luz suficiente. Adicione tochas ou espere o sol nascer",
-    lookatUI_tooDistant = "Nenhum sapien capaz possui a função necessária nas proximidades",
+    lookatUI_tooDistant = "Nenhum sapien capaz possui a Função necessária nas proximidades",
     lookatUI_tooDistantWithRoleName = function(values)
-        return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\""
+        return "Nenhum sapien nas proximidades com a Função \"" .. values.taskName .. "\""
     end,
     lookatUI_tooDistantRequiresCapable = function(values)
-        return "Nenhum sapien nas proximidades com a função \"" .. values.taskName .. "\" (Requer levantar peso)"
+        return "Nenhum sapien nas proximidades com a Função \"" .. values.taskName .. "\" (Requer levantar peso)"
     end,
 	lookatUI_missingSuitableTerrain = "Nenhum terreno do tipo requerido disponível nas proximidades", --0.4
     lookatUI_maintainQuantityThresholdMet = function(values) --0.5
@@ -3235,7 +3235,7 @@ localizations.values = {
 
     -- multiplayer server responses, new in 0.5
     serverRejectionTitle_bad_player_name_or_id = "Erro de Conexão: Nome de jogador inválido", --0.5
-    serverRejectionMessage_bad_player_name_or_id = "Por favor cheque se seu nome de jogador não é curto ou longo demais.", --0.5
+    serverRejectionMessage_bad_player_name_or_id = "Por favor, cheque se seu nome de jogador não é curto ou longo demais.", --0.5
 
     serverRejectionTitle_client_too_old = "Erro de Conexão: Por favor, atualize o jogo", --0.5
     serverRejectionMessage_client_too_old = function(values) --0.5
@@ -3555,11 +3555,14 @@ localizations.values = {
     key_building_rotateX = "Rotacionar 90º no eixo X",
     key_building_rotateY = "Rotacionar 90º no eixo Y",
     key_building_rotateZ = "Rotacionar 90º no eixo Z",
-    key_textEntry_backspace = "Apagar",
+    key_textEntry_backspace = "Apagar", --0.5
+    key_textEntry_delete = "Delete", --0.5
     key_textEntry_send = "Enviar/Enter",
     key_textEntry_newline = "Nova linha",
-    key_textEntry_prevCommand = "Anterior",
-    key_textEntry_nextCommand = "Próximo",
+    key_textEntry_prevCommand = "Anterior", --0.5 changed from "Previous", now mostly used to navigate text, but in the terminal console, it is also used for the previous command
+    key_textEntry_nextCommand = "Próximo", --0.5 changed from "Next", now mostly used to navigate text, but in the terminal console, it is also used for the next command
+    key_textEntry_cursorLeft = "Cursor à Esquerda", --0.5
+    key_textEntry_cursorRight = "Cursor à Direita", --0.5
 
     -- key_multiSelect
     key_multiSelect_subtractModifier = "Modificador de Subtração",
@@ -3568,6 +3571,7 @@ localizations.values = {
     key_debug_reload = "Recarregar",
     key_debug_lockCamera = "Travar Câmera",
     key_debug_setDebugObject = "Definir Objeto em Debug",
+    key_debug_measureDistance = "Medir Distância", --0.5
 
     -- key_cinematicCamera
     key_cinematicCamera_startRecord1 = "Começar Gravação 1",
@@ -3817,6 +3821,85 @@ localizations.values = {
     notification_addWindBlownAdjective = function(values) --0.4 Used in a wind storm eg: "Bob was majorly injured by a 'flying banana'"
         return string.lower(values.objectName) .. " voador(a)"
     end,
+    
+    notification_autoRoleAssign = function(values) --0.5
+        return values.name .. " foi atribuído automaticamente à Função de " .. values.skillName
+    end,
+    notification_tribeFirstMet = function(values) --0.5
+        return values.name .. " encontrou a tribo " .. values.tribeName .. "!"
+    end,
+
+    notification_tribeGrievance_resourcesTaken = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está irritada que estamos pegando " .. string.lower(values.resourcePlural)
+    end,
+
+    notification_tribeGrievance_bedsUsed = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está irritada que estamos dormindo em suas camas"
+    end,
+
+    notification_tribeGrievance_objectsDestroyed = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está irritada que estamos destruindo " .. string.lower(values.objectName)
+    end,
+
+    notification_tribeGrievance_objectsBuilt = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está irritada que estamos construindo um(a) " .. string.lower(values.objectName) .. " muito próximo a eles"
+    end,
+
+    notification_tribeGrievance_craftAreasUsed = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está irritada que estamos usando " .. string.lower(values.objectName) .. " deles"
+    end,
+
+    notification_tradeRequestFavorReward = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " nos concedeu " .. values.reward .. " de Confiança pela nossa entrega de " .. values.deliveredCount .. " " .. values.resourcePlural
+    end,
+
+    notification_tradeOfferFavorPaid = function(values) --0.5
+        return "Nós aceitamos a oferta de " .. values.count .. " " .. values.resourcePlural .. " por " .. values.cost .. " de Confiança da tribo " .. values.tribeName
+    end,
+
+    notification_resourceQuestFavorReward = function(values) --0.5
+        return "Missão concluída! A tribo " .. values.tribeName .. " nos concedeu " .. values.reward .. " de Confiança pela nossa entrega de " .. values.deliveredCount .. " " .. values.resourcePlural
+    end,
+
+    notification_resourceQuestFailFavorPenalty = function(values) --0.5
+        return "Missão fracassada. Nós perdemos " .. values.penalty .. " de Confiança da tribo " .. values.tribeName .. " por falhar na entrega de " .. values.requiredCount .. " " .. values.resourcePlural
+    end,
+
+    --[[notification_resourceQuestFailReducedFavorPenalty = function(values) --0.5
+        return "Quest failed. We have lost " .. values.penalty .. " favor with the " .. values.tribeName .. " tribe for only delivering " ..values.deliveredCount .. " of the " .. values.requiredCount .. " required " .. values.resourcePlural
+    end,]]
+
+    notification_resourceQuestFailNoReward = function(values) --0.5
+        return "Missão fracassada. Mas como entregamos mais da metade (" .. values.deliveredCount .. ") de " .. values.requiredCount .. values.resourcePlural .. ", a Confiança da tribo permanece a mesma."
+    end,
+
+    grievance_resourcesTaken = "Recursos Roubados", --0.5
+    grievance_bedsUsed = "Camas Dormidas", --0.5
+    grievance_objectsDestroyed = "Estruturas Destruídas", --0.5
+    grievance_objectsBuilt = "Estruturas Construídas", --0.5
+    grievance_craftAreasUsed = "Áreas de Criação Utilizadas", --0.5
+
+    --[[
+
+    },
+    { --every time a single item is taken away or destroyed. eg. a thatch hut deconstruction would cause 10 grievances
+        key = "objectsDestroyed",
+        name = locale:get("grievance_objectsDestroyed"),
+        thresholdMin = 1,
+        thresholdMax = 20,
+        favorPenalty = 5,
+    },
+    { --every time a single item is taken to a building site or moved into place within a varying distance of tribe centers
+        key = "objectsBuilt",
+        name = locale:get("grievance_objectsBuilt"),
+        thresholdMin = 1,
+        thresholdMax = 20,
+        favorPenalty = 5,
+    },
+    { --every time a single item is crafted at craft areas, campfires, kilns etc.
+        key = "craftAreasUsed",
+        name = locale:get("grievance_craftAreasUsed"),
+    ]]
 
     deathReason_criticalInjury = "Ferimento Crítico",
     deathReason_oldAge = "Velhice",
@@ -3826,7 +3909,96 @@ localizations.values = {
     deathReason_starvation = "Fome",
     deathReason_hypothermia = "Hipotermia",
 
-    --/0.3.0
+    --notification display groups (new in 0.5 for notifications panel in tribe management UI)
+    notification_displayGroup_informative = "Informativos", --0.5
+    notification_displayGroup_minorWarning = "Avisos Simples", --0.5
+    notification_displayGroup_majorWarning = "Avisos Importantes", --0.5
+    notification_displayGroup_skillsAndResearch = "Habilidades & Pesquisas", --0.5
+    notification_displayGroup_favorLost = "Confiança Perdida", --0.5
+    notification_displayGroup_favorGained = "Confiança Ganha", --0.5
+
+
+    tribeRelations_firstMeet_severePositive = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está muito animada em conhecer " .. values.name .. ". Eles são " .. values.industryWorkerTypeName .. " habilidosos. " .. values.name .. " está de prontidão para ajudar como puder."
+    end,
+    tribeRelations_firstMeet_moderatePositive = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " está muito animada em conhecer " .. values.name .. ". Eles são " .. values.industryWorkerTypeName .. " habilidosos e demonstram grande interesse em fazer trocas conosco."
+    end,
+    tribeRelations_firstMeet_mildPositive = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " cumprimentou " .. values.name .. " respeitosamente. Eles são  " .. values.industryWorkerTypeName .. " habilidosos e demonstram algum interesse em fazer trocas conosco."
+    end,
+
+    tribeRelations_firstMeet_mildNegative = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " cumprimentou " .. values.name .. " com cautela. Eles são " .. values.industryWorkerTypeName .. " habilidosos, mas precisaremos completar uma missão antes que possamos fazer trocas."
+    end,
+    tribeRelations_firstMeet_moderateNegative = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " hesitou em cumprimentar " .. values.name .. " por conta de nossa reputação e não farão trocas conosco."
+    end,
+    tribeRelations_firstMeet_severeNegative = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " parece extremamente hostil a nós. Eles não demonstram nenhum interesse em trocas."
+    end,
+
+
+
+    tribeRelations_general_severePositive = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " é composta de " .. values.industryWorkerTypeName .. " habilidosos. Eles demonstram grande interesse em trocas e estão prontos para ajudar com o que puderem."
+    end,
+    tribeRelations_general_moderatePositive = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " é composta de " .. values.industryWorkerTypeName .. " habilidosos. Eles demonstram grande interesse em trocas conosco."
+    end,
+    tribeRelations_general_mildPositive = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " é composta de " .. values.industryWorkerTypeName .. " habilidosos. Eles demonstram algum interesse em trocas conosco."
+    end,
+
+    tribeRelations_general_mildNegative = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " é composta de " .. values.industryWorkerTypeName .. " habilidosos. Eles farão trocas conosco apenas se aumentarmos a nossa Confiança."
+    end,
+    tribeRelations_general_moderateNegative = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " não esá feliz conosco. Precisaremos trabalhar na relação com eles antes de podermos realizar trocas."
+    end,
+    tribeRelations_general_severeNegative = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " é extremamente hostil a nós. Eles não demonstram nenhum interesse em trocas."
+    end,
+
+    favor_tooltip_gain_later = function(values) --0.5
+        return "Ganhe " .. values.favorChangeValue .. " de Confiança quando completo"
+    end,
+    favor_tooltip_gain_now = function(values) --0.5
+        return "Ganhou " .. values.favorChangeValue .. " de Confiança"
+    end,
+    favor_tooltip_cost_later = function(values) --0.5
+        return "Perde " .. values.favorChangeValue .. " de Confiança se não completar a tempo"
+    end,
+    favor_tooltip_cost_now = function(values) --0.5
+        return "Perdeu " .. values.favorChangeValue .. " de Confiança"
+    end,
+
+
+    tribeRelations_useFavorForOffers = function(values) --0.5
+        return "Use Confiança para comprar recursos da tribo " .. values.tribeName .. "."
+    end,
+    tribeRelations_willNotTradeTitle = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " não fará trocas conosco até que a nossa Confiança esteja mais alta."
+    end,
+    tribeRelations_gainFavorForRequests = function(values) --0.5
+        return "Ganhe Confiança entregando recursos à tribo " .. values.tribeName .. "."
+    end,
+
+    tribeRelations_tribeSettingsSummary = function(values) --0.5
+        return "Permitir que a nossa tribo utilize construções e pegue recursos da tribo " .. values.tribeName .. "."
+    end,
+
+    tribeRelations_settings_allowStorageAreaItemUse_short = "Pegar Itens", --0.5
+    tribeRelations_settings_allowStorageAreaItemUse_long = "Permitir o uso dos itns guardados deles", --0.5
+    tribeRelations_settings_allowStoringInStorageAreas_short = "Guardar Itens", --0.5
+    tribeRelations_settings_allowStoringInStorageAreas_long = "Permitir que nossos itens sejam guardados nas Áreas de Armazenamento deles", --0.5
+    tribeRelations_settings_allowBedUse_short = "Usar Bancos e Camas", --0.5
+    tribeRelations_settings_allowBedUse_long = "Permitir que nossos Sapiens utilizem os bancos e durmam nas camas deles", --0.5
+
+    industry_rockTools_workerTypeName = "Lascadores de Pedra", --0.5 displayed in tribe relations UI for ai tribes when favor is above 40 or so
+    industry_flour_workerTypeName = "Produtores de Grãos", --0.5
+    industry_bread_workerTypeName = "Padeiros", --0.5
+    industry_bronze_workerTypeName = "Metalúrgicos de Bronze", --0.5
 
     -- menues
     menu_createWorld = "Criar Mundo",
@@ -3848,11 +4020,12 @@ localizations.values = {
     reporting_uploadFailed = "Sinto muito, o upload do pacote do relatório falhou.",
     reporting_fileTooLarge = "Sinto muito, o pacote do relatório de bug criado é muito grande para ser enviado.",
     reporting_error = "Sinto muito, algo deu errado.",
+    reporting_inProgress = "Sinto muito, um relatório de bug anterior ainda está sendo criado ou fazendo upload. Por favor, tente novamente mais tarde.", --0.5
     reporting_uploadComplete = "Obrigado pelo seu relatório, foi enviado com sucesso.",
     reporting_cancelled = "Upload cancelado.",
     reporting_creating = "Obrigado. Criando relatório...",
-    reporting_infoText = "Por favor nos ajude a tornar Sapiens melhor! O relatório será enviado em segundo plano depois que você clicar em enviar. Obrigado.",
-    reporting_pleaseWriteATitle = "Por favor forneça uma breve descrição para este relatório de bug.",
+    reporting_infoText = "Por favor, nos ajude a tornar Sapiens melhor! O relatório será enviado em segundo plano depois que você clicar em enviar. Obrigado.",
+    reporting_pleaseWriteATitle = "Por favor, forneça uma breve descrição para este relatório de bug.",
     reporting_bugTitle = "Breve descrição",
     reporting_bugDescription = "Mais detalhes",
     reporting_email = "Email para contato (opcional)",
@@ -3864,7 +4037,7 @@ localizations.values = {
     reporting_sendCrashReport = "Enviar Relatório de Crash",
 
     reporting_crashNotification = "Parece que Sapiens fechou inesperadamente da última vez que você jogou \n\
-Queremos consertar o bug que causou isto, então por favor nos envie um relatório de crash. Obrigado!",
+Queremos consertar o bug que causou isto, então, por favor, nos envie um relatório de crash. Obrigado!",
 
     --mods
     mods_cautionCaps = "CUIDADO!",
@@ -4165,6 +4338,9 @@ As vozes em Sapiens são em "toki pona", a língua construída por Sonja Lang - 
 Muito obrigado pelo enorme suporte, teste, feedback e ajuda de muitos outros. Um agradecimento especialmente grande aos testadores da alpha e também aos membros da comunidade do Discord e aqueles que deram feedback nos vídeos de devlog no YouTube. Eu não teria feito Sapiens sem vocês.
 
 E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à nossa família durante este longo período de desenvolvimento, sacrificando a sua própria carreira para que eu pudesse ter o tempo para trabalhar na minha. Este jogo inteiro é o resultado do trabalho duro da Emma, seu sacrifício e dedicação, assim como o meu.
+
+    Texto de créditos pelos criadores originais.
+    Tradução (mod Sapiens PT-BR) por Jonas Costa Campos.
 ]],
 
     -- orderStatus
@@ -4264,6 +4440,26 @@ E acima de tudo, obrigado a minha incrível esposa, Emma, que apoiou a mim e à 
         return values.inProgressName .. " " .. values.heldObjectName .. " em " .. values.retrievedObjectName
     end,
     --/0.4
+
+    ---- quests, all below is added in 0.5
+
+    quest_motivation_story_craftable = function(values)
+        return "A tribo " .. values.tribeName .. " está procurando por " .. values.count .. " " .. values.resourcePlural 
+        .. ". Se criarmos uma rota e entregar estes para a Área de Armazenamento marcada em sua vila, isso melhorará o nosso relacionamento com eles."
+    end,
+
+    quest_timeLimit = "Tempo Limite",
+    quest_completionReward = "Recompensa por Completar",
+    quest_failurePenalty = "Penalidade por Falhar",
+
+    quest_resource = "Recursos",
+    quest_knowledge = "Conhecimento",
+    quest_findSapien = "Sapien Perdido",
+    quest_treatSick = "Medicina",
+    quest_repairBuilding = "Reparos",
+    quest_huntMob = "Caça",
+
+    quest_resource_summaryTitle = "Entregar Recursos",
 }
 
 local function getTimeSplit(durationSeconds, dayLength, yearLength)
