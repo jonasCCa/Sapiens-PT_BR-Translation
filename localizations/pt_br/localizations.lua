@@ -3,6 +3,14 @@ local localizations = {}
 local researchName = "Investigar"
 local researchingName = "Investigando"
 
+local vowelsSet = {
+    a = true,
+    e = true,
+    i = true,
+    o = true,
+    u = true,
+}
+
 localizations.values = {
     gameName = "Sapiens",
     sapiens = "Sapiens",
@@ -136,6 +144,9 @@ localizations.values = {
     buildable_sled = "Trenó", --0.5
     buildable_sled_plural = "Trenós", --0.5
     buildable_sled_summary = "Transporta pilhas de itens a longa distâncias. Funciona como uma Área de Armazenamento, mas pode ser arrastado para locais diferentes sobre qualquer tipo de terreno.", --0.5
+    buildable_coveredSled = "Trenó Coberto", --0.5
+    buildable_coveredSled_plural = "Trenós Cobertos", --0.5
+    buildable_coveredSled_summary = "Transporta pilhas de itens a longa distâncias. A cobertura ajuda a prevenir que os conteúdos apodreçam.", --0.5
     buildable_splitLogSteps = "Escada de Tronco Cortado 2x3 Um Andar",
     buildable_splitLogSteps_plural = "Escadas de Tronco Cortado 2x3 Um Andar",
     buildable_splitLogSteps_summary = "Para se mover entre andares ou subir encostas.",
@@ -1155,6 +1166,9 @@ localizations.values = {
         return "Gerenciar relações com a tribo " .. values.tribeName
     end,
 
+    plan_gatherAll = "Coletar Tudo", --0.5
+    plan_gatherAllInProgress = "Coletando Tudo", --0.5
+
     --research    
     research_fire_description = "Sua tribo descobriu que calor é gerado do atrito quando você esfrega dois galhos. Se ficar quente o suficiente, uma brasa pode ser produzida para iniciar uma fogueira, fornecendo calor e luz.",
     research_thatchBuilding_description = "Sua tribo descobriu que quando vegetação seca é alinhada e colocada em uma estrutura de suporte ela pode fornecer um abrigo à prova d'água.",
@@ -1938,8 +1952,15 @@ localizations.values = {
     object_build_splitLogToolRack_plural = "Suportes para Ferramentas de Tronco Cortado", --0.5
     object_sled = "Trenó", --0.5
     object_sled_plural = "Trenós", --0.5
+    object_uncoveredSled = "Trenó não Coberto", --0.5 only used in multiselect
+    object_uncoveredSled_plural = "Trenós não Cobertos", --0.5 only used in multiselect
+
     object_build_sled = "Trenó", --0.5
     object_build_sled_plural = "Trenós", --0.5
+    object_coveredSled = "Trenó Coberto", --0.5
+    object_coveredSled_plural = "Trenós Cobertos", --0.5
+    object_build_coveredSled = "Trenó Coberto", --0.5
+    object_build_coveredSled_plural = "Trenós Cobertos", --0.5
     object_splitLogRoof = "Telhado de Tronco Cortado",
     object_splitLogRoof_plural = "Telhados de Tronco Cortado",
     object_branchRotten = "Galho Podre",
@@ -2720,7 +2741,7 @@ localizations.values = {
     --settings ui
     settings_options = "Configurações",
     settings_exit = "Sair",
-    settings_header = "Configurações: Geral",
+    --settings_header = "Configurações: Geral", --deprecated 0.5
     settings_general = "Geral",
     settings_graphics = "Gráficos",
     settings_world = "Mundo", --0.5
@@ -2786,6 +2807,15 @@ localizations.values = {
     settings_exitMainMenu = "Sair para Menu Principal",
     settings_exitDesktop = "Sair para a Área de Trabalho",
     
+    settings_exit_hibernate = "Hibernar", --0.5 -- when using exit from the settings menu, but only in multiplayer
+    settings_exit_hibernate_now = "Agora", -- 0.5
+    settings_exit_hibernate_oneDay = "Um Dia", -- 0.5
+    settings_exit_hibernate_twoDays = "Dois Dias", -- 0.5
+
+    settings_inviteFriends = "Convidar Amigos Steam...", --0.5 in general settings, to invite Steam friends to play multiplayer in your current world
+    settings_inviteFriendsButton_tip = "Abre o Painel Steam, o que permite que convide seus amigos para jogar no modo multijogador.", --0.5 from the pause menu when in-game
+    settings_inviteFriendsButton_tip_no_world = "Primeiro carregue um mundo, então você pode convidar amigos para jogar no modo multijogador.", --0.5 when there is no world yet loaded, we are in the main menu and the button is disabled
+
     worldSettings_tribeSpawns = "Estabelecer Aldeias Próximas", -- 0.5
     worldSettings_tribeSpawns_tip = "Criar novas aldeias IA próximas à sua tribo ao longo do tempo e quando outos jogadores se unem no modo multijogador.", -- 0.5
 
@@ -2808,7 +2838,7 @@ localizations.values = {
         return string.format("Todos tipos de %s", values.resourceName)
     end,
     ui_resources_storedCount = function(values)
-        return string.format("%s guardados", values.storedCount)
+        return string.format("Guardados: %s", values.storedCount) --0.5 updated from "%s stored" for readibility
     end,
     ui_resources_decorations = "Colocar Decoração",
     ui_resources_eating = "Comer",
@@ -2901,6 +2931,7 @@ localizations.values = {
     ui_action_disallow = "Remover Atribuição",
     ui_action_selectMore = "Selecionar Mais",
     ui_action_select = "Selecionar",
+    ui_action_deselect = "Desselecionar", --0.5 in multiselect ui, in box selection mode
     ui_action_boxSelect = "Seleção em Caixa",
     ui_action_radiusSelect = "Seleção em Raio",
     ui_action_editName = "Renomear",
@@ -2934,6 +2965,9 @@ localizations.values = {
     ui_action_multiplayer = "Multijogador", --0.5 button on main menu
     ui_action_buy = "Comprar", --0.5 on button for purchasing in trade offers
     
+    ui_action_enable = "Habilitar", -- 0.5 when enabling routes in storage area panel
+    ui_action_disable = "Desabilitar", -- 0.5 when enabling routes in storage area panel
+
     ui_action_craftX = function(values) --0.5
         return "Criar " .. values.countText
     end,
@@ -3080,13 +3114,20 @@ localizations.values = {
     ui_name_offer = "Oferta", --0.5 hovering over trade offer storage area
     ui_name_purchased = "Comprado", -- hovering over trade offer storage area eg. "Offer: 45 Stone Axe Heads - Purchased:40"
     ui_name_delivered = "Entregue", -- hovering over trade request storage area eg. "Request: 45 Stone Axe Heads - Delivered:40"
+    ui_name_chat = "Bate-Papo", --0.5 displayed in the chat message ui [t]
 
     ui_name_connected = "Conectado", --0.5 displayed in the chat message ui when players connect
     ui_name_disconnected = "Desconectado", --0.5 displayed in the chat message ui when players disconnect
     ui_name_hibernated = "Tribo hibernada", --0.5 displayed in the chat message ui when players hibernate
 
+    ui_info_noOtherPlayers = "(nenhum outro jogador)", --0.5 displayed in the chat message ui when no other players are connected
+    ui_info_singleOtherPlayer = "(1 outro jogador)", --0.5 displayed in the chat message ui when one other player is connected
+    ui_info_multipleOtherPlayers = function(values) --0.5 displayed in the chat message ui when multiple other players are connected
+        return string.format("(%d outros jogadores)", values.playerCount)
+    end,
 
-
+    ui_name_serverName = "Nome do Servidor", --0.5 displayed as table header title in multiplayer main menu
+    ui_name_playersOnline = "Jogadores Online", --0.5 displayed as table header title in multiplayer main menu
 
     -- ui infos
     ui_info_deleteWorldAreYouSure = function(values)
@@ -3108,6 +3149,8 @@ localizations.values = {
     ui_pause = "Pause",
     ui_play = "Resumir",
     ui_fastForward = "Avanço Rápido",
+
+    ui_fastForwardDisabledDueToServerLoad = "Avanço Rápido desabilitado devido à sobrecarga do servidor", --0.5
 
 	ui_objectBelongingToSapien = function(values) --b20
         return string.format("%s de %s", values.objectName, values.sapienName)
@@ -3159,6 +3202,14 @@ localizations.values = {
     misc_addStops = "Adicionar Paradas",
     misc_addNewRoute = "Adicionar Nova Rota",
     misc_addNewRouteStartingHere = "Adicionar Nova Rota Daqui", --0.5
+    misc_sendingItems = "Enviando Itens Para", -- 0.5 in storage area management panel
+    misc_receivingItems = "Recebendo Itens De", -- 0.5 in storage area management panel
+    misc_sendItems = "Enviar Itens", -- 0.5 in storage area management panel
+    misc_receiveItems = "Receber Itens", -- 0.5 in storage area management panel
+    misc_selectRouteFromTitle = "Selecione a origem", --0.5 when connecting storage areas via the above
+    misc_selectRouteToTitle = "Selecione o destino", --0.5 when connecting storage areas via the above
+    misc_selectRouteFrom = "Selecione o Armazenamento de onde receber itens", --0.5 when connecting storage areas via the above
+    misc_selectRouteTo = "Selecione o Armazenamento para onde enviar itens", --0.5 when connecting storage areas via the above
     misc_setFillType = "Selecionar Material de Preenchimento",
     misc_debug = "Depuração",
     misc_cheat = "Trapaça",
@@ -3167,9 +3218,11 @@ localizations.values = {
     misc_demo = "Demo",
     misc_forums = "Sapiens Fórums",
     misc_discord = "Sapiens Discord",
-    misc_twitter = "Sapiens no Twitter",
+    --misc_twitter = "Sapiens no Twitter", --deprecated 0.5
+    misc_reddit = "Sapiens no Reddit", --0.5 tool tip on reddit button on main menu
     misc_serverNotFound = "Não foi possível encontrar o servidor",
     misc_serverNotFound_info = "O servidor pode estar offline ou inalcançável",
+    misc_publicServerList = "Lista de Servidores Públicos", --0.5 main menu multiplayer screen
     misc_connectionLost = "Conexão Perdida",
     misc_connectionLost_info = "A conexão com o servidor foi perdida",
     misc_random = "Aleatório",
@@ -3233,6 +3286,14 @@ localizations.values = {
     misc_timeRemaining = "Tempo restante", --in tribe relationship UI, under quest title, when quest is assigned
     misc_timeUntilNextQuest = "Próxima Missão", --in tribe relationship UI, under quest title, when quest is failed or complete
 
+    misc_active = "Ativa", --0.5
+    misc_hibernating = "Hibernando", --0.5
+
+    misc_hex = "Hexágono", --0.5 displayed when using multiselect on multiple types of terrain
+    misc_hexes = "Hexágonos", --0.5 displayed when using multiselect on multiple types of terrain
+
+    misc_selectionTool = "Ferramenta de Seleção", --0.5 in multiselect UI
+
     -- multiplayer server responses, new in 0.5
     serverRejectionTitle_bad_player_name_or_id = "Erro de Conexão: Nome de jogador inválido", --0.5
     serverRejectionMessage_bad_player_name_or_id = "Por favor, cheque se seu nome de jogador não é curto ou longo demais.", --0.5
@@ -3261,9 +3322,9 @@ localizations.values = {
     --loading
     loading_connecting = "Conectando ao Servidor",
     loading_connected = "Conectado ao Servidor",
-    loading_loadingShaders = "Carregando Shaders",
-    loading_waiting = "Esperando pelo Servidor",
-    loading_generating = "Gerando Mundo",
+    --loading_loadingShaders = "Carregando Shaders", --0.5 DEPRECATED
+    --loading_waiting = "Esperando pelo Servidor", --0.5 DEPRECATED
+    --loading_generating = "Gerando Mundo", --0.5 DEPRECATED
     loading_world = "Carregando Mundo",
     loading_downloadingData = "Baixando dados/mods do Mundo",
     loading_downloading = "Baixando",
@@ -3524,6 +3585,7 @@ localizations.values = {
     key_game_zoomModifier = "Modificador de Zoom no Clique",
     key_game_multiselectModifier = "Atalho de Multi-Seleção no Clique",
     key_game_radialMenuClone = "Atalho de Construir Mais do Menu Radial",--b13
+    key_game_prioritize = "Priorizar", --0.5
 
     -- key_menu
     key_menu_up = "Cima",
@@ -3556,7 +3618,7 @@ localizations.values = {
     key_building_rotateY = "Rotacionar 90º no eixo Y",
     key_building_rotateZ = "Rotacionar 90º no eixo Z",
     key_textEntry_backspace = "Apagar", --0.5
-    key_textEntry_delete = "Delete", --0.5
+    key_textEntry_delete = "Deletar", --0.5
     key_textEntry_send = "Enviar/Enter",
     key_textEntry_newline = "Nova linha",
     key_textEntry_prevCommand = "Anterior", --0.5 changed from "Previous", now mostly used to navigate text, but in the terminal console, it is also used for the previous command
@@ -3610,6 +3672,18 @@ localizations.values = {
 	selectionGroup_stoneBlock_objectName = "Bloco de Pedra", --0.4
     selectionGroup_stoneBlock_plural = "Blocos de Pedra", --0.4
     selectionGroup_stoneBlock_descriptive = "Quaisquer Blocos de Pedra", --0.4
+
+    selectionGroup_plant_objectName = "Planta", --0.5
+    selectionGroup_plant_plural = "Plantas", --0.5
+    selectionGroup_plant_descriptive = "Quaisquer Plantas", --0.5
+
+    selectionGroup_tree_objectName = "Árvore", --0.5
+    selectionGroup_tree_plural = "Árvores", --0.5
+    selectionGroup_tree_descriptive = "Quaisquer Árvores", --0.5
+
+    selectionGroup_sled_objectName = "Trenó", --0.5
+    selectionGroup_sled_plural = "Trenós", --0.5
+    selectionGroup_sled_descriptive = "Quaisuqer Trenós", --0.5
 
     -- notifications
     notification_becamePregnant = function(values)
@@ -3960,6 +4034,10 @@ localizations.values = {
         return "A tribo " .. values.tribeName .. " é extremamente hostil a nós. Eles não demonstram nenhum interesse em trocas."
     end,
 
+    tribeRelations_otherPlayer = function(values) --0.5
+        return "A tribo " .. values.tribeName .. " é liderada por " .. values.playerName .. "."
+    end,
+
     favor_tooltip_gain_later = function(values) --0.5
         return "Ganhe " .. values.favorChangeValue .. " de Confiança quando completo"
     end,
@@ -3999,6 +4077,7 @@ localizations.values = {
     industry_flour_workerTypeName = "Produtores de Grãos", --0.5
     industry_bread_workerTypeName = "Padeiros", --0.5
     industry_bronze_workerTypeName = "Metalúrgicos de Bronze", --0.5
+    industry_pottery_workerTypeName = "Oleiros", --0.5
 
     -- menues
     menu_createWorld = "Criar Mundo",
@@ -4044,8 +4123,11 @@ Queremos consertar o bug que causou isto, então, por favor, nos envie um relat�
 
     mods_cautionInfo = "Mods podem conter e executar código em Lua e C, que podem ter acesso ao seu sistema, arquivos e internet.\n\
 Mods no Sapiens não são de forma alguma protegidos, então devem ser tratados como aplicativos totalmente separados e com extremo cuidado. Eles podem danificar seu computador.\n\
-Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalmente seguros. Instale e ative apenas mods de autores que você confia.",
+Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalmente seguros. Instale e ative apenas mods de autores e servidores dos quais você confia.", --0.5 added "and servers"
     mods_enableMods = "Habilitar Mods",
+    mods_installWarningTitle = "ATENÇÃO: Este servidor quer instalar mods no seu computador", --0.5 title for an alert panel if you connect to a modded server
+    mods_installListMessage = "Os seguintes mods serão baixados automaticamente deste servidor:", --0.5 in the alert panel if you connect to a modded server
+    mods_installMods = "Instalar Mods", --0.5 when connecting to a modded server, on the button to confirm we want to install the mods.
     mods_notAddedToWorkshop = "Não adicionado à Steam Workshop.",
     mods_addedToWorkshop = "Adicionado à Steam Workshop. Clique em enviar para atualizar os arquivos do mod na Steam.",
     mods_modDeveloperTools = "Ferramentas de Desenvolvedor de Mods",
@@ -4083,7 +4165,7 @@ Mesmo mods que foram instalados a partir da Steam Workshop podem não ser totalm
 
     mods_steamWorkshop_info = "Você pode navegar pela Steam Workshop para encontrar e instalar mods, que podem ser ativados dentro do jogo.\n\
 Certifique-se de ter a sobreposição da Steam ativada. Quando encontrar um mod que você deseja na Steam Workshop, instale clicando em '+ Subscrever'. Talvez seja necessário reiniciar o Sapiens ou reiniciar a Steam para ver as mudanças.\n\
-MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Steam Workshop podem conter e executar códigos que podem danificar seu computador. Apenas instale e ative mods de autores que você confia.",
+MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Steam Workshop podem conter e executar códigos que podem danificar seu computador. Apenas instale e ative mods de autores e servidores dos quais você confia.",--0.5 added "and servers"
 
     -- graphics drivers
     gfx_updateRequiredTitle = "Por favor, atualize os drivers da sua placa de vídeo.",
@@ -4179,7 +4261,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_title_research = "Investigar para Avançar",
     tutorial_research_storyText = "Para poder avançar, sapiens precisam investigar o mundo à sua volta.\n\nIsto leva a descobertas tecnológicas que desbloquearão novas coisas para construir e criar.",
     tutorial_research_branch = "Investigue um galho",
-    tutorial_research_rock = "Investigue uma pedra",
+    tutorial_research_rock = "Investigue pedras", --0.5 changed rock to rocks.
     tutorial_research_hay = "Investigue feno",
 
     -- tools
@@ -4209,7 +4291,7 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
 
     -- food
     tutorial_title_food = "Fome e Comida",
-    tutorial_food_storyText = "Seus sapiens estão começando a ficar com fome. Sapiens não colhem frutas sozinhos, você deve ordená-los a fazer isso, assim como caçar e guardar a comida.\n\nMas não colete tudo de uma vez, já que a maioria das frutas ficam na árvore até a próxima estação e, uma vez colhidas, apodrecerão rapidamente se deixadas expostas.",
+    tutorial_food_storyText = "Seus Sapiens estão começando a ficar com fome. Sapiens colherão frutas sozinhos se ficarem desesperados, mas você precisa criar ordensr para colher, caçar e guardar comida para deixá-los felizes.\n\nMas não colete tudo de uma vez, a maioria dos frutos ficam nas árvores até a estação seguinde, mas apodrecerão se colhidos e deixados expostos.", --0.5 changed to "Sapiens will gather fruits by themselves if they get desperate, but you need to issue orders to gather, hunt, and store food to keep them happy". In 0.5, sapiens now gather food themselves, but only if it is very close and they are starving 
     tutorial_food_storeTask = function(values)
         return string.format("Colete e guarde %d recursos de comida", values.count)
     end,
@@ -4231,13 +4313,11 @@ MUITO CUIDADO! Instale mods por sua própria conta e risco. Mesmo os mods na Ste
     tutorial_music_playFlute = "Toque um instrumento musical", --0.3.0 alterado para "instrumento musical" já que tambores e xilofones agora também contam para completar
 
     -- routes
-    tutorial_title_routes = "Rotas e Logística",
-    tutorial_routes_storyText = "Sapiens podem mover recursos de uma área de armazenamento para outra utilizando rotas.\n\nRotas são úteis para distribuir recursos para onde eles são necessários. Elas podem ser usadas também para transferir recursos através de grandes distâncias.",
-    tutorial_routes_create = "Crie uma rota de transferência",
-    tutorial_routes_create_subtitle_a = "- Abra o menu e clique em \"Rotas\"",
-    tutorial_routes_create_subtitle_b = "- Adicione uma nova rota, então clique em \"Adicionar Paradas\"",
-    tutorial_routes_create_subtitle_c = "- Clique na área de armazenamento de origem",
-    tutorial_routes_create_subtitle_d = "- Então clique em uma área de armazenamento destino vazia",
+    tutorial_title_routes = "Mover recursos", --0.5 changed from "Routes and logistics"
+    tutorial_routes_storyText = "Sapiens podem mover recursos de uma área de armazenamento para outra com ordens de envio e recebimento.\n\n.Isto é útil para distribuir recursos para onde eles são necessários ou para transportá-los por grandes distâncias.", --0.5 routes have been replaced with send/receive orders
+    tutorial_routes_create = "Crie uma ordem de envio ou recebimento", --0.5 changed route to send or receive order
+    tutorial_routes_create_subtitle_a = "- Clique em uma Área de Armazenamento, e selecione \"Gerenciar Armazenamento\"", --0.5
+    tutorial_routes_create_subtitle_b = "- Clique no botão \"Enviar Itens\" ou \"Receber Itens\" e selecione outra Área de Armazenamento", --0.5
     tutorial_routes_doTransfer = "Transfira qualquer item de uma área de armazenamento para outra",
 
     -- paths
