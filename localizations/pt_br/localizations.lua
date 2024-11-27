@@ -22,6 +22,8 @@ localizations.values = {
     mob_chicken_plural = "Galinhas",
     mob_mammoth = "Mamute",
     mob_mammoth_plural = "Mamutes",
+    mob_catfish = "Bagre", --0.5.1.4
+    mob_catfish_plural = "Bagres", --0.5.1.4
 
     -- buildables
     buildable_craftArea = "Área de Criação",
@@ -144,6 +146,13 @@ localizations.values = {
     buildable_sled = "Trenó", --0.5
     buildable_sled_plural = "Trenós", --0.5
     buildable_sled_summary = "Transporta pilhas de itens a longa distâncias. Funciona como uma Área de Armazenamento, mas pode ser arrastado para locais diferentes sobre qualquer tipo de terreno.", --0.5
+    buildable_canoe = "Canoa", --0.5.1
+    buildable_canoe_plural = "Canoas", --0.5.1
+    buildable_canoe_summary = "Move-se rapidamente sobre a água e pode carregar uma pequena quantidade de itens.", --0.5.1
+    buildable_canoe_researchClueText = "Esculpir e flutuar na água", --0.5.1
+    buildable_coveredCanoe = "Canoa Coberta", --0.5.1
+    buildable_coveredCanoe_plural = "Canoas Cobertas", --0.5.1
+    buildable_coveredCanoe_summary = "Move-se rapidamente sobre a água. A cobertura ajuda a prevenir que a carga estrague.", --0.5.1
     buildable_coveredSled = "Trenó Coberto", --0.5
     buildable_coveredSled_plural = "Trenós Cobertos", --0.5
     buildable_coveredSled_summary = "Transporta pilhas de itens a longa distâncias. A cobertura ajuda a prevenir que os conteúdos apodreçam.", --0.5
@@ -337,6 +346,7 @@ localizations.values = {
     craftable_logDrum = "Tambor de Tronco",
     craftable_logDrum_plural = "Tambores de Tronco",
     craftable_logDrum_summary = "Música ajuda manter os sapiens felizes.",
+    craftable_logDrum_researchClueText = "Esculpir e fazer barulho",
     craftable_balafon = "Xilofone",
     craftable_balafon_plural = "Xilofones",
     craftable_balafon_summary = "Música ajuda manter os sapiens felizes.",
@@ -430,6 +440,9 @@ localizations.values = {
     craftable_campfireRoastedBeetroot = "Beterraba Assada na Fogueira",
     craftable_campfireRoastedBeetroot_plural = "Beterrabas Assadas na Fogueira",
     craftable_campfireRoastedBeetroot_summary = "Melhor que comer cru.",
+    craftable_cookedFish = "Peixe Cozido", --0.5.1.4
+    craftable_cookedFish_plural = "Peixes Cozidos", --0.5.1.4
+    craftable_cookedFish_summary = "Uma refeição deliciosa com peixe.", --0.5.1.4
     craftable_flatbread = "Pão Pita",
     craftable_flatbread_plural = "Pães Pitas",
     craftable_flatbread_summary = "O pão mais simples de todos.",
@@ -610,6 +623,8 @@ localizations.values = {
     action_putOnTorsoClothing_inProgress = "Vestindo Roupa",
     action_greet = "Cumprimentar", --0.5
     action_greet_inProgress = "Cumprimentando", --0.5
+    action_row = "Remar", --0.5.1
+    action_row_inProgress = "Remando", --0.5.1
 
     --0.3.0 group:
     action_selfApplyOralMedicine = "Tomar Medicamento",
@@ -1080,6 +1095,8 @@ localizations.values = {
     plan_fill_inProgress = "Preenchendo",
     plan_chop = "Derrubar",
     plan_chop_inProgress = "Derrubando",
+    plan_chopReplant = "Derrubar & Replantar", --0.5.1
+    plan_chopReplant_inProgress = "Derrubando & Replantando", --0.5.1
     plan_storeObject = "Guardar",
     plan_storeObject_inProgress = "Guardando",
     plan_transferObject = "Transferir",
@@ -1171,39 +1188,102 @@ localizations.values = {
 
     --research    
     research_fire_description = "Sua tribo descobriu que calor é gerado do atrito quando você esfrega dois galhos. Se ficar quente o suficiente, uma brasa pode ser produzida para iniciar uma fogueira, fornecendo calor e luz.",
+    research_fire_clueText = "Esfregar", --0.5.1
+
     research_thatchBuilding_description = "Sua tribo descobriu que quando vegetação seca é alinhada e colocada em uma estrutura de suporte ela pode fornecer um abrigo à prova d'água.",
+    research_thatchBuilding_clueText = "Construir", --0.5.1
+
     research_mudBrickBuilding_description = "Sua tribo descobriu que blocos ou tijolos empilhados podem criar estruturas resistentes.", --0.4 changed, now applies to all brick/block based building
+    research_mudBrickBuilding_clueText = "Construir", --0.5.1
+
     research_brickBuilding_description = "Agora que a sua tribo descobriu como juntar tijolos queimados junto, eles têm uma nova alternativa decorativa aos tijolos de barro para construir paredes.", --deprecated (0.4)
+    research_brickBuilding_clueText = "Construir", --0.5.1
+
     research_woodBuilding_description = "Após cortar troncos com ferramentas simples, a sua tribo descobriu um novo material de construção. Estruturas construídas com madeira são mais fortes e mais resistentes ao clima.",
+    research_woodBuilding_clueText = "Construir", --0.5.1
+
     research_rockKnapping_description = "Após usar uma pedra para bater em outra, a sua tribo descobriu que as pontas podem ser afiadas e algumas ferramentas muito úteis podem ser feitas.",
+    research_rockKnapping_clueText = "Lascar", --0.5.1
+
     research_flintKnapping_description = "Depois de encontrar um novo tipo de pedra, a sua tribo tentou lascá-la para criar uma lâmina mais afiada. Esse novo material é mais durável.",
+    research_flintKnapping_clueText = "Construir", --0.5.1
+
     research_pottery_description = "Sua tribo descobriu que alguns tipos de terra podem ser pressionadas em formas diferentes quando estão moles e molhadas e que mantém a sua forma quando secam e endurecem. Isto vai ser útil para guardar certos recursos.",
+    research_pottery_clueText = "Moldar", --0.5.1
+
     research_potteryFiring_description = "Sua tribo percebeu que argila endurece no fogo. Com a ajuda de um invólucro especial de tijolos de barro e um fogo ainda mais quente, eles agora podem fazer cerâmica que é mais resistente à água, preservando melhor o conteúdo.",
+    research_potteryFiring_clueText = "Esquentar", --0.5.1
+
     research_spinning_description = "Sua tribo agora consegue criar fios e cordas torcendo fibras de plantas. Isso será perticularmente útil para unir coisas para criar ferramentas mais complexas.",
+    research_spinning_clueText = "Tecer", --0.5.1
+
     research_digging_description = "Com o novo conhecimento de lascar pedras, cabeças de machado podem ser usados para remover solo mais facilmente e então transportá-lo outro local e revelar o que há abaixo.",
+    research_digging_clueText = "Bater com ferramenta", --0.5.1
+
     research_mining_description = "Após adicionar um cabo a uma ferramenta simples, força suficiente pode ser gerada para estilhaçar superfícies mais duras e a sua tribo agora descobriu que é possível mirerar pedras.",
-	research_chiselStone_description = "Sua tribo descobriu que um cinzel pode ser utilizado para esculpir blocos diretamente de pedra. Blocos de pedra podem ser utilizados para construir estruturas resistentes, ou podem ser esculpidos novamente para criar ladrilhos.", --0.4
+    research_mining_clueText = "Bater com ferramenta", --0.5.1
+
+    research_chiselStone_description = "Sua tribo descobriu que um cinzel pode ser utilizado para esculpir blocos diretamente de pedra. Blocos de pedra podem ser utilizados para construir estruturas resistentes, ou podem ser esculpidos novamente para criar ladrilhos.", --0.4
+    research_chiselStone_clueText = "Bater com ferramenta", --0.5.1
+
     research_planting_description = "Após observar sementes e plantas, a sua tribo descobriu como controlar onde as coisas crescem. Isso tornará mais fácil o controle de comida e fornecerá mais opções decorativas.",
-	research_mulching_description = "Sua tribo descobriu que o solo pode ser melhorado se adicionar uma camada de matéria orgânica podre. Com um solo mais rico, plantas e árvores crescem mais rápido e provém colheitas abundantes.", --0.4
+    research_planting_clueText = "Enterrar semente", --0.5.1
+
+    research_mulching_description = "Sua tribo descobriu que o solo pode ser melhorado se adicionar uma camada de matéria orgânica podre. Com um solo mais rico, plantas e árvores crescem mais rápido e provém colheitas abundantes.", --0.4
+    research_mulching_clueText = "Melhorar solo", --0.5.1
+
     research_threshing_description = "As sementes de certas plantas tem valor nutricional e a sua tribo descobriu como extraí-las mais facilmente.",
+    research_threshing_clueText = "Separar sementes", --0.5.1
+
     research_treeFelling_description = "Com golpes suficientes de um machado, até mesmo as árvores mais poderosas podem ser derrubadas. Isso fornecerá troncos, que queimam por muito mais tempo, mas talvez haja outros usos também.",
+    research_treeFelling_clueText = "Bater com ferramenta", --0.5.1
+
     research_basicHunting_description = "Sua tribo descobriu uma maneira de caçar pequenas presas, que podem fornecer recursos valiosos e potencialmente comida, quando preparados e cozidos.",
+    research_basicHunting_clueText = "Atacar", --0.5.1
+
     research_spearHunting_description = "Depois de experimentar com vários projéteis, a sua tribo descobriu que, combinando uma lâmina afiada com a estabilidade de vôo de uma vara, eles podem caçar com mais sucesso e alvejar presas maiores.",
+    research_spearHunting_clueText = "Atacar", --0.5.1
+
     research_butchery_description = "Sua tribo agora possui a habilidade de separar os recursos valiosos contidos em uma carcaça de animal. Eles agora conseguem obter carne crua, mesmo que talvez você queira contar para eles que é melhor não comer assim.",
+    research_butchery_clueText = "Cortar", --0.5.1
+
     research_woodWorking_description = "Sua tribo descobriu que lascar camadas de galhos e troncos pode ser útil para criar diversas ferramentas e materiais de construção.",
+    research_woodWorking_clueText = "Talhar com ferramenta", --0.5.1
+
     research_boneCarving_description = "Sua tribo descobriu que ossos podem ser moldados usando uma faca para criar lâminas afiadas ou até mesmo fazer um som musical.",
+    research_boneCarving_clueText = "Lascar", --0.5.1
+
     research_flutePlaying_description = "Sua tribo descobriu como tocar música. A música ajuda a sua tribo a se manter unida, aumentando a lealdade e a felicidade daqueles próximos.",
+    research_flutePlaying_clueText = "Tocar", --0.5.1
+
     research_campfireCooking_description = "Depois de um momento de inspiração, a sua tribo descobriu que aquecer ingredientes no fogo faz com que eles fiquem mais gostosos e mais fáceis de comer.",
+    research_campfireCooking_clueText = "Esquentar", --0.5.1
+
     research_baking_description = "Finalmente, após muitos experimentos, a sua tribo conseguiu criar uma refeição deliciosa e satisfatória usando os muitos grãos que crescem à sua volta.",
+    research_baking_clueText = "Criar & Esquentar", --0.5.1
+
     research_toolAssembly_description = "Uma pedra afiada pode ser usada com muito mais força quando unida a um cabo de madeira. Sua tribo agora consegue criar ferramentas melhores e armas formidáveis.",
+    research_toolAssembly_clueText = "Montar", --0.5.1
+
     research_medicine_description = "Ao triturar ervas, raízes e flores, sua tribo descobriu que pode fazer cataplasmas e remédios. Essas misturas podem ajudar com ferimentos e doenças.", --0.3.0
+    research_medicine_clueText = "Criar", --0.5.1
+
     research_grinding_description = "Pulverizar coisas pode ser bastante útil, principalmente para liberar as valiosas calorias escondidas dentro dos grãos e sementes. Sua tribo descobriu que o pilão torna muito mais fácil o trabalho de moer.", --modified b13
+    research_grinding_clueText = "Amassar", --0.5.1
+
     research_tiling_description = "Sua tribo descobriu um novo método de construção utilizando blocos de pedra ou argila cortados em pedaços finos. Ladrilhos podem ser usados para construir telhados de alta qualidade, assim como chãos e caminhos.", --0.4 modified
-    research_unlock_butcherMammoth = "Cortar Mamute",
+    research_tiling_clueText = "Construir", --0.5.1
 
 	research_composting_name = "Compostar", --0.4 --the name is usually derived from the skill, so research types that don't have an associated skill must be given a name.
     research_composting_description = "Matéria orgânica podre pode ser empilhada e transformada em adubo, que então pode ser utilizado para enriquecer o solo.", --0.4
+    research_composting_clueText = "Melhorar solo", --0.5.1
+
     research_blacksmithing_description = "Ao aquecer e combinar certos tipos de minerais em altas temperaturas, sua tribo descobriu como produzir e utilizar bronze. Ferramentas de bronze duram muito mais tempo e podem ser utilizadas para fabricar tipos de ferramentas inteiramente novos.", --0.4
+    research_blacksmithing_clueText = "Ferver", --0.5.1
+
+
+
+    research_unlock_butcherMammoth = "Cortar Mamute",
 
     -- paths
     path_dirt = "Caminho de Terra",
@@ -1228,6 +1308,10 @@ localizations.values = {
     object_alpacaMeatRack_plural = "Carnes de Alpaca Cruas", --0.3.0 adicionado "Crua"
     object_alpacaMeatRackCooked = "Carne de Alpaca Cozida",
     object_alpacaMeatRackCooked_plural = "Carnes de Alpaca Cozidas",
+    object_catfishDead = "Bagre Cru", --0.5.1.4
+    object_catfishDead_plural = "Bagres Crus", --0.5.1.4
+    object_catfishCooked = "Bagre Cozido", --0.5.1.4
+    object_catfishCooked_plural = "Bagres Cozidos", --0.5.1.4
     object_dirtWallDoor = "Parede de Terra com Porta",
     object_dirtWallDoor_plural = "Parede de Terra com Porta",
     object_build_storageArea = "Área de Armazenamento",
@@ -1954,6 +2038,19 @@ localizations.values = {
     object_sled_plural = "Trenós", --0.5
     object_uncoveredSled = "Trenó não Coberto", --0.5 only used in multiselect
     object_uncoveredSled_plural = "Trenós não Cobertos", --0.5 only used in multiselect
+    object_uncoveredCanoe = "Canoa não Coberta", --0.5.1 only used in multiselect
+    object_uncoveredCanoe_plural = "Canoas não Cobertas", --0.5.1 only used in multiselect
+
+    object_canoe = "Canoa", --0.5.1
+    object_canoe_plural = "Canoas", --0.5.1
+    object_coveredCanoe = "Canoa Coberta", --0.5.1
+    object_coveredCanoe_plural = "Canoas Cobertas", --0.5.1
+    object_build_canoe = "Canoa", --0.5.1
+    object_build_canoe_plural = "Canoas", --0.5.1
+    object_build_coveredCanoe = "Canoa Coberta", --0.5.1
+    object_build_coveredCanoe_plural = "Canoas Cobertas", --0.5.1
+    object_paddle = "Remo", --0.5.1
+    object_paddle_plural = "Remos", --0.5.1
 
     object_build_sled = "Trenó", --0.5
     object_build_sled_plural = "Trenós", --0.5
@@ -2109,6 +2206,10 @@ localizations.values = {
     object_mammothMeatTBoneCooked_plural = "Carnes de Mamute Cozidas",
 	object_bronzeIngot = "Barra de Bronze", --0.4
     object_bronzeIngot_plural = "Barras de Bronze", --0.4
+    
+    
+    object_catfish = "Bagre",
+    object_catfish_plural = "Bagres",
 
     --order
     order_idle = "Parado",
@@ -2284,6 +2385,10 @@ localizations.values = {
     resource_alpacaMeat_plural = "Carnes de Alpaca Cruas", --0.3.0 adicionado "Crua"
     resource_alpacaMeatCooked = "Carne de Alpaca Cozida",
     resource_alpacaMeatCooked_plural = "Carnes de Alpaca Cozidas",
+    resource_fish = "Peixe Cru", --0.5.1.4
+    resource_fish_plural = "Peixes Crus", --0.5.1.4
+    resource_fishCooked = "Peixe Cozido",--0.5.1.4
+    resource_fishCooked_plural = "Peixes Cozidos",--0.5.1.4
     resource_stoneSpear = "Lança de Pedra",
     resource_stoneSpear_plural = "Lanças de Pedra",
     resource_stoneSpearHead = "Ponta de Lança de Pedra",
@@ -2751,11 +2856,12 @@ localizations.values = {
     settings_language = "Idioma",
     settings_language_tip = "Instale mais idiomas pela Steam Workshop através do painel 'Mods' no menu principal",
     settings_Controls = "Controles",
-    settings_Controls_mouseSensitivity = "Sensibilidade do Mouse",
+    settings_Controls_mouseSensitivity = "Sensibilidade da Câmera com Mouse",
     settings_Controls_invertMouseLookY = "Inverter Mouse Y",
     settings_Controls_invertMouseWheelZoom = "Inverter Zoom na Roda do Mouse", --b20
-    settings_Controls_controllerLookSensitivity = "Sensibilidade do Controle",
-	settings_Controls_controllerZoomSensitivity = "Sensibilidade do Zoom", --0.4
+    settings_Controls_controllerLookSensitivity = "Sensibilidade da Câmera com Controle",
+	settings_Controls_controllerZoomSensitivity = "Sensibilidade do Zoom com Controle", --0.4
+    settings_Controls_mouseZoomSensitivity = "Sensibilidade do Zoom com Mouse", --0.5.1.1
     settings_Controls_invertControllerLookY = "Inverter Controle Y",
     settings_Controls_enableDoubleTapForFastMovement = "Clique duplo para mover rápido",
 	settings_Controls_reticle = "Retícula de Mira", --0.4 - refers to the pointer/crosshairs image setting
@@ -2763,6 +2869,11 @@ localizations.values = {
     settings_Controls_reticleType_dot = "Ponto", --0.4
     settings_Controls_reticleType_bullseye = "Alvo", --0.4
     settings_Controls_reticleType_crosshairs = "Mira", --0.4
+    
+    settings_Controls_cameraControlType = "Tipo de Controle de Cãmera", --0.5.1 -- this is the title for the pop up button in the options menu to select point and click mode
+    settings_Controls_cameraControlType_firstPerson3D = "Primeira Pessoa", --0.5.1
+    settings_Controls_cameraControlType_pointAndClick = "Point and click", --0.5.1
+    
     settings_Audio = "Áudio",
     settings_Audio_MusicVolume = "Volume da Música",
     settings_Audio_SoundVolume = "Volume dos Sons",
@@ -2784,6 +2895,7 @@ localizations.values = {
     settings_graphics_Relaunch = "Reiniciar",
     settings_graphics_VSync = "VSync",
     settings_graphics_FOV = "Campo de Visão",
+    settings_graphics_terrainContours = "Contorno do Terreno", --0.5.1.2 controls opacity of contour lines that are rendered on the terrain
     settings_Performance = "Performance",
     settings_Performance_RenderDistance = "Distância de Renderização",
     settings_Performance_GrassDistance = "Distância da Grama",
@@ -2900,6 +3012,7 @@ localizations.values = {
     lookatUI_maintainQuantityInProgress = function(values) --0.5
         return values.actionInProgressName .. " para manter " .. values.maintainCount .. " " .. values.resourcePlural .. ": " .. values.storedCount .. "/" .. values.maintainCount
     end,
+    lookatUI_missingShallowWater = "Nenhum corpo d'água raso por perto", --0.5.1
 
     sapien_ui_roles = "Funções",
     sapien_ui_inventory = "Inventário",
@@ -3473,6 +3586,7 @@ localizations.values = {
     storage_banana = "Bananas",
     storage_coconut = "Cocos",
     storage_alpacaMeat = "Carnes de Alpaca",
+    storage_fish = "peixe", --0.5.1.3
     storage_gooseberry = "Groselhas",
     storage_pumpkin = "Abóboras",
     storage_urn = "Vasos",
@@ -3586,6 +3700,8 @@ localizations.values = {
     key_game_multiselectModifier = "Atalho de Multi-Seleção no Clique",
     key_game_radialMenuClone = "Atalho de Construir Mais do Menu Radial",--b13
     key_game_prioritize = "Priorizar", --0.5
+    key_game_togglePointAndClick = "Alternar modo de câmera point-and-click", --0.5.1
+    key_game_radialMenuChopReplant = "Derrubar & Replantar", --0.5.1
 
     -- key_menu
     key_menu_up = "Cima",
@@ -3608,6 +3724,12 @@ localizations.values = {
     key_movement_rightAlt = "Direita (Alternativo)",
 	key_movement_zoomIn = "Mais Zoom", --0.4
     key_movement_zoomOut = "Menos Zoom", --0.4
+    key_movement_rotateLeft = "Rotacionar para Esquerda", --0.5.1
+    key_movement_rotateRight = "Rotacionar para Direita", --0.5.1
+    key_movement_rotateForward = "Rotacionar para Frente", --0.5.1.3
+    key_movement_rotateBack = "Rotacionar para Trás", --0.5.1.3
+    
+    
 
     key_building_cancel = "Cancelar",
     key_building_confirm = "Confirmar",
@@ -3684,6 +3806,10 @@ localizations.values = {
     selectionGroup_sled_objectName = "Trenó", --0.5
     selectionGroup_sled_plural = "Trenós", --0.5
     selectionGroup_sled_descriptive = "Quaisuqer Trenós", --0.5
+    
+    selectionGroup_canoe_objectName = "Canoa", --0.5.1
+    selectionGroup_canoe_plural = "Canoas", --0.5.1
+    selectionGroup_canoe_descriptive = "Quaisquer Canoas", --0.5.1
 
     -- notifications
     notification_becamePregnant = function(values)
